@@ -1,2 +1,5 @@
+ColorsAndFontsPreferencePage.expandedCategories=Torg.eclipse.ui.workbenchMisc\tTorg.eclipse.cdt.ui.presentation
+ColorsAndFontsPreferencePage.selectedElement=Forg.eclipse.cdt.ui.buildconsole.ConsoleFont
 UIActivities.com.ti.ccstudio.activities.RSEActivity=true
 eclipse.preferences.version=1
+org.eclipse.cdt.ui.buildconsole.ConsoleFont=1|Consolas|9.75|0|WINDOWS|1|-13|0|0|0|400|0|0|0|0|3|2|1|49|Consolas;

@@ -1,0 +1,29 @@
+
+**** Build of configuration Debug for project lightSensor_I2C_Rpi ****
+
+"C:\\Program Files (x86)\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: C:/ti/TivaWare_C_Series-2.1.1.71/utils/uartstdio.c'
+'Invoking: ARM Compiler'
+"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -O2 --include_path="C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/include" --include_path="c:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub" --include_path="c:/ti/TivaWare_C_Series-2.1.1.71" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --define=TARGET_IS_TM4C129_RA0 --define=UART_BUFFERED --display_error_number --diag_warning=225 --diag_wrap=off --gen_func_subsections=on --ual --preproc_with_compile --preproc_dependency="utils/uartstdio.pp" --obj_directory="utils"  "C:/ti/TivaWare_C_Series-2.1.1.71/utils/uartstdio.c"
+'Finished building: C:/ti/TivaWare_C_Series-2.1.1.71/utils/uartstdio.c'
+' '
+'Building file: C:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub/drivers/buttons.c'
+'Invoking: ARM Compiler'
+"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -O2 --include_path="C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/include" --include_path="c:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub" --include_path="c:/ti/TivaWare_C_Series-2.1.1.71" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --define=TARGET_IS_TM4C129_RA0 --define=UART_BUFFERED --display_error_number --diag_warning=225 --diag_wrap=off --gen_func_subsections=on --ual --preproc_with_compile --preproc_dependency="drivers/buttons.pp" --obj_directory="drivers"  "C:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub/drivers/buttons.c"
+'Finished building: C:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub/drivers/buttons.c'
+' '
+'Building file: C:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub/drivers/pinout.c'
+'Invoking: ARM Compiler'
+"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -O2 --include_path="C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/include" --include_path="c:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub" --include_path="c:/ti/TivaWare_C_Series-2.1.1.71" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --define=TARGET_IS_TM4C129_RA0 --define=UART_BUFFERED --display_error_number --diag_warning=225 --diag_wrap=off --gen_func_subsections=on --ual --preproc_with_compile --preproc_dependency="drivers/pinout.pp" --obj_directory="drivers"  "C:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub/drivers/pinout.c"
+'Finished building: C:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub/drivers/pinout.c'
+' '
+'Building target: lightSensor_I2C_Rpi.out'
+'Invoking: ARM Linker'
+"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -O2 -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --define=TARGET_IS_TM4C129_RA0 --define=UART_BUFFERED --display_error_number --diag_warning=225 --diag_wrap=off --gen_func_subsections=on --ual -z -m"light_isl29023_ccs.map" --heap_size=0 --stack_size=1024 -i"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/lib" -i"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lightSensor_I2C_Rpi_linkInfo.xml" --rom_model -o "lightSensor_I2C_Rpi.out"  "./light_isl29023.obj" "./startup_ccs.obj" "./utils/uartstdio.obj" "./drivers/buttons.obj" "./drivers/pinout.obj" "../light_isl29023_ccs.cmd" -l"libc.a" -l"c:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub/light_isl29023/ccs/../../../../../driverlib/ccs/Debug/driverlib.lib" -l"c:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub/light_isl29023/ccs/../../../../../sensorlib/ccs/Debug/sensorlib.lib" 
+<Linking>
+'Finished building target: lightSensor_I2C_Rpi.out'
+' '
+"C:/Program Files (x86)/ccsv6/utils/tiobj2bin/tiobj2bin" "lightSensor_I2C_Rpi.out" "lightSensor_I2C_Rpi.bin" "C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armofd" "C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armhex" "C:/Program Files (x86)/ccsv6/utils/tiobj2bin/mkhex4bin"
+' '
+
+**** Build Finished ****

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;sensor_pack/drivers/pinout&apos; to &apos;pinout.h&apos;" description="Rename resource &apos;pinout&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="drivers/pinout" name="pinout.h" stamp="1457148630687" updateReferences="true"/>
+</session>

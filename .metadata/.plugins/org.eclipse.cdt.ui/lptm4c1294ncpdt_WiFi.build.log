@@ -1,0 +1,615 @@
+
+**** Build of configuration Debug for project lptm4c1294ncpdt_WiFi ****
+
+"C:\\Program Files (x86)\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/WiFi.cpp'
+'Invoking: GNU Compiler'
+"C:/energia-0101E0015-windows/energia-0101E0015/hardware/tools/lm4f/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m4 -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -fno-rtti -fno-exceptions -DF_CPU=120000000L -DARDUINO=101 -DENERGIA=12 -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/cores/lm4f" -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/variants/launchpad_129" -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/tools/lm4f/arm-none-eabi/include" -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/SPI" -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi" -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility" -Os -ffunction-sections -fdata-sections -fsingle-precision-constant -g -gstrict-dwarf -Wall -MMD -MP -MF"WiFi.d" -MT"WiFi.d" -o"WiFi.o"  "C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/WiFi.cpp"
+In file included from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/WiFi.cpp:36:0:
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/WiFi.h:34:0: warning: "MAX_SOCK_NUM" redefined [enabled by default]
+ #define MAX_SOCK_NUM 8
+ ^
+In file included from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/WiFi.h:26:0,
+                 from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/WiFi.cpp:36:
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/wl_definitions.h:43:0: note: this is the location of the previous definition
+ #define MAX_SOCK_NUM  4
+ ^
+In file included from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/WiFi.h:24:0,
+                 from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/WiFi.cpp:36:
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/cores/lm4f/IPAddress.h: In member function 'IPAddress::operator uint32_t()':
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/cores/lm4f/IPAddress.h:51:55: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+     operator uint32_t() { return *((uint32_t*)_address); };
+                                                       ^
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/cores/lm4f/IPAddress.h: In member function 'bool IPAddress::operator==(const IPAddress&)':
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/cores/lm4f/IPAddress.h:52:75: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+     bool operator==(const IPAddress& addr) { return (*((uint32_t*)_address)) == (*((uint32_t*)addr._address)); };
+                                                                           ^
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/cores/lm4f/IPAddress.h:52:108: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+     bool operator==(const IPAddress& addr) { return (*((uint32_t*)_address)) == (*((uint32_t*)addr._address)); };
+                                                                                                            ^
+In file included from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/WiFi.h:27:0,
+                 from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/WiFi.cpp:36:
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/WiFi.cpp: In member function 'char* WiFiClass::driverVersion()':
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/SimpleLink.h:226:29: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+ #define SL_DRIVER_VERSION   "0.0.5.1"
+                             ^
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/WiFi.cpp:188:9: note: in expansion of macro 'SL_DRIVER_VERSION'
+  return SL_DRIVER_VERSION;
+         ^
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/WiFi.cpp: In member function 'char* WiFiClass::firmwareVersion()':
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/WiFi.cpp:197:10: warning: variable 'lRetVal' set but not used [-Wunused-but-set-variable]
+     long lRetVal = -1;
+          ^
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/WiFi.cpp: In member function 'int WiFiClass::beginNetwork(char*)':
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/WiFi.cpp:405:12: warning: variable 'retVal' set but not used [-Wunused-but-set-variable]
+     long   retVal = -1;
+            ^
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/WiFi.cpp: In member function 'int WiFiClass::beginNetwork(char*, char*)':
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/WiFi.cpp:435:12: warning: variable 'retVal' set but not used [-Wunused-but-set-variable]
+     long   retVal = -1;
+            ^
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/WiFi.cpp: In member function 'int WiFiClass::disconnect()':
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/WiFi.cpp:629:9: warning: unused variable 'iRet' [-Wunused-variable]
+     int iRet = sl_WlanDisconnect();
+         ^
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/WiFi.cpp: In member function 'int WiFiClass::startSmartConfig()':
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/WiFi.cpp:978:13: warning: unused variable 'iCount' [-Wunused-variable]
+     uint8_t iCount;
+             ^
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/WiFi.cpp: In member function 'IPAddress WiFiClass::deviceIpAddress(unsigned int)':
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/WiFi.cpp:1067:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             if (j == idx) {
+                      ^
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/WiFi.cpp: In member function 'MACAddress WiFiClass::deviceMacAddress(unsigned int)':
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/WiFi.cpp:1086:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             if (j == idx) {
+                      ^
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/WiFi.cpp:1081:23: warning: unused variable 'k' [-Wunused-variable]
+     int i = 0, j = 0, k = 0;
+                       ^
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/WiFi.cpp: In member function 'MACAddress WiFiClass::deviceMacByIpAddress(IPAddress)':
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/WiFi.cpp:1119:16: warning: unused variable 'j' [-Wunused-variable]
+     int i = 0, j = 0, k = 0;
+                ^
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/WiFi.cpp:1119:23: warning: unused variable 'k' [-Wunused-variable]
+     int i = 0, j = 0, k = 0;
+                       ^
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/WiFi.cpp: In member function 'int WiFiClass::startSmartConfig()':
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/WiFi.cpp:987:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/WiFi.cpp'
+' '
+'Building file: C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/WiFiClient.cpp'
+'Invoking: GNU Compiler'
+"C:/energia-0101E0015-windows/energia-0101E0015/hardware/tools/lm4f/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m4 -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -fno-rtti -fno-exceptions -DF_CPU=120000000L -DARDUINO=101 -DENERGIA=12 -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/cores/lm4f" -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/variants/launchpad_129" -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/tools/lm4f/arm-none-eabi/include" -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/SPI" -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi" -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility" -Os -ffunction-sections -fdata-sections -fsingle-precision-constant -g -gstrict-dwarf -Wall -MMD -MP -MF"WiFiClient.d" -MT"WiFiClient.d" -o"WiFiClient.o"  "C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/WiFiClient.cpp"
+In file included from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/WiFiClient.cpp:40:0:
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/WiFi.h:34:0: warning: "MAX_SOCK_NUM" redefined [enabled by default]
+ #define MAX_SOCK_NUM 8
+ ^
+In file included from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/WiFiClient.cpp:36:0:
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/wl_definitions.h:43:0: note: this is the location of the previous definition
+ #define MAX_SOCK_NUM  4
+ ^
+In file included from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/WiFi.h:24:0,
+                 from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/WiFiClient.cpp:40:
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/cores/lm4f/IPAddress.h: In member function 'IPAddress::operator uint32_t()':
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/cores/lm4f/IPAddress.h:51:55: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+     operator uint32_t() { return *((uint32_t*)_address); };
+                                                       ^
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/cores/lm4f/IPAddress.h: In member function 'bool IPAddress::operator==(const IPAddress&)':
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/cores/lm4f/IPAddress.h:52:75: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+     bool operator==(const IPAddress& addr) { return (*((uint32_t*)_address)) == (*((uint32_t*)addr._address)); };
+                                                                           ^
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/cores/lm4f/IPAddress.h:52:108: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+     bool operator==(const IPAddress& addr) { return (*((uint32_t*)_address)) == (*((uint32_t*)addr._address)); };
+                                                                                                            ^
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/WiFiClient.cpp: In member function 'virtual size_t WiFiClient::write(const uint8_t*, size_t)':
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/WiFiClient.cpp:359:81: warning: passing NULL to non-pointer argument 4 of 'int sl_Send(int, const void*, int, int)' [-Wconversion-null]
+     int iRet = sl_Send(WiFiClass::_handleArray[_socketIndex], buffer, size, NULL);
+                                                                                 ^
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/WiFiClient.cpp:364:81: warning: passing NULL to non-pointer argument 4 of 'int sl_Send(int, const void*, int, int)' [-Wconversion-null]
+         iRet = sl_Send(WiFiClass::_handleArray[_socketIndex], buffer, size, NULL);
+                                                                                 ^
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/WiFiClient.cpp:367:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if ((iRet < 0) || (iRet != size)) {
+                                ^
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/WiFiClient.cpp: In member function 'virtual int WiFiClient::available()':
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/WiFiClient.cpp:413:104: warning: passing NULL to non-pointer argument 4 of 'int sl_Recv(int, void*, int, int)' [-Wconversion-null]
+         int iRet = sl_Recv(WiFiClass::_handleArray[_socketIndex], rx_buffer, TCP_RX_BUFF_MAX_SIZE, NULL);
+                                                                                                        ^
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/WiFiClient.cpp:415:17: warning: unused variable 'iRet' [-Wunused-variable]
+             int iRet = sl_Close(WiFiClass::_handleArray[_socketIndex]);
+                 ^
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/WiFiClient.cpp: In member function 'virtual int WiFiClient::read(uint8_t*, size_t)':
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/WiFiClient.cpp:471:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if (len > size) {
+               ^
+'Finished building: C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/WiFiClient.cpp'
+' '
+'Building file: C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/WiFiServer.cpp'
+'Invoking: GNU Compiler'
+"C:/energia-0101E0015-windows/energia-0101E0015/hardware/tools/lm4f/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m4 -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -fno-rtti -fno-exceptions -DF_CPU=120000000L -DARDUINO=101 -DENERGIA=12 -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/cores/lm4f" -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/variants/launchpad_129" -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/tools/lm4f/arm-none-eabi/include" -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/SPI" -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi" -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility" -Os -ffunction-sections -fdata-sections -fsingle-precision-constant -g -gstrict-dwarf -Wall -MMD -MP -MF"WiFiServer.d" -MT"WiFiServer.d" -o"WiFiServer.o"  "C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/WiFiServer.cpp"
+In file included from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/WiFiServer.cpp:29:0:
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/WiFi.h:34:0: warning: "MAX_SOCK_NUM" redefined [enabled by default]
+ #define MAX_SOCK_NUM 8
+ ^
+In file included from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/WiFiServer.cpp:25:0:
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/wl_definitions.h:43:0: note: this is the location of the previous definition
+ #define MAX_SOCK_NUM  4
+ ^
+In file included from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/WiFi.h:24:0,
+                 from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/WiFiServer.cpp:29:
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/cores/lm4f/IPAddress.h: In member function 'IPAddress::operator uint32_t()':
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/cores/lm4f/IPAddress.h:51:55: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+     operator uint32_t() { return *((uint32_t*)_address); };
+                                                       ^
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/cores/lm4f/IPAddress.h: In member function 'bool IPAddress::operator==(const IPAddress&)':
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/cores/lm4f/IPAddress.h:52:75: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+     bool operator==(const IPAddress& addr) { return (*((uint32_t*)_address)) == (*((uint32_t*)addr._address)); };
+                                                                           ^
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/cores/lm4f/IPAddress.h:52:108: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+     bool operator==(const IPAddress& addr) { return (*((uint32_t*)_address)) == (*((uint32_t*)addr._address)); };
+                                                                                                            ^
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/WiFiServer.cpp: In member function 'virtual size_t WiFiServer::write(const uint8_t*, size_t)':
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/WiFiServer.cpp:206:59: warning: passing NULL to non-pointer argument 4 of 'int sl_Send(int, const void*, int, int)' [-Wconversion-null]
+             sentBytes = sl_Send(handle, buffer, size, NULL);
+                                                           ^
+'Finished building: C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/WiFiServer.cpp'
+' '
+'Building file: C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/WiFiUdp.cpp'
+'Invoking: GNU Compiler'
+"C:/energia-0101E0015-windows/energia-0101E0015/hardware/tools/lm4f/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m4 -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -fno-rtti -fno-exceptions -DF_CPU=120000000L -DARDUINO=101 -DENERGIA=12 -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/cores/lm4f" -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/variants/launchpad_129" -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/tools/lm4f/arm-none-eabi/include" -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/SPI" -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi" -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility" -Os -ffunction-sections -fdata-sections -fsingle-precision-constant -g -gstrict-dwarf -Wall -MMD -MP -MF"WiFiUdp.d" -MT"WiFiUdp.d" -o"WiFiUdp.o"  "C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/WiFiUdp.cpp"
+In file included from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/WiFiUdp.cpp:28:0:
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/WiFi.h:34:0: warning: "MAX_SOCK_NUM" redefined [enabled by default]
+ #define MAX_SOCK_NUM 8
+ ^
+In file included from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/WiFiUdp.cpp:23:0:
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/wl_definitions.h:43:0: note: this is the location of the previous definition
+ #define MAX_SOCK_NUM  4
+ ^
+In file included from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/WiFi.h:24:0,
+                 from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/WiFiUdp.cpp:28:
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/cores/lm4f/IPAddress.h: In member function 'IPAddress::operator uint32_t()':
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/cores/lm4f/IPAddress.h:51:55: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+     operator uint32_t() { return *((uint32_t*)_address); };
+                                                       ^
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/cores/lm4f/IPAddress.h: In member function 'bool IPAddress::operator==(const IPAddress&)':
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/cores/lm4f/IPAddress.h:52:75: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+     bool operator==(const IPAddress& addr) { return (*((uint32_t*)_address)) == (*((uint32_t*)addr._address)); };
+                                                                           ^
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/cores/lm4f/IPAddress.h:52:108: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+     bool operator==(const IPAddress& addr) { return (*((uint32_t*)_address)) == (*((uint32_t*)addr._address)); };
+                                                                                                            ^
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/WiFiUdp.cpp: In member function 'int WiFiUDP::endPacket()':
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/WiFiUdp.cpp:196:119: warning: passing NULL to non-pointer argument 4 of 'int sl_SendTo(int, const void*, int, int, const SlSockAddr_t*, SlSocklen_t)' [-Wconversion-null]
+     int iRet = sl_SendTo(socketHandle, tx_buf, tx_fillLevel, NULL, (SlSockAddr_t*)&sendAddress, sizeof(SlSockAddrIn_t));
+                                                                                                                       ^
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/WiFiUdp.cpp: In member function 'int WiFiUDP::parsePacket()':
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/WiFiUdp.cpp:288:129: warning: passing NULL to non-pointer argument 4 of 'int sl_RecvFrom(int, void*, int, int, SlSockAddr_t*, SlSocklen_t*)' [-Wconversion-null]
+     int bytes = sl_RecvFrom(socketHandle, rx_buf, UDP_RX_PACKET_MAX_SIZE, NULL, (SlSockAddr_t*)&address, (SlSocklen_t*)&AddrSize);
+                                                                                                                                 ^
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/WiFiUdp.cpp: In member function 'int WiFiUDP::read(unsigned char*, size_t)':
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/WiFiUdp.cpp:339:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if (len > size) {
+               ^
+'Finished building: C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/WiFiUdp.cpp'
+' '
+'Building file: C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/SimpleLinkCallbacks.cpp'
+'Invoking: GNU Compiler'
+"C:/energia-0101E0015-windows/energia-0101E0015/hardware/tools/lm4f/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m4 -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -fno-rtti -fno-exceptions -DF_CPU=120000000L -DARDUINO=101 -DENERGIA=12 -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/cores/lm4f" -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/variants/launchpad_129" -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/tools/lm4f/arm-none-eabi/include" -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/SPI" -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi" -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility" -Os -ffunction-sections -fdata-sections -fsingle-precision-constant -g -gstrict-dwarf -Wall -MMD -MP -MF"utility/SimpleLinkCallbacks.d" -MT"utility/SimpleLinkCallbacks.d" -o"utility/SimpleLinkCallbacks.o"  "C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/SimpleLinkCallbacks.cpp"
+In file included from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/SimpleLinkCallbacks.cpp:27:0:
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/WiFi.h:34:0: warning: "MAX_SOCK_NUM" redefined [enabled by default]
+ #define MAX_SOCK_NUM 8
+ ^
+In file included from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/WiFi.h:26:0,
+                 from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/SimpleLinkCallbacks.cpp:27:
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/wl_definitions.h:43:0: note: this is the location of the previous definition
+ #define MAX_SOCK_NUM  4
+ ^
+In file included from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/WiFi.h:24:0,
+                 from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/SimpleLinkCallbacks.cpp:27:
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/cores/lm4f/IPAddress.h: In member function 'IPAddress::operator uint32_t()':
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/cores/lm4f/IPAddress.h:51:55: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+     operator uint32_t() { return *((uint32_t*)_address); };
+                                                       ^
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/cores/lm4f/IPAddress.h: In member function 'bool IPAddress::operator==(const IPAddress&)':
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/cores/lm4f/IPAddress.h:52:75: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+     bool operator==(const IPAddress& addr) { return (*((uint32_t*)_address)) == (*((uint32_t*)addr._address)); };
+                                                                           ^
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/cores/lm4f/IPAddress.h:52:108: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+     bool operator==(const IPAddress& addr) { return (*((uint32_t*)_address)) == (*((uint32_t*)addr._address)); };
+                                                                                                            ^
+'Finished building: C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/SimpleLinkCallbacks.cpp'
+' '
+'Building file: C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/SimpleLinkForEnergia.cpp'
+'Invoking: GNU Compiler'
+"C:/energia-0101E0015-windows/energia-0101E0015/hardware/tools/lm4f/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m4 -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -fno-rtti -fno-exceptions -DF_CPU=120000000L -DARDUINO=101 -DENERGIA=12 -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/cores/lm4f" -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/variants/launchpad_129" -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/tools/lm4f/arm-none-eabi/include" -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/SPI" -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi" -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility" -Os -ffunction-sections -fdata-sections -fsingle-precision-constant -g -gstrict-dwarf -Wall -MMD -MP -MF"utility/SimpleLinkForEnergia.d" -MT"utility/SimpleLinkForEnergia.d" -o"utility/SimpleLinkForEnergia.o"  "C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/SimpleLinkForEnergia.cpp"
+In file included from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/SimpleLinkForEnergia.cpp:12:0:
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/WiFi.h:34:0: warning: "MAX_SOCK_NUM" redefined [enabled by default]
+ #define MAX_SOCK_NUM 8
+ ^
+In file included from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/WiFi.h:26:0,
+                 from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/SimpleLinkForEnergia.cpp:12:
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/wl_definitions.h:43:0: note: this is the location of the previous definition
+ #define MAX_SOCK_NUM  4
+ ^
+In file included from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/WiFi.h:24:0,
+                 from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/SimpleLinkForEnergia.cpp:12:
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/cores/lm4f/IPAddress.h: In member function 'IPAddress::operator uint32_t()':
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/cores/lm4f/IPAddress.h:51:55: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+     operator uint32_t() { return *((uint32_t*)_address); };
+                                                       ^
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/cores/lm4f/IPAddress.h: In member function 'bool IPAddress::operator==(const IPAddress&)':
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/cores/lm4f/IPAddress.h:52:75: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+     bool operator==(const IPAddress& addr) { return (*((uint32_t*)_address)) == (*((uint32_t*)addr._address)); };
+                                                                           ^
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/cores/lm4f/IPAddress.h:52:108: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+     bool operator==(const IPAddress& addr) { return (*((uint32_t*)_address)) == (*((uint32_t*)addr._address)); };
+                                                                                                            ^
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/SimpleLinkForEnergia.cpp: In function 'int spi_Close(int)':
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/SimpleLinkForEnergia.cpp:86:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/SimpleLinkForEnergia.cpp: In function 'int spi_Read(int, char*, int)':
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/SimpleLinkForEnergia.cpp:100:37: warning: passing NULL to non-pointer argument 1 of 'uint8_t SPIClass::transfer(uint8_t)' [-Wconversion-null]
+         pBuff[i] = SPI.transfer(NULL);
+                                     ^
+'Finished building: C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/SimpleLinkForEnergia.cpp'
+' '
+'Building file: C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/device.c'
+'Invoking: GNU Compiler'
+"C:/energia-0101E0015-windows/energia-0101E0015/hardware/tools/lm4f/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m4 -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -fno-rtti -fno-exceptions -DF_CPU=120000000L -DARDUINO=101 -DENERGIA=12 -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/cores/lm4f" -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/variants/launchpad_129" -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/tools/lm4f/arm-none-eabi/include" -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/SPI" -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi" -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility" -Os -ffunction-sections -fdata-sections -fsingle-precision-constant -g -gstrict-dwarf -Wall -MMD -MP -MF"utility/device.d" -MT"utility/device.d" -o"utility/device.o"  "C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/device.c"
+cc1.exe: warning: command line option '-fno-rtti' is valid for C++/ObjC++ but not for C [enabled by default]
+'Finished building: C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/device.c'
+' '
+'Building file: C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/driver.c'
+'Invoking: GNU Compiler'
+"C:/energia-0101E0015-windows/energia-0101E0015/hardware/tools/lm4f/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m4 -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -fno-rtti -fno-exceptions -DF_CPU=120000000L -DARDUINO=101 -DENERGIA=12 -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/cores/lm4f" -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/variants/launchpad_129" -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/tools/lm4f/arm-none-eabi/include" -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/SPI" -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi" -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility" -Os -ffunction-sections -fdata-sections -fsingle-precision-constant -g -gstrict-dwarf -Wall -MMD -MP -MF"utility/driver.d" -MT"utility/driver.d" -o"utility/driver.o"  "C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/driver.c"
+cc1.exe: warning: command line option '-fno-rtti' is valid for C++/ObjC++ but not for C [enabled by default]
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/driver.c: In function '_SlDrvMsgWrite':
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/driver.c:424:2: warning: pointer targets in passing argument 2 of 'spi_Write' differ in signedness [-Wpointer-sign]
+  NWP_IF_WRITE_CHECK(g_pCB->FD, (unsigned char *)&g_H2NSyncPattern.Short, SYNC_PATTERN_LEN);
+  ^
+In file included from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/user.h:67:0,
+                 from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/SimpleLink.h:216,
+                 from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/driver.c:38:
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/SimpleLinkForEnergia.h:24:5: note: expected 'char *' but argument is of type 'unsigned char *'
+ int spi_Write(int Fd , char* pBuff , int Len);
+     ^
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/driver.c:428:5: warning: pointer targets in passing argument 2 of 'spi_Write' differ in signedness [-Wpointer-sign]
+     NWP_IF_WRITE_CHECK(g_pCB->FD, (unsigned char *)&g_pCB->TempProtocolHeader, _SL_CMD_HDR_SIZE);
+     ^
+In file included from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/user.h:67:0,
+                 from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/SimpleLink.h:216,
+                 from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/driver.c:38:
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/SimpleLinkForEnergia.h:24:5: note: expected 'char *' but argument is of type 'unsigned char *'
+ int spi_Write(int Fd , char* pBuff , int Len);
+     ^
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/driver.c:433:6: warning: pointer targets in passing argument 2 of 'spi_Write' differ in signedness [-Wpointer-sign]
+      NWP_IF_WRITE_CHECK(g_pCB->FD, g_pCB->FunctionParams.pTxRxDescBuff, 
+      ^
+In file included from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/user.h:67:0,
+                 from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/SimpleLink.h:216,
+                 from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/driver.c:38:
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/SimpleLinkForEnergia.h:24:5: note: expected 'char *' but argument is of type 'UINT8 *'
+ int spi_Write(int Fd , char* pBuff , int Len);
+     ^
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/driver.c:443:7: warning: pointer targets in passing argument 2 of 'spi_Write' differ in signedness [-Wpointer-sign]
+       NWP_IF_WRITE_CHECK(g_pCB->FD, g_pCB->FunctionParams.pCmdExt->pRxPayload, 
+       ^
+In file included from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/user.h:67:0,
+                 from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/SimpleLink.h:216,
+                 from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/driver.c:38:
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/SimpleLinkForEnergia.h:24:5: note: expected 'char *' but argument is of type 'UINT8 *'
+ int spi_Write(int Fd , char* pBuff , int Len);
+     ^
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/driver.c:454:6: warning: pointer targets in passing argument 2 of 'spi_Write' differ in signedness [-Wpointer-sign]
+      NWP_IF_WRITE_CHECK(g_pCB->FD, g_pCB->FunctionParams.pCmdExt->pTxPayload, 
+      ^
+In file included from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/user.h:67:0,
+                 from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/SimpleLink.h:216,
+                 from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/driver.c:38:
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/SimpleLinkForEnergia.h:24:5: note: expected 'char *' but argument is of type 'UINT8 *'
+ int spi_Write(int Fd , char* pBuff , int Len);
+     ^
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/driver.c: In function '_SlDrvMsgRead':
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/driver.c:493:5: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+     if(SL_OPCODE_DEVICE_INITCOMPLETE != OPCODE(uBuf.TempBuf))
+     ^
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/driver.c:495:9: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+         g_pCB->FlowContCB.TxPoolCnt = ((_SlResponseHeader_t *)uBuf.TempBuf)->TxPoolCnt;
+         ^
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/driver.c:496:9: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+         g_pCB->SocketNonBlocking = ((_SlResponseHeader_t *)uBuf.TempBuf)->SocketNonBlocking;
+         ^
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/driver.c:497:3: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+   g_pCB->SocketTXFailure = ((_SlResponseHeader_t *)uBuf.TempBuf)->SocketTXFailure;
+   ^
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/driver.c:505:5: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+     _SlDrvClassifyRxMsg(OPCODE(uBuf.TempBuf));
+     ^
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/driver.c:523:4: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+    if (_SL_PROTOCOL_ALIGN_SIZE(RSP_PAYLOAD_LEN(uBuf.TempBuf)) <= SL_ASYNC_MAX_PAYLOAD_LEN)
+    ^
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/driver.c:525:5: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+     AlignedLengthRecv = _SL_PROTOCOL_ALIGN_SIZE(RSP_PAYLOAD_LEN(uBuf.TempBuf));
+     ^
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/driver.c:532:13: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+             if (RSP_PAYLOAD_LEN(uBuf.TempBuf) > 0)
+             ^
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/driver.c:534:17: warning: pointer targets in passing argument 2 of 'spi_Read' differ in signedness [-Wpointer-sign]
+                 NWP_IF_READ_CHECK(g_pCB->FD,
+                 ^
+In file included from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/user.h:67:0,
+                 from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/SimpleLink.h:216,
+                 from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/driver.c:38:
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/SimpleLinkForEnergia.h:23:5: note: expected 'char *' but argument is of type 'UINT8 *'
+ int spi_Read(int Fd , char* pBuff , int Len);
+     ^
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/driver.c:539:4: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+    if ((_SL_PROTOCOL_ALIGN_SIZE(RSP_PAYLOAD_LEN(uBuf.TempBuf)) > SL_ASYNC_MAX_PAYLOAD_LEN))
+    ^
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/driver.c:541:5: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+     AlignedLengthRecv = _SL_PROTOCOL_ALIGN_SIZE(RSP_PAYLOAD_LEN(uBuf.TempBuf)) - SL_ASYNC_MAX_PAYLOAD_LEN;
+     ^
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/driver.c:544:6: warning: pointer targets in passing argument 2 of 'spi_Read' differ in signedness [-Wpointer-sign]
+      NWP_IF_READ_CHECK(g_pCB->FD,TailBuffer,4);
+      ^
+In file included from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/user.h:67:0,
+                 from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/SimpleLink.h:216,
+                 from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/driver.c:38:
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/SimpleLinkForEnergia.h:23:5: note: expected 'char *' but argument is of type 'UINT8 *'
+ int spi_Read(int Fd , char* pBuff , int Len);
+     ^
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/driver.c:550:4: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+    if ((SL_OPCODE_SOCKET_ACCEPTASYNCRESPONSE == OPCODE(uBuf.TempBuf)) || (SL_OPCODE_SOCKET_ACCEPTASYNCRESPONSE_V6 == OPCODE(uBuf.TempBuf)) || (SL_OPCODE_SOCKET_CONNECTASYNCRESPONSE == OPCODE(uBuf.TempBuf)))
+    ^
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/driver.c:550:4: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/driver.c:550:4: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/driver.c:553:5: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+     _SlFindAndSetActiveObj(OPCODE(uBuf.TempBuf),(((_SocketResponse_t *)(g_pCB->FunctionParams.AsyncExt.pAsyncBuf + _SL_RESP_HDR_SIZE))->sd) & BSD_SOCKET_ID_MASK);
+     ^
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/driver.c:557:5: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+     _SlFindAndSetActiveObj(OPCODE(uBuf.TempBuf),SL_MAX_SOCKETS);
+     ^
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/driver.c:567:17: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+                 switch(OPCODE(uBuf.TempBuf))
+                 ^
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/driver.c:582:17: warning: pointer targets in passing argument 2 of 'spi_Read' differ in signedness [-Wpointer-sign]
+                 NWP_IF_READ_CHECK(g_pCB->FD, &uBuf.TempBuf[4], RECV_ARGS_SIZE);
+                 ^
+In file included from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/user.h:67:0,
+                 from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/SimpleLink.h:216,
+                 from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/driver.c:38:
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/SimpleLinkForEnergia.h:23:5: note: expected 'char *' but argument is of type 'UINT8 *'
+ int spi_Read(int Fd , char* pBuff , int Len);
+     ^
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/driver.c:585:17: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+                 VERIFY_PROTOCOL((SD(&uBuf.TempBuf[4])& BSD_SOCKET_ID_MASK) < SL_MAX_SOCKETS);
+                 ^
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/driver.c:590:5: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+     VERIFY_RET_OK(_SlFindAndSetActiveObj(OPCODE(uBuf.TempBuf),SD(&uBuf.TempBuf[4]) & BSD_SOCKET_ID_MASK));
+     ^
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/driver.c:590:5: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/driver.c:599:21: warning: pointer targets in passing argument 2 of 'spi_Read' differ in signedness [-Wpointer-sign]
+                     NWP_IF_READ_CHECK(g_pCB->FD,
+                     ^
+In file included from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/user.h:67:0,
+                 from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/SimpleLink.h:216,
+                 from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/driver.c:38:
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/SimpleLinkForEnergia.h:23:5: note: expected 'char *' but argument is of type 'UINT8 *'
+ int spi_Read(int Fd , char* pBuff , int Len);
+     ^
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/driver.c:608:17: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+                 if(ACT_DATA_SIZE(&uBuf.TempBuf[4]) > 0)
+                 ^
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/driver.c:616:21: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+                     LengthToCopy = ACT_DATA_SIZE(&uBuf.TempBuf[4]) & (3);
+                     ^
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/driver.c:617:21: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+                     AlignedLengthRecv = ACT_DATA_SIZE(&uBuf.TempBuf[4]) & (~3);
+                     ^
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/driver.c:620:21: warning: pointer targets in passing argument 2 of 'spi_Read' differ in signedness [-Wpointer-sign]
+                     NWP_IF_READ_CHECK(g_pCB->FD,((_SlArgsData_t *)(g_pCB->ObjPool[g_pCB->FunctionParams.AsyncExt.ActionIndex].pRespArgs))->pData,AlignedLengthRecv );                      
+                     ^
+In file included from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/user.h:67:0,
+                 from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/SimpleLink.h:216,
+                 from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/driver.c:38:
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/SimpleLinkForEnergia.h:23:5: note: expected 'char *' but argument is of type 'UINT8 *'
+ int spi_Read(int Fd , char* pBuff , int Len);
+     ^
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/driver.c:625:24: warning: pointer targets in passing argument 2 of 'spi_Read' differ in signedness [-Wpointer-sign]
+                        NWP_IF_READ_CHECK(g_pCB->FD,TailBuffer,4);
+                        ^
+In file included from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/user.h:67:0,
+                 from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/SimpleLink.h:216,
+                 from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/driver.c:38:
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/SimpleLinkForEnergia.h:23:5: note: expected 'char *' but argument is of type 'UINT8 *'
+ int spi_Read(int Fd , char* pBuff , int Len);
+     ^
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/driver.c:642:13: warning: pointer targets in passing argument 2 of 'spi_Read' differ in signedness [-Wpointer-sign]
+             NWP_IF_READ_CHECK(g_pCB->FD,
+             ^
+In file included from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/user.h:67:0,
+                 from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/SimpleLink.h:216,
+                 from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/driver.c:38:
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/SimpleLinkForEnergia.h:23:5: note: expected 'char *' but argument is of type 'UINT8 *'
+ int spi_Read(int Fd , char* pBuff , int Len);
+     ^
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/driver.c:649:17: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+                 INT16    ActDataSize = RSP_PAYLOAD_LEN(uBuf.TempBuf) - g_pCB->FunctionParams.pCmdCtrl->RxDescLen;
+                 ^
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/driver.c:678:21: warning: pointer targets in passing argument 2 of 'spi_Read' differ in signedness [-Wpointer-sign]
+                     NWP_IF_READ_CHECK(g_pCB->FD,
+                     ^
+In file included from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/user.h:67:0,
+                 from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/SimpleLink.h:216,
+                 from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/driver.c:38:
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/SimpleLinkForEnergia.h:23:5: note: expected 'char *' but argument is of type 'UINT8 *'
+ int spi_Read(int Fd , char* pBuff , int Len);
+     ^
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/driver.c:686:24: warning: pointer targets in passing argument 2 of 'spi_Read' differ in signedness [-Wpointer-sign]
+                        NWP_IF_READ_CHECK(g_pCB->FD,TailBuffer,4);
+                        ^
+In file included from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/user.h:67:0,
+                 from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/SimpleLink.h:216,
+                 from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/driver.c:38:
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/SimpleLinkForEnergia.h:23:5: note: expected 'char *' but argument is of type 'UINT8 *'
+ int spi_Read(int Fd , char* pBuff , int Len);
+     ^
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/driver.c:700:9: warning: pointer targets in passing argument 2 of 'spi_Read' differ in signedness [-Wpointer-sign]
+         NWP_IF_READ_CHECK(g_pCB->FD,TailBuffer, 4 );
+         ^
+In file included from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/user.h:67:0,
+                 from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/SimpleLink.h:216,
+                 from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/driver.c:38:
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/SimpleLinkForEnergia.h:23:5: note: expected 'char *' but argument is of type 'UINT8 *'
+ int spi_Read(int Fd , char* pBuff , int Len);
+     ^
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/driver.c:718:9: warning: pointer targets in passing argument 2 of 'spi_Read' differ in signedness [-Wpointer-sign]
+         NWP_IF_READ_CHECK(g_pCB->FD, uBuf.TempBuf, AlignSize);
+         ^
+In file included from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/user.h:67:0,
+                 from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/SimpleLink.h:216,
+                 from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/driver.c:38:
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/SimpleLinkForEnergia.h:23:5: note: expected 'char *' but argument is of type 'UINT8 *'
+ int spi_Read(int Fd , char* pBuff , int Len);
+     ^
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/driver.c: In function '_SlDrvRxHdrRead':
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/driver.c:1174:5: warning: pointer targets in passing argument 2 of 'spi_Write' differ in signedness [-Wpointer-sign]
+     NWP_IF_WRITE_CHECK(g_pCB->FD, (unsigned char *)&g_H2NCnysPattern.Short, SYNC_PATTERN_LEN);
+     ^
+In file included from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/user.h:67:0,
+                 from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/SimpleLink.h:216,
+                 from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/driver.c:38:
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/SimpleLinkForEnergia.h:24:5: note: expected 'char *' but argument is of type 'unsigned char *'
+ int spi_Write(int Fd , char* pBuff , int Len);
+     ^
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/driver.c:1178:5: warning: pointer targets in passing argument 2 of 'spi_Read' differ in signedness [-Wpointer-sign]
+     NWP_IF_READ_CHECK(g_pCB->FD, &pBuf[0], 4);
+     ^
+In file included from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/user.h:67:0,
+                 from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/SimpleLink.h:216,
+                 from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/driver.c:38:
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/SimpleLinkForEnergia.h:23:5: note: expected 'char *' but argument is of type 'UINT8 *'
+ int spi_Read(int Fd , char* pBuff , int Len);
+     ^
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/driver.c:1190:10: warning: pointer targets in passing argument 2 of 'spi_Read' differ in signedness [-Wpointer-sign]
+          NWP_IF_READ_CHECK(g_pCB->FD, &pBuf[4], 4);
+          ^
+In file included from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/user.h:67:0,
+                 from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/SimpleLink.h:216,
+                 from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/driver.c:38:
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/SimpleLinkForEnergia.h:23:5: note: expected 'char *' but argument is of type 'UINT8 *'
+ int spi_Read(int Fd , char* pBuff , int Len);
+     ^
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/driver.c:1206:9: warning: pointer targets in passing argument 2 of 'spi_Read' differ in signedness [-Wpointer-sign]
+         NWP_IF_READ_CHECK(g_pCB->FD, &pBuf[SYNC_PATTERN_LEN - SyncCnt], SyncCnt);
+         ^
+In file included from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/user.h:67:0,
+                 from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/SimpleLink.h:216,
+                 from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/driver.c:38:
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/SimpleLinkForEnergia.h:23:5: note: expected 'char *' but argument is of type 'UINT8 *'
+ int spi_Read(int Fd , char* pBuff , int Len);
+     ^
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/driver.c:1210:6: warning: pointer targets in passing argument 2 of 'spi_Read' differ in signedness [-Wpointer-sign]
+      NWP_IF_READ_CHECK(g_pCB->FD, &pBuf[0], 4);
+      ^
+In file included from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/user.h:67:0,
+                 from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/SimpleLink.h:216,
+                 from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/driver.c:38:
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/SimpleLinkForEnergia.h:23:5: note: expected 'char *' but argument is of type 'UINT8 *'
+ int spi_Read(int Fd , char* pBuff , int Len);
+     ^
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/driver.c:1217:9: warning: pointer targets in passing argument 2 of 'spi_Read' differ in signedness [-Wpointer-sign]
+         NWP_IF_READ_CHECK(g_pCB->FD, &pBuf[0], SYNC_PATTERN_LEN);
+         ^
+In file included from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/user.h:67:0,
+                 from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/SimpleLink.h:216,
+                 from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/driver.c:38:
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/SimpleLinkForEnergia.h:23:5: note: expected 'char *' but argument is of type 'UINT8 *'
+ int spi_Read(int Fd , char* pBuff , int Len);
+     ^
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/driver.c:1222:5: warning: pointer targets in passing argument 2 of 'spi_Read' differ in signedness [-Wpointer-sign]
+     NWP_IF_READ_CHECK(g_pCB->FD, &pBuf[SYNC_PATTERN_LEN], _SL_RESP_SPEC_HDR_SIZE);
+     ^
+In file included from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/user.h:67:0,
+                 from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/SimpleLink.h:216,
+                 from C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/driver.c:38:
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/SimpleLinkForEnergia.h:23:5: note: expected 'char *' but argument is of type 'UINT8 *'
+ int spi_Read(int Fd , char* pBuff , int Len);
+     ^
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/driver.c: In function '_SlDrvBasicCmd':
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/driver.c:1241:5: warning: missing braces around initializer [-Wmissing-braces]
+     _SlBasicCmdMsg_u       Msg = {0};
+     ^
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/driver.c:1241:5: warning: (near initialization for 'Msg.Rsp') [-Wmissing-braces]
+'Finished building: C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/driver.c'
+' '
+'Building file: C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/flowcont.c'
+'Invoking: GNU Compiler'
+"C:/energia-0101E0015-windows/energia-0101E0015/hardware/tools/lm4f/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m4 -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -fno-rtti -fno-exceptions -DF_CPU=120000000L -DARDUINO=101 -DENERGIA=12 -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/cores/lm4f" -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/variants/launchpad_129" -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/tools/lm4f/arm-none-eabi/include" -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/SPI" -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi" -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility" -Os -ffunction-sections -fdata-sections -fsingle-precision-constant -g -gstrict-dwarf -Wall -MMD -MP -MF"utility/flowcont.d" -MT"utility/flowcont.d" -o"utility/flowcont.o"  "C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/flowcont.c"
+cc1.exe: warning: command line option '-fno-rtti' is valid for C++/ObjC++ but not for C [enabled by default]
+'Finished building: C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/flowcont.c'
+' '
+'Building file: C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/fs.c'
+'Invoking: GNU Compiler'
+"C:/energia-0101E0015-windows/energia-0101E0015/hardware/tools/lm4f/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m4 -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -fno-rtti -fno-exceptions -DF_CPU=120000000L -DARDUINO=101 -DENERGIA=12 -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/cores/lm4f" -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/variants/launchpad_129" -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/tools/lm4f/arm-none-eabi/include" -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/SPI" -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi" -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility" -Os -ffunction-sections -fdata-sections -fsingle-precision-constant -g -gstrict-dwarf -Wall -MMD -MP -MF"utility/fs.d" -MT"utility/fs.d" -o"utility/fs.o"  "C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/fs.c"
+cc1.exe: warning: command line option '-fno-rtti' is valid for C++/ObjC++ but not for C [enabled by default]
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/fs.c: In function 'sl_FsClose':
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/fs.c:157:5: warning: missing braces around initializer [-Wmissing-braces]
+     _SlFsCloseMsg_u Msg = {0};
+     ^
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/fs.c:157:5: warning: (near initialization for 'Msg.Cmd') [-Wmissing-braces]
+'Finished building: C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/fs.c'
+' '
+'Building file: C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/netapp.c'
+'Invoking: GNU Compiler'
+"C:/energia-0101E0015-windows/energia-0101E0015/hardware/tools/lm4f/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m4 -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -fno-rtti -fno-exceptions -DF_CPU=120000000L -DARDUINO=101 -DENERGIA=12 -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/cores/lm4f" -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/variants/launchpad_129" -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/tools/lm4f/arm-none-eabi/include" -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/SPI" -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi" -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility" -Os -ffunction-sections -fdata-sections -fsingle-precision-constant -g -gstrict-dwarf -Wall -MMD -MP -MF"utility/netapp.d" -MT"utility/netapp.d" -o"utility/netapp.o"  "C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/netapp.c"
+cc1.exe: warning: command line option '-fno-rtti' is valid for C++/ObjC++ but not for C [enabled by default]
+'Finished building: C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/netapp.c'
+' '
+'Building file: C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/netcfg.c'
+'Invoking: GNU Compiler'
+"C:/energia-0101E0015-windows/energia-0101E0015/hardware/tools/lm4f/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m4 -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -fno-rtti -fno-exceptions -DF_CPU=120000000L -DARDUINO=101 -DENERGIA=12 -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/cores/lm4f" -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/variants/launchpad_129" -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/tools/lm4f/arm-none-eabi/include" -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/SPI" -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi" -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility" -Os -ffunction-sections -fdata-sections -fsingle-precision-constant -g -gstrict-dwarf -Wall -MMD -MP -MF"utility/netcfg.d" -MT"utility/netcfg.d" -o"utility/netcfg.o"  "C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/netcfg.c"
+cc1.exe: warning: command line option '-fno-rtti' is valid for C++/ObjC++ but not for C [enabled by default]
+'Finished building: C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/netcfg.c'
+' '
+'Building file: C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/nonos.c'
+'Invoking: GNU Compiler'
+"C:/energia-0101E0015-windows/energia-0101E0015/hardware/tools/lm4f/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m4 -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -fno-rtti -fno-exceptions -DF_CPU=120000000L -DARDUINO=101 -DENERGIA=12 -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/cores/lm4f" -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/variants/launchpad_129" -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/tools/lm4f/arm-none-eabi/include" -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/SPI" -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi" -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility" -Os -ffunction-sections -fdata-sections -fsingle-precision-constant -g -gstrict-dwarf -Wall -MMD -MP -MF"utility/nonos.d" -MT"utility/nonos.d" -o"utility/nonos.o"  "C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/nonos.c"
+cc1.exe: warning: command line option '-fno-rtti' is valid for C++/ObjC++ but not for C [enabled by default]
+'Finished building: C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/nonos.c'
+' '
+'Building file: C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/socket.c'
+'Invoking: GNU Compiler'
+"C:/energia-0101E0015-windows/energia-0101E0015/hardware/tools/lm4f/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m4 -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -fno-rtti -fno-exceptions -DF_CPU=120000000L -DARDUINO=101 -DENERGIA=12 -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/cores/lm4f" -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/variants/launchpad_129" -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/tools/lm4f/arm-none-eabi/include" -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/SPI" -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi" -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility" -Os -ffunction-sections -fdata-sections -fsingle-precision-constant -g -gstrict-dwarf -Wall -MMD -MP -MF"utility/socket.d" -MT"utility/socket.d" -o"utility/socket.o"  "C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/socket.c"
+cc1.exe: warning: command line option '-fno-rtti' is valid for C++/ObjC++ but not for C [enabled by default]
+'Finished building: C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/socket.c'
+' '
+'Building file: C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/spawn.c'
+'Invoking: GNU Compiler'
+"C:/energia-0101E0015-windows/energia-0101E0015/hardware/tools/lm4f/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m4 -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -fno-rtti -fno-exceptions -DF_CPU=120000000L -DARDUINO=101 -DENERGIA=12 -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/cores/lm4f" -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/variants/launchpad_129" -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/tools/lm4f/arm-none-eabi/include" -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/SPI" -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi" -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility" -Os -ffunction-sections -fdata-sections -fsingle-precision-constant -g -gstrict-dwarf -Wall -MMD -MP -MF"utility/spawn.d" -MT"utility/spawn.d" -o"utility/spawn.o"  "C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/spawn.c"
+cc1.exe: warning: command line option '-fno-rtti' is valid for C++/ObjC++ but not for C [enabled by default]
+'Finished building: C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/spawn.c'
+' '
+'Building file: C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/wlan.c'
+'Invoking: GNU Compiler'
+"C:/energia-0101E0015-windows/energia-0101E0015/hardware/tools/lm4f/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m4 -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -fno-rtti -fno-exceptions -DF_CPU=120000000L -DARDUINO=101 -DENERGIA=12 -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/cores/lm4f" -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/variants/launchpad_129" -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/tools/lm4f/arm-none-eabi/include" -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/SPI" -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi" -I"C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility" -Os -ffunction-sections -fdata-sections -fsingle-precision-constant -g -gstrict-dwarf -Wall -MMD -MP -MF"utility/wlan.d" -MT"utility/wlan.d" -o"utility/wlan.o"  "C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/wlan.c"
+cc1.exe: warning: command line option '-fno-rtti' is valid for C++/ObjC++ but not for C [enabled by default]
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/wlan.c: In function 'sl_WlanConnect':
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/wlan.c:76:5: warning: missing braces around initializer [-Wmissing-braces]
+     _SlWlanConnectMsg_u    Msg = {0};
+     ^
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/wlan.c:76:5: warning: (near initialization for 'Msg.Cmd') [-Wmissing-braces]
+'Finished building: C:/energia-0101E0015-windows/energia-0101E0015/hardware/lm4f/libraries/WiFi/utility/wlan.c'
+' '
+'Building target: liblptm4c1294ncpdt_WiFi.a'
+'Invoking: GNU Librarian'
+"C:/energia-0101E0015-windows/energia-0101E0015/hardware/tools/lm4f/bin/arm-none-eabi-ar.exe" -r "liblptm4c1294ncpdt_WiFi.a" "./utility/device.o" "./utility/driver.o" "./utility/flowcont.o" "./utility/fs.o" "./utility/netapp.o" "./utility/netcfg.o" "./utility/nonos.o" "./utility/socket.o" "./utility/spawn.o" "./utility/wlan.o" "./utility/SimpleLinkCallbacks.o" "./utility/SimpleLinkForEnergia.o" "./WiFi.o" "./WiFiClient.o" "./WiFiServer.o" "./WiFiUdp.o"  
+C:/energia-0101E0015-windows/energia-0101E0015/hardware/tools/lm4f/bin/arm-none-eabi-ar.exe: creating liblptm4c1294ncpdt_WiFi.a
+'Finished building target: liblptm4c1294ncpdt_WiFi.a'
+' '
+
+**** Build Finished ****

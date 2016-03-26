@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?>
+
+<cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule configRelations="2" moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="com.ti.ccstudio.buildDefinitions.TMS470.Debug.1729488852">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.ti.ccstudio.buildDefinitions.TMS470.Debug.1729488852" moduleId="org.eclipse.cdt.core.settings" name="Debug">
+				<externalSettings/>
+				<extensions>
+					<extension id="com.ti.ccstudio.binaryparser.CoffParser" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="out" artifactName="${ProjName}" buildProperties="" cleanCommand="${CG_CLEAN_CMD}" description="" id="com.ti.ccstudio.buildDefinitions.TMS470.Debug.1729488852" name="Debug" parent="com.ti.ccstudio.buildDefinitions.TMS470.Debug" postbuildStep="${CG_TOOL_ROOT}/bin/arm-none-eabi-objcopy -O binary ${BuildArtifactFileName} ${BuildArtifactFileBaseName}.bin ">
+					<folderInfo id="com.ti.ccstudio.buildDefinitions.TMS470.Debug.1729488852." name="/" resourcePath="">
+						<toolChain id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.exe.DebugToolchain.1879309153" name="TI Build Tools" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.exe.DebugToolchain" targetTool="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.exe.linkerDebug.358792706">
+							<option id="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS.1100659437" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS" valueType="stringList">
+								<listOptionValue builtIn="false" value="DEVICE_CONFIGURATION_ID=Cortex M.TM4C1294NCPDT"/>
+								<listOptionValue builtIn="false" value="DEVICE_ENDIANNESS=little"/>
+								<listOptionValue builtIn="false" value="OUTPUT_FORMAT=ELF"/>
+								<listOptionValue builtIn="false" value="CCS_MBS_VERSION=5.5.0"/>
+								<listOptionValue builtIn="false" value="LINKER_COMMAND_FILE="/>
+								<listOptionValue builtIn="false" value="RUNTIME_SUPPORT_LIBRARY="/>
+								<listOptionValue builtIn="false" value="ENERGIA_BOARD=lptm4c1294ncpdt"/>
+								<listOptionValue builtIn="false" value="OUTPUT_TYPE=executable"/>
+							</option>
+							<option id="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION.834368034" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION" value="GNU_4.8.4:Linaro" valueType="string"/>
+							<targetPlatform id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.exe.targetPlatformDebug.1938237918" name="Platform" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.exe.targetPlatformDebug"/>
+							<builder buildPath="${BuildDirectory}" id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.exe.builderDebug.1866172180" name="GNU Make.Debug" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.exe.builderDebug"/>
+							<tool id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.exe.compilerDebug.1701694021" name="GNU Compiler" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.exe.compilerDebug">
+								<option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.compilerID.MCPU.668442111" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.compilerID.MCPU" value="cortex-m4" valueType="string"/>
+								<option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.compilerID.MARCH.443917516" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.compilerID.MARCH" value="armv7e-m" valueType="string"/>
+								<option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.compilerID.CODE_STATE.1863088671" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.compilerID.CODE_STATE" value="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.compilerID.CODE_STATE.THUMB" valueType="enumerated"/>
+								<option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.compilerID.MFLOAT_ABI.557977875" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.compilerID.MFLOAT_ABI" value="hard" valueType="string"/>
+								<option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.compilerID.MFPU.1650913478" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.compilerID.MFPU" value="fpv4-sp-d16" valueType="string"/>
+								<option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.compilerID.FRTTI.168914350" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.compilerID.FRTTI" value="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.compilerID.FRTTI.OFF" valueType="enumerated"/>
+								<option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.compilerID.FEXCEPTIONS.991628064" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.compilerID.FEXCEPTIONS" value="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.compilerID.FEXCEPTIONS.OFF" valueType="enumerated"/>
+								<option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.compilerID.DEFINE.509015542" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.compilerID.DEFINE" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="F_CPU=120000000L"/>
+									<listOptionValue builtIn="false" value="ARDUINO=101"/>
+									<listOptionValue builtIn="false" value="ENERGIA=12"/>
+								</option>
+								<option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.compilerID.INCLUDE_PATH.1433323663" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.compilerID.INCLUDE_PATH" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${ENERGIA_ROOT}/hardware/lm4f/cores/lm4f&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ENERGIA_ROOT}/hardware/lm4f/variants/launchpad_129&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${CG_TOOL_INCLUDE_PATH}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ENERGIA_ROOT}/hardware/lm4f/libraries/aJson&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ENERGIA_ROOT}/hardware/lm4f/libraries/Wire&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ENERGIA_ROOT}/hardware/lm4f/libraries/WiFi&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ENERGIA_ROOT}/hardware/lm4f/libraries/Ethernet&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ENERGIA_ROOT}/hardware/lm4f/libraries/SPI&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ENERGIA_ROOT}/hardware/lm4f/libraries/Adafruit_TMP006&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ENERGIA_ROOT}/hardware/lm4f/libraries/AIR430BoostEuropeETSI&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ENERGIA_ROOT}/hardware/lm4f/libraries/AIR430BoostUSAFCC&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ENERGIA_ROOT}/hardware/lm4f/libraries/CogLCD&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ENERGIA_ROOT}/hardware/lm4f/libraries/EduBPMKII_Screen&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ENERGIA_ROOT}/hardware/lm4f/libraries/EEPROM&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ENERGIA_ROOT}/hardware/lm4f/libraries/M2XStreamClient&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ENERGIA_ROOT}/hardware/lm4f/libraries/MQTTClient&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ENERGIA_ROOT}/hardware/lm4f/libraries/OPT3001&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ENERGIA_ROOT}/hardware/lm4f/libraries/PubNub&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ENERGIA_ROOT}/hardware/lm4f/libraries/PubSubClient&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ENERGIA_ROOT}/hardware/lm4f/libraries/Servo&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ENERGIA_ROOT}/hardware/lm4f/libraries/Stepper&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ENERGIA_ROOT}/hardware/lm4f/libraries/Temboo&quot;"/>
+								</option>
+								<option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.compilerID.OPT_FOR_SPACE.512165049" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.compilerID.OPT_FOR_SPACE" value="true" valueType="boolean"/>
+								<option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.compilerID.FUNCTION_SECTIONS.1448061891" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.compilerID.FUNCTION_SECTIONS" value="true" valueType="boolean"/>
+								<option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.compilerID.DATA_SECTIONS.1981803097" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.compilerID.DATA_SECTIONS" value="true" valueType="boolean"/>
+								<option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.compilerID.SINGLE_PRECISION_CONSTANT.1867189539" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.compilerID.SINGLE_PRECISION_CONSTANT" value="true" valueType="boolean"/>
+								<option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.compilerID.DEBUG.862663750" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.compilerID.DEBUG" value="true" valueType="boolean"/>
+								<option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.compilerID.STRICT_DWARF.1046169415" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.compilerID.STRICT_DWARF" value="true" valueType="boolean"/>
+								<inputType id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.compiler.inputType__C_SRCS.1018213428" name="C Sources" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.compiler.inputType__C_SRCS"/>
+								<inputType id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.compiler.inputType__CPP_SRCS.1298853788" name="C++ Sources" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.compiler.inputType__CPP_SRCS"/>
+								<inputType id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.compiler.inputType__ASM_SRCS.1039191966" name="Assembly Sources" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.compiler.inputType__ASM_SRCS"/>
+							</tool>
+							<tool id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.exe.linkerDebug.358792706" name="GNU Linker" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.exe.linkerDebug">
+								<option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.linkerID.OUTPUT_FILE.1258525900" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.linkerID.OUTPUT_FILE" value="&quot;${ProjName}.out&quot;" valueType="string"/>
+								<option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.linkerID.MAP_FILE.1652264925" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.linkerID.MAP_FILE" value="&quot;${ProjName}.map&quot;" valueType="string"/>
+								<option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.linkerID.ENTRY.136409851" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.linkerID.ENTRY" value="ResetISR" valueType="string"/>
+								<option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.linkerID.NOSTARTFILES.778438347" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.linkerID.NOSTARTFILES" value="true" valueType="boolean"/>
+								<option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.linkerID.NOSTDLIB.29205855" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.linkerID.NOSTDLIB" value="true" valueType="boolean"/>
+								<option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.linkerID.GC_SECTIONS.981230916" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.linkerID.GC_SECTIONS" value="true" valueType="boolean"/>
+								<option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.linkerID.SCRIPTS.873075122" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.linkerID.SCRIPTS" valueType="libs">
+									<listOptionValue builtIn="false" value="&quot;${ENERGIA_ROOT}/hardware/lm4f/cores/lm4f/lm4fcpp_snowflake.ld&quot;"/>
+								</option>
+								<option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.linkerID.LIBRARY.1486811276" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.linkerID.LIBRARY" valueType="libs">
+									<listOptionValue builtIn="false" value="&quot;lptm4c1294ncpdt_Temboo&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;lptm4c1294ncpdt_Stepper&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;lptm4c1294ncpdt_Servo&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;lptm4c1294ncpdt_PubSubClient&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;lptm4c1294ncpdt_PubNub&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;lptm4c1294ncpdt_OPT3001&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;lptm4c1294ncpdt_MQTTClient&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;lptm4c1294ncpdt_M2XStreamClient&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;lptm4c1294ncpdt_EEPROM&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;lptm4c1294ncpdt_EduBPMKII_Screen&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;lptm4c1294ncpdt_CogLCD&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;lptm4c1294ncpdt_AIR430BoostUSAFCC&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;lptm4c1294ncpdt_AIR430BoostEuropeETSI&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;lptm4c1294ncpdt_Adafruit_TMP006&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;lptm4c1294ncpdt_SPI&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;lptm4c1294ncpdt_Ethernet&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;lptm4c1294ncpdt_WiFi&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;lptm4c1294ncpdt_Wire&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;lptm4c1294ncpdt_aJson&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;lptm4c1294ncpdt_core&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;m&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;c&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;gcc&quot;"/>
+								</option>
+								<option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.linkerID.SEARCH_PATH.742658818" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.linkerID.SEARCH_PATH" valueType="stringList">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/lptm4c1294ncpdt_core}/${ConfigName}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/lptm4c1294ncpdt_aJson}/${ConfigName}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/lptm4c1294ncpdt_Wire}/${ConfigName}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/lptm4c1294ncpdt_WiFi}/${ConfigName}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/lptm4c1294ncpdt_Ethernet}/${ConfigName}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/lptm4c1294ncpdt_SPI}/${ConfigName}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/lptm4c1294ncpdt_Adafruit_TMP006}/${ConfigName}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/lptm4c1294ncpdt_AIR430BoostEuropeETSI}/${ConfigName}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/lptm4c1294ncpdt_AIR430BoostUSAFCC}/${ConfigName}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/lptm4c1294ncpdt_CogLCD}/${ConfigName}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/lptm4c1294ncpdt_EduBPMKII_Screen}/${ConfigName}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/lptm4c1294ncpdt_EEPROM}/${ConfigName}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/lptm4c1294ncpdt_M2XStreamClient}/${ConfigName}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/lptm4c1294ncpdt_MQTTClient}/${ConfigName}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/lptm4c1294ncpdt_OPT3001}/${ConfigName}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/lptm4c1294ncpdt_PubNub}/${ConfigName}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/lptm4c1294ncpdt_PubSubClient}/${ConfigName}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/lptm4c1294ncpdt_Servo}/${ConfigName}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/lptm4c1294ncpdt_Stepper}/${ConfigName}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/lptm4c1294ncpdt_Temboo}/${ConfigName}&quot;"/>
+								</option>
+								<inputType id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.exeLinker.inputType__CMD_SRCS.1720411940" name="Linker Command Files" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.exeLinker.inputType__CMD_SRCS"/>
+								<inputType id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.exeLinker.inputType__CMD2_SRCS.1675216126" name="Linker Command Files" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.exeLinker.inputType__CMD2_SRCS"/>
+								<inputType id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.exeLinker.inputType__GEN_CMDS.1441106762" name="Generated Linker Command Files" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.exeLinker.inputType__GEN_CMDS"/>
+							</tool>
+							<tool id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.hex.1762534100" name="GNU Objcopy Utility" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.hex"/>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings">
+				<externalSettings containerId="lptm4c1294ncpdt_core;com.ti.ccstudio.buildDefinitions.TMS470.Debug.1927662639" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier"/>
+				<externalSettings containerId="lptm4c1294ncpdt_aJson;com.ti.ccstudio.buildDefinitions.TMS470.Debug.1758148605" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier"/>
+				<externalSettings containerId="lptm4c1294ncpdt_Wire;com.ti.ccstudio.buildDefinitions.TMS470.Debug.1381870081" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier"/>
+				<externalSettings containerId="lptm4c1294ncpdt_WiFi;com.ti.ccstudio.buildDefinitions.TMS470.Debug.123955611" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier"/>
+				<externalSettings containerId="lptm4c1294ncpdt_Ethernet;com.ti.ccstudio.buildDefinitions.TMS470.Debug.1769459623" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier"/>
+				<externalSettings containerId="lptm4c1294ncpdt_SPI;com.ti.ccstudio.buildDefinitions.TMS470.Debug.1145063058" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier"/>
+				<externalSettings containerId="lptm4c1294ncpdt_Adafruit_TMP006;com.ti.ccstudio.buildDefinitions.TMS470.Debug.1962390025" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier"/>
+				<externalSettings containerId="lptm4c1294ncpdt_AIR430BoostEuropeETSI;com.ti.ccstudio.buildDefinitions.TMS470.Debug.1813081120" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier"/>
+				<externalSettings containerId="lptm4c1294ncpdt_AIR430BoostUSAFCC;com.ti.ccstudio.buildDefinitions.TMS470.Debug.821643646" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier"/>
+				<externalSettings containerId="lptm4c1294ncpdt_CogLCD;com.ti.ccstudio.buildDefinitions.TMS470.Debug.1881137171" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier"/>
+				<externalSettings containerId="lptm4c1294ncpdt_EduBPMKII_Screen;com.ti.ccstudio.buildDefinitions.TMS470.Debug.715358635" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier"/>
+				<externalSettings containerId="lptm4c1294ncpdt_EEPROM;com.ti.ccstudio.buildDefinitions.TMS470.Debug.935819531" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier"/>
+				<externalSettings containerId="lptm4c1294ncpdt_M2XStreamClient;com.ti.ccstudio.buildDefinitions.TMS470.Debug.453717251" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier"/>
+				<externalSettings containerId="lptm4c1294ncpdt_MQTTClient;com.ti.ccstudio.buildDefinitions.TMS470.Debug.33597688" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier"/>
+				<externalSettings containerId="lptm4c1294ncpdt_OPT3001;com.ti.ccstudio.buildDefinitions.TMS470.Debug.1359664780" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier"/>
+				<externalSettings containerId="lptm4c1294ncpdt_PubNub;com.ti.ccstudio.buildDefinitions.TMS470.Debug.1304094711" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier"/>
+				<externalSettings containerId="lptm4c1294ncpdt_PubSubClient;com.ti.ccstudio.buildDefinitions.TMS470.Debug.1199217491" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier"/>
+				<externalSettings containerId="lptm4c1294ncpdt_Servo;com.ti.ccstudio.buildDefinitions.TMS470.Debug.1941817535" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier"/>
+				<externalSettings containerId="lptm4c1294ncpdt_Stepper;com.ti.ccstudio.buildDefinitions.TMS470.Debug.1729046900" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier"/>
+				<externalSettings containerId="lptm4c1294ncpdt_Temboo;com.ti.ccstudio.buildDefinitions.TMS470.Debug.1476807552" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier"/>
+			</storageModule>
+		</cconfiguration>
+		<cconfiguration id="com.ti.ccstudio.buildDefinitions.TMS470.Release.1915399315">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.ti.ccstudio.buildDefinitions.TMS470.Release.1915399315" moduleId="org.eclipse.cdt.core.settings" name="Release">
+				<externalSettings/>
+				<extensions>
+					<extension id="com.ti.ccstudio.binaryparser.CoffParser" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="out" artifactName="${ProjName}" buildProperties="" cleanCommand="${CG_CLEAN_CMD}" description="" id="com.ti.ccstudio.buildDefinitions.TMS470.Release.1915399315" name="Release" parent="com.ti.ccstudio.buildDefinitions.TMS470.Release" postbuildStep="${CG_TOOL_ROOT}/bin/arm-none-eabi-objcopy -O binary ${BuildArtifactFileName} ${BuildArtifactFileBaseName}.bin ">
+					<folderInfo id="com.ti.ccstudio.buildDefinitions.TMS470.Release.1915399315." name="/" resourcePath="">
+						<toolChain id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.exe.ReleaseToolchain.2112492536" name="TI Build Tools" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.exe.ReleaseToolchain" targetTool="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.exe.linkerRelease.1558158004">
+							<option id="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS.1606919884" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS" valueType="stringList">
+								<listOptionValue builtIn="false" value="DEVICE_CONFIGURATION_ID=Cortex M.TM4C1294NCPDT"/>
+								<listOptionValue builtIn="false" value="DEVICE_ENDIANNESS=little"/>
+								<listOptionValue builtIn="false" value="OUTPUT_FORMAT=ELF"/>
+								<listOptionValue builtIn="false" value="CCS_MBS_VERSION=5.5.0"/>
+								<listOptionValue builtIn="false" value="LINKER_COMMAND_FILE="/>
+								<listOptionValue builtIn="false" value="RUNTIME_SUPPORT_LIBRARY="/>
+								<listOptionValue builtIn="false" value="ENERGIA_BOARD=lptm4c1294ncpdt"/>
+								<listOptionValue builtIn="false" value="OUTPUT_TYPE=executable"/>
+							</option>
+							<option id="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION.410683396" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION" value="GNU_4.8.4:Linaro" valueType="string"/>
+							<targetPlatform id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.exe.targetPlatformRelease.29369583" name="Platform" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.exe.targetPlatformRelease"/>
+							<builder buildPath="${BuildDirectory}" id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.exe.builderRelease.2037545728" name="GNU Make.Release" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.exe.builderRelease"/>
+							<tool id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.exe.compilerRelease.736674677" name="GNU Compiler" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.exe.compilerRelease">
+								<option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.compilerID.MCPU.1599869515" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.compilerID.MCPU" value="cortex-m4" valueType="string"/>
+								<option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.compilerID.MARCH.56406380" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.compilerID.MARCH" value="armv7e-m" valueType="string"/>
+								<option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.compilerID.CODE_STATE.1966310211" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.compilerID.CODE_STATE" value="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.compilerID.CODE_STATE.THUMB" valueType="enumerated"/>
+								<option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.compilerID.MFLOAT_ABI.928866390" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.compilerID.MFLOAT_ABI" value="hard" valueType="string"/>
+								<option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.compilerID.MFPU.845907308" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.compilerID.MFPU" value="fpv4-sp-d16" valueType="string"/>
+								<option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.compilerID.FRTTI.1153407001" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.compilerID.FRTTI" value="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.compilerID.FRTTI.OFF" valueType="enumerated"/>
+								<option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.compilerID.FEXCEPTIONS.349477493" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.compilerID.FEXCEPTIONS" value="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.compilerID.FEXCEPTIONS.OFF" valueType="enumerated"/>
+								<option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.compilerID.DEFINE.1595090086" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.compilerID.DEFINE" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="F_CPU=120000000L"/>
+									<listOptionValue builtIn="false" value="ARDUINO=101"/>
+									<listOptionValue builtIn="false" value="ENERGIA=12"/>
+								</option>
+								<option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.compilerID.INCLUDE_PATH.912113229" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.compilerID.INCLUDE_PATH" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${ENERGIA_ROOT}/hardware/lm4f/cores/lm4f&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ENERGIA_ROOT}/hardware/lm4f/variants/launchpad_129&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${CG_TOOL_INCLUDE_PATH}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ENERGIA_ROOT}/hardware/lm4f/libraries/aJson&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ENERGIA_ROOT}/hardware/lm4f/libraries/Wire&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ENERGIA_ROOT}/hardware/lm4f/libraries/WiFi&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ENERGIA_ROOT}/hardware/lm4f/libraries/Ethernet&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ENERGIA_ROOT}/hardware/lm4f/libraries/SPI&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ENERGIA_ROOT}/hardware/lm4f/libraries/Adafruit_TMP006&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ENERGIA_ROOT}/hardware/lm4f/libraries/AIR430BoostEuropeETSI&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ENERGIA_ROOT}/hardware/lm4f/libraries/AIR430BoostUSAFCC&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ENERGIA_ROOT}/hardware/lm4f/libraries/CogLCD&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ENERGIA_ROOT}/hardware/lm4f/libraries/EduBPMKII_Screen&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ENERGIA_ROOT}/hardware/lm4f/libraries/EEPROM&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ENERGIA_ROOT}/hardware/lm4f/libraries/M2XStreamClient&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ENERGIA_ROOT}/hardware/lm4f/libraries/MQTTClient&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ENERGIA_ROOT}/hardware/lm4f/libraries/OPT3001&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ENERGIA_ROOT}/hardware/lm4f/libraries/PubNub&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ENERGIA_ROOT}/hardware/lm4f/libraries/PubSubClient&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ENERGIA_ROOT}/hardware/lm4f/libraries/Servo&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ENERGIA_ROOT}/hardware/lm4f/libraries/Stepper&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ENERGIA_ROOT}/hardware/lm4f/libraries/Temboo&quot;"/>
+								</option>
+								<option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.compilerID.OPT_FOR_SPACE.1841744451" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.compilerID.OPT_FOR_SPACE" value="true" valueType="boolean"/>
+								<option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.compilerID.FUNCTION_SECTIONS.1946335411" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.compilerID.FUNCTION_SECTIONS" value="true" valueType="boolean"/>
+								<option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.compilerID.DATA_SECTIONS.2018692243" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.compilerID.DATA_SECTIONS" value="true" valueType="boolean"/>
+								<option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.compilerID.SINGLE_PRECISION_CONSTANT.1105291870" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.compilerID.SINGLE_PRECISION_CONSTANT" value="true" valueType="boolean"/>
+								<inputType id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.compiler.inputType__C_SRCS.2012458715" name="C Sources" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.compiler.inputType__C_SRCS"/>
+								<inputType id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.compiler.inputType__CPP_SRCS.1464768976" name="C++ Sources" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.compiler.inputType__CPP_SRCS"/>
+								<inputType id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.compiler.inputType__ASM_SRCS.892663575" name="Assembly Sources" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.compiler.inputType__ASM_SRCS"/>
+							</tool>
+							<tool id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.exe.linkerRelease.1558158004" name="GNU Linker" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.exe.linkerRelease">
+								<option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.linkerID.OUTPUT_FILE.1961753622" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.linkerID.OUTPUT_FILE" value="&quot;${ProjName}.out&quot;" valueType="string"/>
+								<option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.linkerID.MAP_FILE.862532776" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.linkerID.MAP_FILE" value="&quot;${ProjName}.map&quot;" valueType="string"/>
+								<option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.linkerID.ENTRY.1377063372" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.linkerID.ENTRY" value="ResetISR" valueType="string"/>
+								<option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.linkerID.NOSTARTFILES.1965443896" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.linkerID.NOSTARTFILES" value="true" valueType="boolean"/>
+								<option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.linkerID.NOSTDLIB.1179005635" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.linkerID.NOSTDLIB" value="true" valueType="boolean"/>
+								<option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.linkerID.GC_SECTIONS.980315653" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.linkerID.GC_SECTIONS" value="true" valueType="boolean"/>
+								<option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.linkerID.SCRIPTS.1125123562" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.linkerID.SCRIPTS" valueType="libs">
+									<listOptionValue builtIn="false" value="&quot;${ENERGIA_ROOT}/hardware/lm4f/cores/lm4f/lm4fcpp_snowflake.ld&quot;"/>
+								</option>
+								<option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.linkerID.LIBRARY.980294971" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.linkerID.LIBRARY" valueType="libs">
+									<listOptionValue builtIn="false" value="&quot;lptm4c1294ncpdt_Temboo&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;lptm4c1294ncpdt_Stepper&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;lptm4c1294ncpdt_Servo&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;lptm4c1294ncpdt_PubSubClient&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;lptm4c1294ncpdt_PubNub&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;lptm4c1294ncpdt_OPT3001&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;lptm4c1294ncpdt_MQTTClient&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;lptm4c1294ncpdt_M2XStreamClient&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;lptm4c1294ncpdt_EEPROM&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;lptm4c1294ncpdt_EduBPMKII_Screen&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;lptm4c1294ncpdt_CogLCD&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;lptm4c1294ncpdt_AIR430BoostUSAFCC&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;lptm4c1294ncpdt_AIR430BoostEuropeETSI&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;lptm4c1294ncpdt_Adafruit_TMP006&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;lptm4c1294ncpdt_SPI&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;lptm4c1294ncpdt_Ethernet&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;lptm4c1294ncpdt_WiFi&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;lptm4c1294ncpdt_Wire&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;lptm4c1294ncpdt_aJson&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;lptm4c1294ncpdt_core&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;m&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;c&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;gcc&quot;"/>
+								</option>
+								<option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.linkerID.SEARCH_PATH.836311426" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.linkerID.SEARCH_PATH" valueType="stringList">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/lptm4c1294ncpdt_core}/${ConfigName}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/lptm4c1294ncpdt_aJson}/${ConfigName}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/lptm4c1294ncpdt_Wire}/${ConfigName}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/lptm4c1294ncpdt_WiFi}/${ConfigName}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/lptm4c1294ncpdt_Ethernet}/${ConfigName}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/lptm4c1294ncpdt_SPI}/${ConfigName}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/lptm4c1294ncpdt_Adafruit_TMP006}/${ConfigName}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/lptm4c1294ncpdt_AIR430BoostEuropeETSI}/${ConfigName}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/lptm4c1294ncpdt_AIR430BoostUSAFCC}/${ConfigName}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/lptm4c1294ncpdt_CogLCD}/${ConfigName}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/lptm4c1294ncpdt_EduBPMKII_Screen}/${ConfigName}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/lptm4c1294ncpdt_EEPROM}/${ConfigName}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/lptm4c1294ncpdt_M2XStreamClient}/${ConfigName}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/lptm4c1294ncpdt_MQTTClient}/${ConfigName}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/lptm4c1294ncpdt_OPT3001}/${ConfigName}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/lptm4c1294ncpdt_PubNub}/${ConfigName}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/lptm4c1294ncpdt_PubSubClient}/${ConfigName}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/lptm4c1294ncpdt_Servo}/${ConfigName}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/lptm4c1294ncpdt_Stepper}/${ConfigName}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/lptm4c1294ncpdt_Temboo}/${ConfigName}&quot;"/>
+								</option>
+								<inputType id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.exeLinker.inputType__CMD_SRCS.1436360957" name="Linker Command Files" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.exeLinker.inputType__CMD_SRCS"/>
+								<inputType id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.exeLinker.inputType__CMD2_SRCS.1746146179" name="Linker Command Files" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.exeLinker.inputType__CMD2_SRCS"/>
+								<inputType id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.exeLinker.inputType__GEN_CMDS.302913548" name="Generated Linker Command Files" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.exeLinker.inputType__GEN_CMDS"/>
+							</tool>
+							<tool id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.hex.45882841" name="GNU Objcopy Utility" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_4.0.hex"/>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings">
+				<externalSettings containerId="lptm4c1294ncpdt_core;com.ti.ccstudio.buildDefinitions.TMS470.Release.456592773" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier"/>
+				<externalSettings containerId="lptm4c1294ncpdt_aJson;com.ti.ccstudio.buildDefinitions.TMS470.Release.1527319053" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier"/>
+				<externalSettings containerId="lptm4c1294ncpdt_Wire;com.ti.ccstudio.buildDefinitions.TMS470.Release.1788767527" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier"/>
+				<externalSettings containerId="lptm4c1294ncpdt_WiFi;com.ti.ccstudio.buildDefinitions.TMS470.Release.1709332015" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier"/>
+				<externalSettings containerId="lptm4c1294ncpdt_Ethernet;com.ti.ccstudio.buildDefinitions.TMS470.Release.1966354981" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier"/>
+				<externalSettings containerId="lptm4c1294ncpdt_SPI;com.ti.ccstudio.buildDefinitions.TMS470.Release.2011004376" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier"/>
+				<externalSettings containerId="lptm4c1294ncpdt_Adafruit_TMP006;com.ti.ccstudio.buildDefinitions.TMS470.Release.1545972790" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier"/>
+				<externalSettings containerId="lptm4c1294ncpdt_AIR430BoostEuropeETSI;com.ti.ccstudio.buildDefinitions.TMS470.Release.503590798" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier"/>
+				<externalSettings containerId="lptm4c1294ncpdt_AIR430BoostUSAFCC;com.ti.ccstudio.buildDefinitions.TMS470.Release.349900823" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier"/>
+				<externalSettings containerId="lptm4c1294ncpdt_CogLCD;com.ti.ccstudio.buildDefinitions.TMS470.Release.1480608877" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier"/>
+				<externalSettings containerId="lptm4c1294ncpdt_EduBPMKII_Screen;com.ti.ccstudio.buildDefinitions.TMS470.Release.790980936" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier"/>
+				<externalSettings containerId="lptm4c1294ncpdt_EEPROM;com.ti.ccstudio.buildDefinitions.TMS470.Release.894141782" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier"/>
+				<externalSettings containerId="lptm4c1294ncpdt_M2XStreamClient;com.ti.ccstudio.buildDefinitions.TMS470.Release.1085845943" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier"/>
+				<externalSettings containerId="lptm4c1294ncpdt_MQTTClient;com.ti.ccstudio.buildDefinitions.TMS470.Release.821724432" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier"/>
+				<externalSettings containerId="lptm4c1294ncpdt_OPT3001;com.ti.ccstudio.buildDefinitions.TMS470.Release.71867640" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier"/>
+				<externalSettings containerId="lptm4c1294ncpdt_PubNub;com.ti.ccstudio.buildDefinitions.TMS470.Release.1800226195" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier"/>
+				<externalSettings containerId="lptm4c1294ncpdt_PubSubClient;com.ti.ccstudio.buildDefinitions.TMS470.Release.2092458499" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier"/>
+				<externalSettings containerId="lptm4c1294ncpdt_Servo;com.ti.ccstudio.buildDefinitions.TMS470.Release.1814327647" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier"/>
+				<externalSettings containerId="lptm4c1294ncpdt_Stepper;com.ti.ccstudio.buildDefinitions.TMS470.Release.1055850103" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier"/>
+				<externalSettings containerId="lptm4c1294ncpdt_Temboo;com.ti.ccstudio.buildDefinitions.TMS470.Release.734527964" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier"/>
+			</storageModule>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="test.com.ti.ccstudio.buildDefinitions.TMS470.ProjectType.281852339" name="ARM" projectType="com.ti.ccstudio.buildDefinitions.TMS470.ProjectType"/>
+	</storageModule>
+	<storageModule moduleId="scannerConfiguration"/>
+	<storageModule moduleId="org.eclipse.cdt.core.language.mapping">
+		<project-mappings>
+			<content-type-mapping configuration="" content-type="org.eclipse.cdt.core.asmSource" language="com.ti.ccstudio.core.TIASMLanguage"/>
+			<content-type-mapping configuration="" content-type="org.eclipse.cdt.core.cHeader" language="com.ti.ccstudio.core.TIGCCLanguage"/>
+			<content-type-mapping configuration="" content-type="org.eclipse.cdt.core.cSource" language="com.ti.ccstudio.core.TIGCCLanguage"/>
+			<content-type-mapping configuration="" content-type="org.eclipse.cdt.core.cxxHeader" language="com.ti.ccstudio.core.TIGPPLanguage"/>
+			<content-type-mapping configuration="" content-type="org.eclipse.cdt.core.cxxSource" language="com.ti.ccstudio.core.TIGPPLanguage"/>
+		</project-mappings>
+	</storageModule>
+</cproject>

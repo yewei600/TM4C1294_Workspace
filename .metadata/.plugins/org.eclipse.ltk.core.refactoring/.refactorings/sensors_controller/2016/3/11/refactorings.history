@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;sensors_controller/humidity_sht21.c&apos; to &apos;main.c&apos;" description="Rename resource &apos;humidity_sht21.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="humidity_sht21.c" name="main.c" stamp="1457643084307" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;sensors_controller/humidity_sht21_ccs.cmd&apos; to &apos;main.cmd&apos;" description="Rename resource &apos;humidity_sht21_ccs.cmd&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="humidity_sht21_ccs.cmd" name="main.cmd" stamp="1457643848825" updateReferences="true"/>
+</session>

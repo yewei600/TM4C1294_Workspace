@@ -1,0 +1,464 @@
+******************************************************************************
+                  TI ARM Linker PC v5.1.6                      
+******************************************************************************
+>> Linked Thu Mar 10 17:56:41 2016
+
+OUTPUT FILE NAME:   <sensors_controller.out>
+ENTRY POINT SYMBOL: "_c_int00"  address: 00002249
+
+
+MEMORY CONFIGURATION
+
+         name            origin    length      used     unused   attr    fill
+----------------------  --------  ---------  --------  --------  ----  --------
+  FLASH                 00000000   00100000  00002b9c  000fd464  R  X
+  SRAM                  20000000   00040000  00000b61  0003f49f  RW X
+
+
+SEGMENT ALLOCATION MAP
+
+run origin  load origin   length   init length attrs members
+----------  ----------- ---------- ----------- ----- -------
+00000000    00000000    00002ba0   00002ba0    r-x
+  00000000    00000000    00000200   00000200    r-- .intvecs
+  00000200    00000200    000026cc   000026cc    r-x .text
+  000028cc    000028cc    00000270   00000270    r-- .const
+  00002b40    00002b40    00000060   00000060    r-- .cinit
+20000000    20000000    00000b68   00000000    rw-
+  20000000    20000000    00000611   00000000    rw- .bss
+  20000614    20000614    00000400   00000000    rw- .stack
+  20000a18    20000a18    00000150   00000000    rw- .data
+
+
+SECTION ALLOCATION MAP
+
+ output                                  attributes/
+section   page    origin      length       input sections
+--------  ----  ----------  ----------   ----------------
+.intvecs   0    00000000    00000200     
+                  00000000    00000200     startup_ccs.obj (.intvecs)
+
+.init_array 
+*          0    00000000    00000000     UNINITIALIZED
+
+.text      0    00000200    000026cc     
+                  00000200    00000214     pinout.obj (.text:PinoutSet)
+                  00000414    00000204     driverlib.lib : sysctl.obj (.text:SysCtlClockFreqSet)
+                  00000618    000001ec     main.obj (.text:main)
+                  00000804    000001ea     uartstdio.obj (.text:UARTvprintf)
+                  000009ee    00000002     startup_ccs.obj (.text:FaultISR)
+                  000009f0    000001e4     sensorlib.lib : tmp006.obj (.text:TMP006DataTemperatureGetFloat)
+                  00000bd4    000001b8     main.obj (.text:printHumidityData)
+                  00000d8c    000001b6     rtsv7M4_T_le_v4SPD16_eabi.lib : fd_add_t2.obj (.text)
+                  00000f42    00000002     startup_ccs.obj (.text:IntDefaultHandler)
+                  00000f44    00000160     uartstdio.obj (.text:UARTStdioIntHandler)
+                  000010a4    00000130     driverlib.lib : gpio.obj (.text:GPIOPadConfigSet)
+                  000011d4    00000104     main.obj (.text:printTemperatureData)
+                  000012d8    000000fc     rtsv7M4_T_le_v4SPD16_eabi.lib : fd_mul_t2.obj (.text)
+                  000013d4    000000f2     sensorlib.lib : i2cm_drv.obj (.text:I2CMIntHandler)
+                  000014c6    00000002     startup_ccs.obj (.text:NmiSR)
+                  000014c8    000000c4     main.obj (.text:SHT21AppErrorHandler)
+                  0000158c    000000b0     uartstdio.obj (.text:UARTStdioConfig)
+                  0000163c    000000a8     uartstdio.obj (.text:UARTwrite)
+                  000016e4    0000009c     rtsv7M4_T_le_v4SPD16_eabi.lib : memcpy_t2.obj (.text)
+                  00001780    00000098     sensorlib.lib : i2cm_drv.obj (.text:I2CMStateIdle)
+                  00001818    00000094     main.obj (.text:TMP006AppErrorHandler)
+                  000018ac    00000094     rtsv7M4_T_le_v4SPD16_eabi.lib : auto_init.obj (.text)
+                  00001940    0000008c     uartstdio.obj (.text:UARTPrimeTransmit)
+                  000019cc    00000088     sensorlib.lib : i2cm_drv.obj (.text:I2CMCommand)
+                  00001a54    00000070                   : sht21.obj (.text:SHT21DataHumidityGetFloat)
+                  00001ac4    0000006c     pinout.obj (.text:LEDWrite)
+                  00001b30    00000068     main.obj (.text:ConfigureUART)
+                  00001b98    00000068     driverlib.lib : interrupt.obj (.text:IntDisable)
+                  00001c00    00000068                   : interrupt.obj (.text:IntEnable)
+                  00001c68    00000064                   : interrupt.obj (.text:IntIsEnabled)
+                  00001ccc    00000060     pinout.obj (.text:LEDRead)
+                  00001d2c    00000060     sensorlib.lib : sht21.obj (.text:SHT21DataTemperatureGetFloat)
+                  00001d8c    00000060                   : tmp006.obj (.text:TMP006Callback)
+                  00001dec    0000005e                   : i2cm_drv.obj (.text:I2CMStateWritePause)
+                  00001e4a    0000005e     rtsv7M4_T_le_v4SPD16_eabi.lib : copy_decompress_rle.obj (.text)
+                  00001ea8    00000058     sensorlib.lib : tmp006.obj (.text:TMP006Init)
+                  00001f00    00000054                   : i2cm_drv.obj (.text:I2CMWrite8)
+                  00001f54    00000054     uartstdio.obj (.text:UARTgets)
+                  00001fa8    00000050     sensorlib.lib : i2cm_drv.obj (.text:I2CMStateWriteFinal)
+                  00001ff8    0000004c                   : sht21.obj (.text:SHT21DataRead)
+                  00002044    0000004c                   : sht21.obj (.text:SHT21Init)
+                  00002090    0000004c                   : sht21.obj (.text:SHT21Write)
+                  000020dc    0000004a                   : i2cm_drv.obj (.text:I2CMStateReadNext)
+                  00002126    0000004a     rtsv7M4_T_le_v4SPD16_eabi.lib : fd_tos_t2.obj (.text)
+                  00002170    00000048     sensorlib.lib : i2cm_drv.obj (.text:I2CMStateWriteNext)
+                  000021b8    00000048     driverlib.lib : i2c.obj (.text:I2CMasterInitExpClk)
+                  00002200    00000048                   : sysctl.obj (.text:_SysCtlFrequencyGet)
+                  00002248    00000048     rtsv7M4_T_le_v4SPD16_eabi.lib : boot.obj (.text)
+                  00002290    00000044     sensorlib.lib : i2cm_drv.obj (.text:I2CMStateCallback)
+                  000022d4    00000044     main.obj (.text:SHT21AppI2CWait)
+                  00002318    00000044     rtsv7M4_T_le_v4SPD16_eabi.lib : cpy_tbl.obj (.text)
+                  0000235c    00000044                                   : exit.obj (.text)
+                  000023a0    00000042                                   : u_divt2.obj (.text)
+                  000023e2    00000040     sensorlib.lib : i2cm_drv.obj (.text:I2CMStateReadFinal)
+                  00002422    00000002     --HOLE-- [fill = 0]
+                  00002424    00000040     rtsv7M4_T_le_v4SPD16_eabi.lib : signal.obj (.text)
+                  00002464    0000003e     sensorlib.lib : i2cm_drv.obj (.text:I2CMStateReadPause)
+                  000024a2    00000002     --HOLE-- [fill = 0]
+                  000024a4    0000003c     uartstdio.obj (.text:UARTFlushTx)
+                  000024e0    0000003a     sensorlib.lib : i2cm_drv.obj (.text:I2CMWrite8Callback)
+                  0000251a    00000038     rtsv7M4_T_le_v4SPD16_eabi.lib : fs_tod_t2.obj (.text)
+                  00002552    00000034     sensorlib.lib : i2cm_drv.obj (.text:I2CMInit)
+                  00002586    00000002     --HOLE-- [fill = 0]
+                  00002588    00000034     rtsv7M4_T_le_v4SPD16_eabi.lib : feraiseexcept.obj (.text)
+                  000025bc    00000030     sensorlib.lib : i2cm_drv.obj (.text:I2CMTransferResume)
+                  000025ec    00000030     rtsv7M4_T_le_v4SPD16_eabi.lib : xferaise.obj (.text)
+                  0000261c    0000002e                                   : raise.obj (.text)
+                  0000264a    00000002     --HOLE-- [fill = 0]
+                  0000264c    0000002c     uartstdio.obj (.text:UARTFlushRx)
+                  00002678    0000002a     driverlib.lib : gpio.obj (.text:GPIODirModeSet)
+                  000026a2    0000002a     sensorlib.lib : i2cm_drv.obj (.text:I2CMStateReadFirst)
+                  000026cc    00000024     main.obj (.text:SHT21AppCallback)
+                  000026f0    00000024     rtsv7M4_T_le_v4SPD16_eabi.lib : sqrtf.obj (.text)
+                  00002714    00000020     sensorlib.lib : i2cm_drv.obj (.text:I2CMStateReadOne)
+                  00002734    0000001c     driverlib.lib : sysctl.obj (.text:_SysCtlMemTimingGet)
+                  00002750    0000001a     sensorlib.lib : i2cm_drv.obj (.text:I2CMStateReadWait)
+                  0000276a    0000001a     uartstdio.obj (.text:UARTprintf)
+                  00002784    00000018     uartstdio.obj (.text:IsBufferFull)
+                  0000279c    00000018     main.obj (.text:TMP006AppCallback)
+                  000027b4    00000018     sensorlib.lib : tmp006.obj (.text:TMP006DataTemperatureGetRaw)
+                  000027cc    00000018     rtsv7M4_T_le_v4SPD16_eabi.lib : args_main.obj (.text)
+                  000027e4    00000016     sensorlib.lib : sht21.obj (.text:SHT21Callback)
+                  000027fa    00000002     --HOLE-- [fill = 0]
+                  000027fc    00000014     rtsv7M4_T_le_v4SPD16_eabi.lib : _lock.obj (.text)
+                  00002810    00000012     driverlib.lib : gpio.obj (.text:GPIOPinTypeEthernetLED)
+                  00002822    00000012     rtsv7M4_T_le_v4SPD16_eabi.lib : copy_zero_init.obj (.text:decompress:ZI)
+                  00002834    0000000e     uartstdio.obj (.text:IsBufferEmpty)
+                  00002842    0000000e     rtsv7M4_T_le_v4SPD16_eabi.lib : copy_decompress_none.obj (.text:decompress:none)
+                  00002850    0000000c     driverlib.lib : interrupt.obj (.text:IntTrigger)
+                  0000285c    0000000c     sensorlib.lib : sht21.obj (.text:SHT21DataHumidityGetRaw)
+                  00002868    0000000c                   : sht21.obj (.text:SHT21DataTemperatureGetRaw)
+                  00002874    0000000c     main.obj (.text:SHT21I2CIntHandler)
+                  00002880    0000000a     driverlib.lib : i2c.obj (.text:I2CMasterEnable)
+                  0000288a    00000008                   : i2c.obj (.text:I2CMasterIntClear)
+                  00002892    00000008                   : i2c.obj (.text:I2CMasterIntEnableEx)
+                  0000289a    00000008                   : i2c.obj (.text:I2CMasterSlaveAddrSet)
+                  000028a2    00000006                   : gpio.obj (.text:GPIOPinRead)
+                  000028a8    00000006                   : gpio.obj (.text:GPIOPinWrite)
+                  000028ae    00000006     startup_ccs.obj (.text:ResetISR)
+                  000028b4    00000006     driverlib.lib : uart.obj (.text:UARTClockSourceSet)
+                  000028ba    00000006     rtsv7M4_T_le_v4SPD16_eabi.lib : copy_decompress_rle.obj (.text:decompress:rle24)
+                  000028c0    00000004     driverlib.lib : i2c.obj (.text:I2CMasterControl)
+                  000028c4    00000004                   : i2c.obj (.text:I2CMasterDataGet)
+                  000028c8    00000004                   : i2c.obj (.text:I2CMasterDataPut)
+
+.const     0    000028cc    00000270     
+                  000028cc    00000120     driverlib.lib : sysctl.obj (.const:g_pppui32XTALtoVCO)
+                  000029ec    00000070                   : interrupt.obj (.const)
+                  00002a5c    0000006c                   : sysctl.obj (.const:g_pui32Xtals)
+                  00002ac8    00000030                   : sysctl.obj (.const:g_sXTALtoMEMTIM)
+                  00002af8    00000028     uartstdio.obj (.const)
+                  00002b20    00000012     uartstdio.obj (.const:.string)
+                  00002b32    00000002     --HOLE-- [fill = 0]
+                  00002b34    00000008     driverlib.lib : sysctl.obj (.const)
+
+.cinit     0    00002b40    00000060     
+                  00002b40    00000038     (.cinit..data.load) [load image, compression = rle]
+                  00002b78    0000000c     (__TI_handler_table)
+                  00002b84    00000004     --HOLE-- [fill = 0]
+                  00002b88    00000008     (.cinit..bss.load) [load image, compression = zero_init]
+                  00002b90    00000010     (__TI_cinit_table)
+
+.bss       0    20000000    00000611     UNINITIALIZED
+                  20000000    00000400     uartstdio.obj (.bss:g_pcUARTTxBuffer)
+                  20000400    00000124     main.obj (.bss:g_sI2CInst)
+                  20000524    00000080     uartstdio.obj (.bss:g_pcUARTRxBuffer)
+                  200005a4    00000030     main.obj (.bss:g_sTMP006Inst)
+                  200005d4    0000002c     main.obj (.bss:g_sSHT21Inst)
+                  20000600    00000004     (.common:g_ui32PortNum)
+                  20000604    00000004     (.common:g_ui32SysClock)
+                  20000608    00000004     (.common:g_vui8DataFlag)
+                  2000060c    00000004     (.common:g_vui8ErrorFlag)
+                  20000610    00000001     (.common:g_bDisableEcho)
+
+.stack     0    20000614    00000400     UNINITIALIZED
+                  20000614    00000400     --HOLE--
+
+.data      0    20000a18    00000150     UNINITIALIZED
+                  20000a18    000000b0     rtsv7M4_T_le_v4SPD16_eabi.lib : signal.obj (.data:sigtable)
+                  20000ac8    00000068                                   : xfvalues.obj (.data)
+                  20000b30    00000015     uartstdio.obj (.data)
+                  20000b45    00000003     --HOLE--
+                  20000b48    00000008     rtsv7M4_T_le_v4SPD16_eabi.lib : _lock.obj (.data)
+                  20000b50    00000008                                   : exit.obj (.data)
+                  20000b58    00000008                                   : feraiseexcept.obj (.data)
+                  20000b60    00000004                                   : errno.obj (.data)
+                  20000b64    00000004                                   : stkdepth_vars.obj (.data)
+
+
+LINKER GENERATED COPY TABLES
+
+__TI_cinit_table @ 00002b90 records: 2, size/record: 8, table size: 16
+	.data: load addr=00002b40, load size=00000038 bytes, run addr=20000a18, run size=00000150 bytes, compression=rle
+	.bss: load addr=00002b88, load size=00000008 bytes, run addr=20000000, run size=00000611 bytes, compression=zero_init
+
+
+LINKER GENERATED HANDLER TABLE
+
+__TI_handler_table @ 00002b78 records: 3, size/record: 4, table size: 12
+	index: 0, handler: __TI_decompress_rle24
+	index: 1, handler: __TI_decompress_none
+	index: 2, handler: __TI_zero_init
+
+
+GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
+
+address    name
+--------   ----
+0000235d   C$$EXIT
+00001b31   ConfigureUART
+00002679   GPIODirModeSet
+000010a5   GPIOPadConfigSet
+000028a3   GPIOPinRead
+00002811   GPIOPinTypeEthernetLED
+000028a9   GPIOPinWrite
+000019cd   I2CMCommand
+00002553   I2CMInit
+000013d5   I2CMIntHandler
+000025bd   I2CMTransferResume
+00001f01   I2CMWrite8
+000028c1   I2CMasterControl
+000028c5   I2CMasterDataGet
+000028c9   I2CMasterDataPut
+00002881   I2CMasterEnable
+000021b9   I2CMasterInitExpClk
+0000288b   I2CMasterIntClear
+00002893   I2CMasterIntEnableEx
+0000289b   I2CMasterSlaveAddrSet
+00001b99   IntDisable
+00001c01   IntEnable
+00001c69   IntIsEnabled
+00002851   IntTrigger
+00001ccd   LEDRead
+00001ac5   LEDWrite
+00000201   PinoutSet
+000028af   ResetISR
+UNDEFED    SHT$$INIT_ARRAY$$Base
+UNDEFED    SHT$$INIT_ARRAY$$Limit
+000026cd   SHT21AppCallback
+000014c9   SHT21AppErrorHandler
+000022d5   SHT21AppI2CWait
+00001a55   SHT21DataHumidityGetFloat
+0000285d   SHT21DataHumidityGetRaw
+00001ff9   SHT21DataRead
+00001d2d   SHT21DataTemperatureGetFloat
+00002869   SHT21DataTemperatureGetRaw
+00002875   SHT21I2CIntHandler
+00002045   SHT21Init
+00002091   SHT21Write
+00000415   SysCtlClockFreqSet
+0000279d   TMP006AppCallback
+00001819   TMP006AppErrorHandler
+000009f1   TMP006DataTemperatureGetFloat
+000027b5   TMP006DataTemperatureGetRaw
+00001ea9   TMP006Init
+000028b5   UARTClockSourceSet
+0000264d   UARTFlushRx
+000024a5   UARTFlushTx
+0000158d   UARTStdioConfig
+00000f45   UARTStdioIntHandler
+00001f55   UARTgets
+0000276b   UARTprintf
+00000805   UARTvprintf
+0000163d   UARTwrite
+20000b60   _Errno
+20000ac8   _FDenorm
+20000ad8   _FEps
+20000ae8   _FInf
+20000af8   _FNan
+20000b18   _FRteps
+20000b08   _FSnan
+20000b28   _FXbig
+20000b2c   _FZero
+20000b58   _Fenv
+000025ed   _Feraise
+20000b5c   _Tls_setup__Fenv
+20000a14   __STACK_END
+00000400   __STACK_SIZE
+20000a14   __STACK_TOP
+00002b90   __TI_CINIT_Base
+00002ba0   __TI_CINIT_Limit
+00002b78   __TI_Handler_Table_Base
+00002b84   __TI_Handler_Table_Limit
+00000001   __TI_args_main
+000018ad   __TI_auto_init
+20000b50   __TI_cleanup_ptr
+00002843   __TI_decompress_none
+000028bb   __TI_decompress_rle24
+20000b54   __TI_dtors_ptr
+00000000   __TI_static_base__
+00002823   __TI_zero_init
+00002127   __aeabi_d2f
+00000d97   __aeabi_dadd
+000012d9   __aeabi_dmul
+00000d8d   __aeabi_dsub
+0000251b   __aeabi_f2d
+000016e5   __aeabi_memcpy
+000016e5   __aeabi_memcpy4
+000016e5   __aeabi_memcpy8
+000023a1   __aeabi_uidivmod
+ffffffff   __binit__
+ffffffff   __c_args__
+20000614   __stack
+000027cd   _args_main
+00002249   _c_int00
+20000b48   _lock
+0000280b   _nop
+00002803   _register_lock
+000027fd   _register_unlock
+20000b4c   _unlock
+00002361   abort
+ffffffff   binit
+00002319   copy_in
+00002369   exit
+00002589   feraiseexcept
+00000000   g_pfnVectors
+20000400   g_sI2CInst
+200005d4   g_sSHT21Inst
+200005a4   g_sTMP006Inst
+20000604   g_ui32SysClock
+20000608   g_vui8DataFlag
+2000060c   g_vui8ErrorFlag
+00000619   main
+20000b64   main_func_sp
+000016e5   memcpy
+00000bd5   printHumidityData
+000011d5   printTemperatureData
+0000261d   raise
+00002425   signal
+000026f1   sqrtf
+
+
+GLOBAL SYMBOLS: SORTED BY Symbol Address 
+
+address    name
+--------   ----
+00000000   __TI_static_base__
+00000000   g_pfnVectors
+00000001   __TI_args_main
+00000201   PinoutSet
+00000400   __STACK_SIZE
+00000415   SysCtlClockFreqSet
+00000619   main
+00000805   UARTvprintf
+000009f1   TMP006DataTemperatureGetFloat
+00000bd5   printHumidityData
+00000d8d   __aeabi_dsub
+00000d97   __aeabi_dadd
+00000f45   UARTStdioIntHandler
+000010a5   GPIOPadConfigSet
+000011d5   printTemperatureData
+000012d9   __aeabi_dmul
+000013d5   I2CMIntHandler
+000014c9   SHT21AppErrorHandler
+0000158d   UARTStdioConfig
+0000163d   UARTwrite
+000016e5   __aeabi_memcpy
+000016e5   __aeabi_memcpy4
+000016e5   __aeabi_memcpy8
+000016e5   memcpy
+00001819   TMP006AppErrorHandler
+000018ad   __TI_auto_init
+000019cd   I2CMCommand
+00001a55   SHT21DataHumidityGetFloat
+00001ac5   LEDWrite
+00001b31   ConfigureUART
+00001b99   IntDisable
+00001c01   IntEnable
+00001c69   IntIsEnabled
+00001ccd   LEDRead
+00001d2d   SHT21DataTemperatureGetFloat
+00001ea9   TMP006Init
+00001f01   I2CMWrite8
+00001f55   UARTgets
+00001ff9   SHT21DataRead
+00002045   SHT21Init
+00002091   SHT21Write
+00002127   __aeabi_d2f
+000021b9   I2CMasterInitExpClk
+00002249   _c_int00
+000022d5   SHT21AppI2CWait
+00002319   copy_in
+0000235d   C$$EXIT
+00002361   abort
+00002369   exit
+000023a1   __aeabi_uidivmod
+00002425   signal
+000024a5   UARTFlushTx
+0000251b   __aeabi_f2d
+00002553   I2CMInit
+00002589   feraiseexcept
+000025bd   I2CMTransferResume
+000025ed   _Feraise
+0000261d   raise
+0000264d   UARTFlushRx
+00002679   GPIODirModeSet
+000026cd   SHT21AppCallback
+000026f1   sqrtf
+0000276b   UARTprintf
+0000279d   TMP006AppCallback
+000027b5   TMP006DataTemperatureGetRaw
+000027cd   _args_main
+000027fd   _register_unlock
+00002803   _register_lock
+0000280b   _nop
+00002811   GPIOPinTypeEthernetLED
+00002823   __TI_zero_init
+00002843   __TI_decompress_none
+00002851   IntTrigger
+0000285d   SHT21DataHumidityGetRaw
+00002869   SHT21DataTemperatureGetRaw
+00002875   SHT21I2CIntHandler
+00002881   I2CMasterEnable
+0000288b   I2CMasterIntClear
+00002893   I2CMasterIntEnableEx
+0000289b   I2CMasterSlaveAddrSet
+000028a3   GPIOPinRead
+000028a9   GPIOPinWrite
+000028af   ResetISR
+000028b5   UARTClockSourceSet
+000028bb   __TI_decompress_rle24
+000028c1   I2CMasterControl
+000028c5   I2CMasterDataGet
+000028c9   I2CMasterDataPut
+00002b78   __TI_Handler_Table_Base
+00002b84   __TI_Handler_Table_Limit
+00002b90   __TI_CINIT_Base
+00002ba0   __TI_CINIT_Limit
+20000400   g_sI2CInst
+200005a4   g_sTMP006Inst
+200005d4   g_sSHT21Inst
+20000604   g_ui32SysClock
+20000608   g_vui8DataFlag
+2000060c   g_vui8ErrorFlag
+20000614   __stack
+20000a14   __STACK_END
+20000a14   __STACK_TOP
+20000ac8   _FDenorm
+20000ad8   _FEps
+20000ae8   _FInf
+20000af8   _FNan
+20000b08   _FSnan
+20000b18   _FRteps
+20000b28   _FXbig
+20000b2c   _FZero
+20000b48   _lock
+20000b4c   _unlock
+20000b50   __TI_cleanup_ptr
+20000b54   __TI_dtors_ptr
+20000b58   _Fenv
+20000b5c   _Tls_setup__Fenv
+20000b60   _Errno
+20000b64   main_func_sp
+ffffffff   __binit__
+ffffffff   __c_args__
+ffffffff   binit
+UNDEFED    SHT$$INIT_ARRAY$$Base
+UNDEFED    SHT$$INIT_ARRAY$$Limit
+
+[122 symbols]

@@ -1,0 +1,11 @@
+
+**** Clean-only build of configuration Debug for project timer_interrupts ****
+
+"C:\\Program Files (x86)\\ccsv6\\utils\\bin\\gmake" -k clean 
+DEL /F  "timer_interrupts.out"  "timer_interrupts.hex" 
+DEL /F "main.pp" "tm4c1294ncpdt_startup_ccs.pp" 
+DEL /F "main.obj" "tm4c1294ncpdt_startup_ccs.obj" 
+'Finished clean'
+' '
+
+**** Build Finished ****

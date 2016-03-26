@@ -1,0 +1,30 @@
+
+**** Build of configuration Debug for project sensor_pack_BAD ****
+
+"C:\\Program Files (x86)\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building target: sensor_pack_BAD.out'
+'Invoking: ARM Linker'
+"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --display_error_number --diag_warning=225 --diag_wrap=off -z -m"sensor_pack_BAD.map" --heap_size=0 --stack_size=512 -i"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/lib" -i"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="sensor_pack_BAD_linkInfo.xml" --rom_model -o "sensor_pack_BAD.out"  "./main.obj" "./tm4c1294ncpdt_startup_ccs.obj" "./utils/uartstdio.obj" "./drivers/pinout.obj" "C:/ti/TivaWare_C_Series-2.1.1.71/driverlib/ccs/Debug/driverlib.lib" "../tm4c1294ncpdt.cmd" -l"libc.a" 
+<Linking>
+
+ undefined                    first referenced               
+  symbol                          in file                    
+ ---------                    ----------------               
+ I2CMInit                     ./main.obj                     
+ SHT21AppI2CWait              ./main.obj                     
+ SHT21DataHumidityGetFloat    ./main.obj                     
+ SHT21DataRead                ./main.obj                     
+ SHT21DataTemperatureGetFloat ./main.obj                     
+
+ SHT21I2CIntHandler           ./tm4c1294ncpdt_startup_ccs.obj
+>> Compilation failure
+ SHT21Init                    ./main.obj                     
+ SHT21Write                   ./main.obj                     
+ UARTStdioIntHandler          ./tm4c1294ncpdt_startup_ccs.obj
+
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "sensor_pack_BAD.out" not built
+gmake: *** [sensor_pack_BAD.out] Error 1
+gmake: Target `all' not remade because of errors.
+
+**** Build Finished ****

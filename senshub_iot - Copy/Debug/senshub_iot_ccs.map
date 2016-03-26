@@ -1,0 +1,2164 @@
+******************************************************************************
+                  TI ARM Linker PC v5.1.6                      
+******************************************************************************
+>> Linked Mon Feb 29 13:53:49 2016
+
+OUTPUT FILE NAME:   <senshub_iot.out>
+ENTRY POINT SYMBOL: "_c_int00"  address: 0000f089
+
+
+MEMORY CONFIGURATION
+
+         name            origin    length      used     unused   attr    fill
+----------------------  --------  ---------  --------  --------  ----  --------
+  FLASH                 00000000   00100000  0001237c  000edc84  R  X
+  SRAM                  20000000   00040000  000297bb  00016845  RW X
+
+
+SEGMENT ALLOCATION MAP
+
+run origin  load origin   length   init length attrs members
+----------  ----------- ---------- ----------- ----- -------
+00000000    00000000    00012380   00012380    r-x
+  00000000    00000000    00000200   00000200    r-- .intvecs
+  00000200    00000200    00011992   00011992    r-x .text
+  00011b94    00011b94    00000692   00000692    r-- .const
+  00012228    00012228    00000158   00000158    r-- .cinit
+20000000    20000000    000297bc   00000000    rw-
+  20000000    20000000    0002540f   00000000    rw- .bss
+  20025410    20025410    00004000   00000000    rw- .stack
+  20029410    20029410    000003ac   00000000    rw- .data
+
+
+SECTION ALLOCATION MAP
+
+ output                                  attributes/
+section   page    origin      length       input sections
+--------  ----  ----------  ----------   ----------------
+.intvecs   0    00000000    00000200     
+                  00000000    00000200     startup_ccs.obj (.intvecs)
+
+.init_array 
+*          0    00000000    00000000     UNINITIALIZED
+
+.text      0    00000200    00011992     
+                  00000200    0000076c     lwiplib.obj (.text:tcp_receive)
+                  0000096c    00000461     cloud_task.obj (.text:PrintConnectionHelp)
+                  00000dcd    00000001     --HOLE-- [fill = 0]
+                  00000dce    00000002     startup_ccs.obj (.text:FaultISR)
+                  00000dd0    000003f0     rtsv7M4_T_le_v4SPD16_eabi.lib : powf.obj (.text)
+                  000011c0    000003b0     lwiplib.obj (.text:tcp_process)
+                  00001570    000003ac     lwiplib.obj (.text:tcp_input)
+                  0000191c    00000324     compdcm_task.obj (.text:CompDCMTask)
+                  00001c40    000002f0     senshub_iot.obj (.text:main)
+                  00001f30    000002dc     lwiplib.obj (.text:tcp_write)
+                  0000220c    000002bc     lwiplib.obj (.text:tcp_slowtmr)
+                  000024c8    00000290     sensorlib.lib : comp_dcm.obj (.text:CompDCMUpdate)
+                  00002758    00000268     isl29023_task.obj (.text:ISL29023Task)
+                  000029c0    00000245     ustdlib.obj (.text:uvsnprintf)
+                  00002c05    00000001     --HOLE-- [fill = 0]
+                  00002c06    00000002     startup_ccs.obj (.text:IntDefaultHandler)
+                  00002c08    0000022c     exosite.obj (.text:sendLine)
+                  00002e34    00000220     lwiplib.obj (.text:dhcp_parse_reply)
+                  00003054    00000214     pinout.obj (.text:PinoutSet)
+                  00003268    00000208     cloud_task.obj (.text:CloudTask)
+                  00003470    00000204     driverlib.lib : sysctl.obj (.text:SysCtlClockFreqSet)
+                  00003674    000001f4     cloud_task.obj (.text:CloudSyncExosite)
+                  00003868    000001ea     uartstdio.obj (.text:UARTvprintf)
+                  00003a52    00000002     startup_ccs.obj (.text:NmiSR)
+                  00003a54    000001e8     sensorlib.lib : bmp180.obj (.text:BMP180DataPressureGetFloat)
+                  00003c3c    000001e4                   : tmp006.obj (.text:TMP006DataTemperatureGetFloat)
+                  00003e20    000001d8     lwiplib.obj (.text:ip_input)
+                  00003ff8    000001d4     cloud_task.obj (.text:CloudTaskInit)
+                  000041cc    000001d0     sensorlib.lib : bmp180.obj (.text:BMP180Callback)
+                  0000439c    000001c8     command_task.obj (.text:Cmd_proxy)
+                  00004564    000001c8     sensorlib.lib : comp_dcm.obj (.text:CompDCMComputeQuaternion)
+                  0000472c    000001c8     lwiplib.obj (.text:udp_input)
+                  000048f4    000001bc     bmp180_task.obj (.text:BMP180Task)
+                  00004ab0    000001b6     rtsv7M4_T_le_v4SPD16_eabi.lib : fd_add_t2.obj (.text)
+                  00004c66    00000002     exosite_hal_lwip.obj (.text:exoHAL_EraseMeta)
+                  00004c68    000001ac     cloud_task.obj (.text:CloudProvisionExosite)
+                  00004e14    0000019c     exosite.obj (.text:Exosite_Activate)
+                  00004fb0    00000194     compdcm_task.obj (.text:CompDCMDataEncodeJSON)
+                  00005144    00000190     lwiplib.obj (.text:tcp_output)
+                  000052d4    0000018c     sensorlib.lib : mpu9150.obj (.text:MPU9150Callback)
+                  00005460    0000018c     tmp006_task.obj (.text:TMP006Task)
+                  000055ec    0000018c     lwiplib.obj (.text:icmp_input)
+                  00005778    00000184     rtsv7M4_T_le_v4SPD16_eabi.lib : xfexp.obj (.text)
+                  000058fc    0000017c     cloud_task.obj (.text:CloudStartExosite)
+                  00005a78    00000178     rtsv7M4_T_le_v4SPD16_eabi.lib : xflog.obj (.text)
+                  00005bf0    00000160     uartstdio.obj (.text:UARTStdioIntHandler)
+                  00005d50    00000154     lwiplib.obj (.text:etharp_arp_input)
+                  00005ea4    00000144     lwiplib.obj (.text:tcp_close_shutdown)
+                  00005fe8    0000013a     lwiplib.obj (.text:pbuf_alloc)
+                  00006122    00000136     rtsv7M4_T_le_v4SPD16_eabi.lib : fd_div_t2.obj (.text)
+                  00006258    00000134     lwiplib.obj (.text:dns_recv)
+                  0000638c    00000134     lwiplib.obj (.text:tivaif_receive)
+                  000064c0    00000130     compdcm_task.obj (.text:CompDCMDataPrint)
+                  000065f0    00000130     driverlib.lib : gpio.obj (.text:GPIOPadConfigSet)
+                  00006720    0000012c     cloud_task.obj (.text:CloudTaskStatsEncodeJSON)
+                  0000684c    00000128     lwiplib.obj (.text:dhcp_create_msg)
+                  00006974    00000128     lwiplib.obj (.text:etharp_output)
+                  00006a9c    00000120     lwiplib.obj (.text:mem_malloc)
+                  00006bbc    00000120     lwiplib.obj (.text:mem_trim)
+                  00006cdc    00000118     exosite_hal_lwip.obj (.text:exoHAL_ExositeEnetEvents)
+                  00006df4    00000114     lwiplib.obj (.text:etharp_query)
+                  00006f08    00000114     lwiplib.obj (.text:tcp_listen_input)
+                  0000701c    00000114     tasks.obj (.text:xTaskIncrementTick)
+                  00007130    0000010a     lwiplib.obj (.text:ipaddr_aton)
+                  0000723a    00000002     senshub_iot.obj (.text:vApplicationStackOverflowHook)
+                  0000723c    00000108     eth_client_lwip.obj (.text:lwIPHostTimerHandler)
+                  00007344    00000104     exosite.obj (.text:Exosite_Read)
+                  00007448    00000104     isl29023_task.obj (.text:ISL29023TaskInit)
+                  0000754c    00000100     tmp006_task.obj (.text:TMP006TaskInit)
+                  0000764c    00000100     queue.obj (.text:xQueueGenericReceive)
+                  0000774c    000000fc     rtsv7M4_T_le_v4SPD16_eabi.lib : fd_mul_t2.obj (.text)
+                  00007848    000000f8     cloud_task.obj (.text:CloudTaskStatsPrint)
+                  00007940    000000f8     lwiplib.obj (.text:tcp_connect)
+                  00007a38    000000f4     lwiplib.obj (.text:lwIPPrivateNetworkConfigChange)
+                  00007b2c    000000f4     lwiplib.obj (.text:tivaif_transmit)
+                  00007c20    000000f2     sensorlib.lib : i2cm_drv.obj (.text:I2CMIntHandler)
+                  00007d12    00000002     heap_1.obj (.text:vPortFree)
+                  00007d14    000000f0     command_task.obj (.text:CommandTask)
+                  00007e04    000000f0     compdcm_task.obj (.text:CompDCMTaskInit)
+                  00007ef4    000000f0     lwiplib.obj (.text:lwIPInit)
+                  00007fe4    000000e4     sht21_task.obj (.text:SHT21MeasureHumidity)
+                  000080c8    000000e4     sht21_task.obj (.text:SHT21MeasureTemperature)
+                  000081ac    000000e0     bmp180_task.obj (.text:BMP180AppErrorHandler)
+                  0000828c    000000e0     compdcm_task.obj (.text:CompDCMAppErrorHandler)
+                  0000836c    000000e0     isl29023_task.obj (.text:ISL29023AppErrorHandler)
+                  0000844c    000000e0     sht21_task.obj (.text:SHT21Task)
+                  0000852c    000000e0     lwiplib.obj (.text:etharp_find_entry)
+                  0000860c    000000dc     sht21_task.obj (.text:SHT21AppErrorHandler)
+                  000086e8    000000dc     lwiplib.obj (.text:etharp_raw)
+                  000087c4    000000dc     tasks.obj (.text:xTaskGenericCreate)
+                  000088a0    000000d8     rtsv7M4_T_le_v4SPD16_eabi.lib : atan2f.obj (.text)
+                  00008978    000000d4     http.obj (.text:HTTPMessageTypeSet)
+                  00008a4c    000000d4     tmp006_task.obj (.text:TMP006AppErrorHandler)
+                  00008b20    000000d4     lwiplib.obj (.text:tcp_alloc)
+                  00008bf4    000000d0     cloud_task.obj (.text:CloudBoardDataDecodeExositeHTTP)
+                  00008cc4    000000d0     lwiplib.obj (.text:autoip_tmr)
+                  00008d94    000000d0     tasks.obj (.text:xTaskResumeAll)
+                  00008e64    000000cc     lwiplib.obj (.text:dhcp_bind)
+                  00008f30    000000cc     lwiplib.obj (.text:dhcp_recv)
+                  00008ffc    000000cc     lwiplib.obj (.text:dhcp_select)
+                  000090c8    000000cc     lwiplib.obj (.text:lwIPPrivateInit)
+                  00009194    000000cc     lwiplib.obj (.text:udp_sendto_if)
+                  00009260    000000c8     exosite.obj (.text:Exosite_Write)
+                  00009328    000000c8     tasks.obj (.text:vTaskSwitchContext)
+                  000093f0    000000c6     queue.obj (.text:xQueueGenericSend)
+                  000094b6    00000002     --HOLE-- [fill = 0]
+                  000094b8    000000c4     driverlib.lib : eeprom.obj (.text:EEPROMProgram)
+                  0000957c    000000c4     isl29023_task.obj (.text:ISL29023AppAdjustRange)
+                  00009640    000000c4     lwiplib.obj (.text:InitDMADescriptors)
+                  00009704    000000c4     exosite_hal_lwip.obj (.text:exoHAL_SocketOpenTCP)
+                  000097c8    000000c0     exosite.obj (.text:info_assemble)
+                  00009888    000000c0     rtsv7M4_T_le_v4SPD16_eabi.lib : xfdscale.obj (.text)
+                  00009948    000000bc     lwiplib.obj (.text:dhcp_discover)
+                  00009a04    000000bc     lwiplib.obj (.text:dns_send)
+                  00009ac0    000000bc     lwiplib.obj (.text:tcp_create_segment)
+                  00009b7c    000000bc     lwiplib.obj (.text:tcp_output_segment)
+                  00009c38    000000bc     lwiplib.obj (.text:tivaif_hwinit)
+                  00009cf4    000000b8     sensorlib.lib : comp_dcm.obj (.text:CompDCMStart)
+                  00009dac    000000b4     bmp180_task.obj (.text:BMP180DataPrint)
+                  00009e60    000000b0     uartstdio.obj (.text:UARTStdioConfig)
+                  00009f10    000000b0     rtsv7M4_T_le_v4SPD16_eabi.lib : asinf.obj (.text)
+                  00009fc0    000000ac     bmp180_task.obj (.text:BMP180DataEncodeJSON)
+                  0000a06c    000000ac     lwiplib.obj (.text:dns_enqueue)
+                  0000a118    000000a8     uartstdio.obj (.text:UARTwrite)
+                  0000a1c0    000000a8     lwiplib.obj (.text:dhcp_start)
+                  0000a268    000000a8     rtsv7M4_T_le_v4SPD16_eabi.lib : xfatan.obj (.text)
+                  0000a310    000000a8     lwiplib.obj (.text:tcp_enqueue_flags)
+                  0000a3b8    000000a6     portasm.obj (.text)
+                  0000a45e    00000002     --HOLE-- [fill = 0]
+                  0000a460    000000a4     lwiplib.obj (.text:dhcp_release)
+                  0000a504    000000a4     lwiplib.obj (.text:ethernet_input)
+                  0000a5a8    000000a4     lwiplib.obj (.text:ip_output_if)
+                  0000a64c    000000a0     sensorlib.lib : mpu9150.obj (.text:MPU9150DataMagnetoGetFloat)
+                  0000a6ec    000000a0                   : mpu9150.obj (.text:MPU9150Write)
+                  0000a78c    000000a0     lwiplib.obj (.text:dhcp_handle_ack)
+                  0000a82c    000000a0     lwiplib.obj (.text:dns_check_entry)
+                  0000a8cc    0000009f     cloud_task.obj (.text:uftostr)
+                  0000a96b    00000001     --HOLE-- [fill = 0]
+                  0000a96c    0000009c     http.obj (.text:HTTPResponseParse)
+                  0000aa08    0000009c     rtsv7M4_T_le_v4SPD16_eabi.lib : memcpy_t2.obj (.text)
+                  0000aaa4    0000009c     tasks.obj (.text:uxTaskGetSystemState)
+                  0000ab40    00000098     sensorlib.lib : i2cm_drv.obj (.text:I2CMStateIdle)
+                  0000abd8    00000098     isl29023_task.obj (.text:ISL29023DataEncodeJSON)
+                  0000ac70    00000098     lwiplib.obj (.text:dhcp_reboot)
+                  0000ad08    00000098     ustdlib.obj (.text:ustrtoul)
+                  0000ada0    00000094     rtsv7M4_T_le_v4SPD16_eabi.lib : auto_init.obj (.text)
+                  0000ae34    00000092     lwiplib.obj (.text:pbuf_copy)
+                  0000aec6    00000002     --HOLE-- [fill = 0]
+                  0000aec8    00000090     bmp180_task.obj (.text:BMP180TaskInit)
+                  0000af58    00000090     sht21_task.obj (.text:SHT21TaskInit)
+                  0000afe8    00000090     timers.obj (.text:prvProcessReceivedCommands)
+                  0000b078    00000090     rtsv7M4_T_le_v4SPD16_eabi.lib : xfdint.obj (.text)
+                  0000b108    00000090     lwiplib.obj (.text:tcp_abandon)
+                  0000b198    00000090     lwiplib.obj (.text:tcpip_thread)
+                  0000b228    0000008c     uartstdio.obj (.text:UARTPrimeTransmit)
+                  0000b2b4    0000008c     lwiplib.obj (.text:tcp_zero_window_probe)
+                  0000b340    00000088     sensorlib.lib : i2cm_drv.obj (.text:I2CMCommand)
+                  0000b3c8    00000088     sht21_task.obj (.text:SHT21DataEncodeJSON)
+                  0000b450    00000088     sht21_task.obj (.text:SHT21DataPrint)
+                  0000b4d8    00000088     tmp006_task.obj (.text:TMP006DataPrint)
+                  0000b560    00000084     sensorlib.lib : bmp180.obj (.text:BMP180DataTemperatureGetFloat)
+                  0000b5e4    00000084     eth_client_lwip.obj (.text:EthClientInit)
+                  0000b668    00000084     locator.obj (.text:LocatorReceive)
+                  0000b6ec    00000084     lwiplib.obj (.text:lwIPLinkDetect)
+                  0000b770    00000084     lwiplib.obj (.text:tcp_timewait_input)
+                  0000b7f4    00000084     lwiplib.obj (.text:tivaif_process_phy_interrupt)
+                  0000b878    00000082     lwiplib.obj (.text:autoip_arp_reply)
+                  0000b8fa    00000002     --HOLE-- [fill = 0]
+                  0000b8fc    00000080     command_task.obj (.text:Cmd_help)
+                  0000b97c    00000080     tmp006_task.obj (.text:TMP006DataEncodeJSON)
+                  0000b9fc    00000080     lwiplib.obj (.text:dhcp_rebind)
+                  0000ba7c    00000080     lwiplib.obj (.text:dhcp_renew)
+                  0000bafc    00000080     lwiplib.obj (.text:sys_sem_new)
+                  0000bb7c    00000080     lwiplib.obj (.text:sys_thread_new)
+                  0000bbfc    00000080     lwiplib.obj (.text:tcp_parseopt)
+                  0000bc7c    0000007c     buttons.obj (.text:ButtonsPoll)
+                  0000bcf8    0000007c     lwiplib.obj (.text:dhcp_timeout)
+                  0000bd74    0000007c     lwiplib.obj (.text:mem_free)
+                  0000bdf0    0000007c     lwiplib.obj (.text:tcp_rst)
+                  0000be6c    0000007a     rtsv7M4_T_le_v4SPD16_eabi.lib : xfdnorm.obj (.text)
+                  0000bee6    00000002     --HOLE-- [fill = 0]
+                  0000bee8    00000078     driverlib.lib : emac.obj (.text:EMACInit)
+                  0000bf60    00000078     sensorlib.lib : i2cm_drv.obj (.text:I2CMReadModifyWrite16LE)
+                  0000bfd8    00000078                   : mpu9150.obj (.text:MPU9150DataAccelGetFloat)
+                  0000c050    00000078                   : mpu9150.obj (.text:MPU9150DataGyroGetFloat)
+                  0000c0c8    00000078     lwiplib.obj (.text:lwIPEthernetIntHandler)
+                  0000c140    00000078     rtsv7M4_T_le_v4SPD16_eabi.lib : memset_t2.obj (.text)
+                  0000c1b8    00000078     lwiplib.obj (.text:tcp_oos_insert_segment)
+                  0000c230    00000074     command_task.obj (.text:Cmd_stats)
+                  0000c2a4    00000074     lwiplib.obj (.text:etharp_update_arp_entry)
+                  0000c318    00000074     exosite_hal_lwip.obj (.text:exoHAL_SocketRecv)
+                  0000c38c    00000074     lwiplib.obj (.text:raw_input)
+                  0000c400    00000070     eth_client_lwip.obj (.text:EthClientTCPConnect)
+                  0000c470    00000070     exosite.obj (.text:Exosite_Init)
+                  0000c4e0    00000070     sensorlib.lib : i2cm_drv.obj (.text:I2CMReadModifyWrite8)
+                  0000c550    00000070                   : sht21.obj (.text:SHT21DataHumidityGetFloat)
+                  0000c5c0    00000070     eth_client_lwip.obj (.text:TCPConnected)
+                  0000c630    00000070     lwiplib.obj (.text:sys_mbox_new)
+                  0000c6a0    00000070     lwiplib.obj (.text:tcp_fasttmr)
+                  0000c710    00000070     queue.obj (.text:xQueueGenericReset)
+                  0000c780    00000070     tasks.obj (.text:xTaskRemoveFromEventList)
+                  0000c7f0    0000006e     tasks.obj (.text:prvListTaskWithinSingleList)
+                  0000c85e    00000002     --HOLE-- [fill = 0]
+                  0000c860    0000006c     sensorlib.lib : i2cm_drv.obj (.text:I2CMReadModifyWrite16LECallback)
+                  0000c8cc    0000006c     isl29023_task.obj (.text:ISL29023DataPrint)
+                  0000c938    0000006c     pinout.obj (.text:LEDWrite)
+                  0000c9a4    0000006c     sensorlib.lib : mpu9150.obj (.text:MPU9150Init)
+                  0000ca10    0000006c     lwiplib.obj (.text:icmp_send_response)
+                  0000ca7c    0000006c     tasks.obj (.text:vTaskPriorityInherit)
+                  0000cae8    0000006a     lwiplib.obj (.text:pbuf_copy_partial)
+                  0000cb52    0000006a     queue.obj (.text:prvCopyDataToQueue)
+                  0000cbbc    00000068     command_task.obj (.text:CommandTaskInit)
+                  0000cc24    00000068     sensorlib.lib : isl29023.obj (.text:ISL29023Write)
+                  0000cc8c    00000068     driverlib.lib : interrupt.obj (.text:IntDisable)
+                  0000ccf4    00000068                   : interrupt.obj (.text:IntEnable)
+                  0000cd5c    00000068     lwiplib.obj (.text:dhcp_decline)
+                  0000cdc4    00000068     exosite_hal_lwip.obj (.text:exoHAL_ExositeInit)
+                  0000ce2c    00000068     lwiplib.obj (.text:memp_init)
+                  0000ce94    00000068     lwiplib.obj (.text:netif_set_ipaddr)
+                  0000cefc    00000068     lwiplib.obj (.text:tcp_output_alloc_header)
+                  0000cf64    00000068     lwiplib.obj (.text:tcp_process_refused_data)
+                  0000cfcc    00000068     tasks.obj (.text:vTaskSuspend)
+                  0000d034    00000064     command_task.obj (.text:ConfigureUART)
+                  0000d098    00000064     eth_client_lwip.obj (.text:EthClientSend)
+                  0000d0fc    00000064     driverlib.lib : interrupt.obj (.text:IntIsEnabled)
+                  0000d160    00000064     senshub_iot.obj (.text:SensorCloudStatTimerConfig)
+                  0000d1c4    00000064     lwiplib.obj (.text:dns_init)
+                  0000d228    00000064     lwiplib.obj (.text:lwip_standard_chksum)
+                  0000d28c    00000064     lwiplib.obj (.text:mem_init)
+                  0000d2f0    00000064     lwiplib.obj (.text:plug_holes)
+                  0000d354    00000064     lwiplib.obj (.text:udp_bind)
+                  0000d3b8    00000064     tasks.obj (.text:vTaskDelete)
+                  0000d41c    00000062     lwiplib.obj (.text:pbuf_header)
+                  0000d47e    00000062     queue.obj (.text:prvUnlockQueue)
+                  0000d4e0    00000060     cmdline.obj (.text:CmdLineProcess)
+                  0000d540    00000060     sensorlib.lib : i2cm_drv.obj (.text:I2CMReadModifyWrite8Callback)
+                  0000d5a0    00000060                   : mpu9150.obj (.text:MPU9150DataRead)
+                  0000d600    00000060                   : sht21.obj (.text:SHT21DataTemperatureGetFloat)
+                  0000d660    00000060                   : tmp006.obj (.text:TMP006Callback)
+                  0000d6c0    00000060                   : tmp006.obj (.text:TMP006ReadModifyWrite)
+                  0000d720    00000060     tasks.obj (.text:prvInitialiseTaskLists)
+                  0000d780    00000060     timers.obj (.text:prvSwitchTimerLists)
+                  0000d7e0    00000060     lwiplib.obj (.text:sys_timeout)
+                  0000d840    00000060     lwiplib.obj (.text:sys_timeouts_mbox_fetch)
+                  0000d8a0    0000005e     sensorlib.lib : i2cm_drv.obj (.text:I2CMStateWritePause)
+                  0000d8fe    0000005e     rtsv7M4_T_le_v4SPD16_eabi.lib : copy_decompress_rle.obj (.text)
+                  0000d95c    0000005c     cloud_task.obj (.text:CloudTaskStatsUpdate)
+                  0000d9b8    0000005c     cloud_task.obj (.text:SwitchTimerCallback)
+                  0000da14    0000005c     lwiplib.obj (.text:memp_malloc)
+                  0000da70    0000005c     lwiplib.obj (.text:tcp_pcb_remove)
+                  0000dacc    0000005c     lwiplib.obj (.text:tcpip_callback_with_block)
+                  0000db28    0000005c     tasks.obj (.text:vTaskDelayUntil)
+                  0000db84    0000005c     tasks.obj (.text:vTaskStartScheduler)
+                  0000dbe0    0000005a     lwiplib.obj (.text:autoip_start)
+                  0000dc3a    0000005a     lwiplib.obj (.text:pbuf_realloc)
+                  0000dc94    00000059     exosite_hal_lwip.obj (.text:exoHAL_ReadUUID)
+                  0000dced    00000003     --HOLE-- [fill = 0]
+                  0000dcf0    00000058     sensorlib.lib : bmp180.obj (.text:BMP180DataRead)
+                  0000dd48    00000058     driverlib.lib : emac.obj (.text:EMACPHYConfigSet)
+                  0000dda0    00000058     sensorlib.lib : tmp006.obj (.text:TMP006Init)
+                  0000ddf8    00000058     lwiplib.obj (.text:dns_gethostbyname)
+                  0000de50    00000058     exosite_hal_lwip.obj (.text:exoHAL_ResetConnection)
+                  0000dea8    00000058     tasks.obj (.text:prvCheckTasksWaitingTermination)
+                  0000df00    00000056     sensorlib.lib : vector.obj (.text:VectorCrossProduct)
+                  0000df56    00000056     lwiplib.obj (.text:inet_chksum_pbuf)
+                  0000dfac    00000056     queue.obj (.text:xQueueGenericSendFromISR)
+                  0000e002    00000002     --HOLE-- [fill = 0]
+                  0000e004    00000054     sensorlib.lib : bmp180.obj (.text:BMP180Init)
+                  0000e058    00000054     cloud_task.obj (.text:CloudProxySet)
+                  0000e0ac    00000054     eth_client_lwip.obj (.text:EthClientDNSResolve)
+                  0000e100    00000054     exosite.obj (.text:Exosite_GetCIK)
+                  0000e154    00000054     sensorlib.lib : i2cm_drv.obj (.text:I2CMWrite8)
+                  0000e1a8    00000054                   : isl29023.obj (.text:ISL29023Init)
+                  0000e1fc    00000054                   : tmp006.obj (.text:TMP006DataRead)
+                  0000e250    00000054     uartstdio.obj (.text:UARTgets)
+                  0000e2a4    00000054     lwiplib.obj (.text:autoip_create_addr)
+                  0000e2f8    00000054     lwiplib.obj (.text:netif_add)
+                  0000e34c    00000054     rtsv7M4_T_le_v4SPD16_eabi.lib : xfdunsca.obj (.text)
+                  0000e3a0    00000054     lwiplib.obj (.text:sys_timeouts_init)
+                  0000e3f4    00000054     lwiplib.obj (.text:tcp_rexmit)
+                  0000e448    00000054     tasks.obj (.text:xTaskCheckForTimeOut)
+                  0000e49c    00000052     lwiplib.obj (.text:pbuf_free)
+                  0000e4ee    00000052     lwiplib.obj (.text:tivaif_process_transmit)
+                  0000e540    00000050     sensorlib.lib : i2cm_drv.obj (.text:I2CMStateWriteFinal)
+                  0000e590    00000050                   : isl29023.obj (.text:ISL29023DataRead)
+                  0000e5e0    00000050                   : isl29023.obj (.text:ISL29023Read)
+                  0000e630    00000050     locator.obj (.text:LocatorInit)
+                  0000e680    00000050     driverlib.lib : sysctl.obj (.text:SysCtlPeripheralReset)
+                  0000e6d0    00000050     lwiplib.obj (.text:autoip_start_probing)
+                  0000e720    00000050     tasks.obj (.text:prvInitialiseTCBVariables)
+                  0000e770    00000050     heap_1.obj (.text:pvPortMalloc)
+                  0000e7c0    00000050     lwiplib.obj (.text:tcp_new_port)
+                  0000e810    0000004e     lwiplib.obj (.text:tcp_pbuf_prealloc)
+                  0000e85e    00000002     --HOLE-- [fill = 0]
+                  0000e860    0000004c     buttons.obj (.text:ButtonsInit)
+                  0000e8ac    0000004c     sensorlib.lib : isl29023.obj (.text:ISL29023ReadModifyWrite)
+                  0000e8f8    0000004c                   : sht21.obj (.text:SHT21DataRead)
+                  0000e944    0000004c                   : sht21.obj (.text:SHT21Init)
+                  0000e990    0000004c                   : sht21.obj (.text:SHT21Write)
+                  0000e9dc    0000004c     exosite_hal_lwip.obj (.text:exoHAL_ExositeConstructProxyRequest)
+                  0000ea28    0000004c     exosite_hal_lwip.obj (.text:exoHAL_SocketSend)
+                  0000ea74    0000004c     lwiplib.obj (.text:ip_route)
+                  0000eac0    0000004c     tasks.obj (.text:prvAddCurrentTaskToDelayedList)
+                  0000eb0c    0000004c     timers.obj (.text:prvCheckForValidListAndQueue)
+                  0000eb58    0000004c     timers.obj (.text:prvProcessTimerOrBlockTask)
+                  0000eba4    0000004c     lwiplib.obj (.text:tcp_write_checks)
+                  0000ebf0    0000004c     lwiplib.obj (.text:tcpip_input)
+                  0000ec3c    0000004c     lwiplib.obj (.text:tivaif_interrupt)
+                  0000ec88    0000004c     lwiplib.obj (.text:udp_new_port)
+                  0000ecd4    0000004c     queue.obj (.text:xQueueCreateMutex)
+                  0000ed20    0000004c     queue.obj (.text:xQueueGenericCreate)
+                  0000ed6c    0000004a     sensorlib.lib : i2cm_drv.obj (.text:I2CMStateReadNext)
+                  0000edb6    0000004a     rtsv7M4_T_le_v4SPD16_eabi.lib : fd_tos_t2.obj (.text)
+                  0000ee00    00000048     cloud_task.obj (.text:CloudBoardDataEncodeExositeHTTP)
+                  0000ee48    00000048     sensorlib.lib : i2cm_drv.obj (.text:I2CMStateWriteNext)
+                  0000ee90    00000048     driverlib.lib : i2c.obj (.text:I2CMasterInitExpClk)
+                  0000eed8    00000048     sensorlib.lib : isl29023.obj (.text:ISL29023DataLightVisibleGetFloat)
+                  0000ef20    00000048     driverlib.lib : sysctl.obj (.text:_SysCtlFrequencyGet)
+                  0000ef68    00000048     lwiplib.obj (.text:etharp_output_to_arp_index)
+                  0000efb0    00000048     exosite_meta.obj (.text:exosite_meta_read)
+                  0000eff8    00000048     lwiplib.obj (.text:ip_output)
+                  0000f040    00000048     timers.obj (.text:prvProcessExpiredTimer)
+                  0000f088    00000048     rtsv7M4_T_le_v4SPD16_eabi.lib : boot.obj (.text)
+                  0000f0d0    00000048     lwiplib.obj (.text:sys_arch_mbox_fetch)
+                  0000f118    00000048     lwiplib.obj (.text:sys_untimeout)
+                  0000f160    00000048     lwiplib.obj (.text:tcp_kill_prio)
+                  0000f1a8    00000048     lwiplib.obj (.text:tcp_rexmit_fast)
+                  0000f1f0    00000048     lwiplib.obj (.text:tcpip_init)
+                  0000f238    00000048     lwiplib.obj (.text:tivaif_check_pbuf)
+                  0000f280    00000048     lwiplib.obj (.text:udp_connect)
+                  0000f2c8    00000048     tasks.obj (.text:vTaskPriorityDisinherit)
+                  0000f310    00000046     lwiplib.obj (.text:tcp_send_empty_ack)
+                  0000f356    00000002     --HOLE-- [fill = 0]
+                  0000f358    00000044     sensorlib.lib : comp_dcm.obj (.text:CompDCMInit)
+                  0000f39c    00000044     eth_client_lwip.obj (.text:EthClientDHCPConnect)
+                  0000f3e0    00000044     sensorlib.lib : i2cm_drv.obj (.text:I2CMStateCallback)
+                  0000f424    00000044     uartstdio.obj (.text:UARTPeek)
+                  0000f468    00000044     lwiplib.obj (.text:lwIPInterruptTask)
+                  0000f4ac    00000044     timers.obj (.text:prvInsertTimerInActiveList)
+                  0000f4f0    00000044     rtsv7M4_T_le_v4SPD16_eabi.lib : cpy_tbl.obj (.text)
+                  0000f534    00000044                                   : exit.obj (.text)
+                  0000f578    00000044     lwiplib.obj (.text:tcp_keepalive)
+                  0000f5bc    00000044     lwiplib.obj (.text:tcp_send_fin)
+                  0000f600    00000044     tasks.obj (.text:vTaskPlaceOnEventList)
+                  0000f644    00000044     timers.obj (.text:xTimerCreateTimerTask)
+                  0000f688    00000042     sensorlib.lib : comp_dcm.obj (.text:CompDCMComputeEulers)
+                  0000f6ca    00000042     lwiplib.obj (.text:dhcp_network_changed)
+                  0000f70c    00000042     lwiplib.obj (.text:dhcp_option_long)
+                  0000f74e    00000042     rtsv7M4_T_le_v4SPD16_eabi.lib : u_divt2.obj (.text)
+                  0000f790    00000042     lwiplib.obj (.text:sys_arch_sem_wait)
+                  0000f7d2    00000042     lwiplib.obj (.text:tcp_pcb_purge)
+                  0000f814    00000040     command_task.obj (.text:Cmd_activate)
+                  0000f854    00000040     driverlib.lib : eeprom.obj (.text:EEPROMInit)
+                  0000f894    00000040     sensorlib.lib : i2cm_drv.obj (.text:I2CMStateReadFinal)
+                  0000f8d4    00000040                   : isl29023.obj (.text:ISL29023Callback)
+                  0000f914    00000040     http.obj (.text:InsertRequest)
+                  0000f954    00000040     tmp006_task.obj (.text:IntHandlerGPIOPortH)
+                  0000f994    00000040     compdcm_task.obj (.text:IntHandlerGPIOPortM)
+                  0000f9d4    00000040     eth_client_lwip.obj (.text:TCPReceived)
+                  0000fa14    00000040     lwiplib.obj (.text:dns_lookup)
+                  0000fa54    00000040     lwiplib.obj (.text:etharp_tmr)
+                  0000fa94    00000040     rtsv7M4_T_le_v4SPD16_eabi.lib : signal.obj (.text)
+                  0000fad4    00000040     port.obj (.text:xPortStartScheduler)
+                  0000fb14    00000040     timers.obj (.text:xTimerGenericCommand)
+                  0000fb54    0000003e     sensorlib.lib : i2cm_drv.obj (.text:I2CMStateReadPause)
+                  0000fb92    0000003e     exosite_meta.obj (.text:exosite_meta_write)
+                  0000fbd0    0000003e     lwiplib.obj (.text:netif_set_link_up)
+                  0000fc0e    00000002     --HOLE-- [fill = 0]
+                  0000fc10    0000003c     cloud_task.obj (.text:CloudTimerCallback)
+                  0000fc4c    0000003c     command_task.obj (.text:Cmd_connect)
+                  0000fc88    0000003c     command_task.obj (.text:Cmd_sync)
+                  0000fcc4    0000003c     isl29023_task.obj (.text:IntHandlerGPIOPortE)
+                  0000fd00    0000003c     uartstdio.obj (.text:UARTFlushTx)
+                  0000fd3c    0000003c     driverlib.lib : eeprom.obj (.text:_EEPROMSectorMaskSet)
+                  0000fd78    0000003c     lwiplib.obj (.text:dhcp_coarse_tmr)
+                  0000fdb4    0000003c     queue.obj (.text:vQueueWaitForMessageRestricted)
+                  0000fdf0    0000003b     cloud_task.obj (.text:SetupServices)
+                  0000fe2b    00000001     --HOLE-- [fill = 0]
+                  0000fe2c    0000003a     driverlib.lib : emac.obj (.text:EMACIntEnable)
+                  0000fe66    0000003a     sensorlib.lib : i2cm_drv.obj (.text:I2CMWrite8Callback)
+                  0000fea0    0000003a     timers.obj (.text:xTimerCreate)
+                  0000feda    00000002     --HOLE-- [fill = 0]
+                  0000fedc    00000038     driverlib.lib : emac.obj (.text:EMACConfigGet)
+                  0000ff14    00000038                   : sysctl.obj (.text:SysCtlPeripheralReady)
+                  0000ff4c    00000038     lwiplib.obj (.text:dhcp_fine_tmr)
+                  0000ff84    00000038     lwiplib.obj (.text:dhcp_handle_nak)
+                  0000ffbc    00000038     lwiplib.obj (.text:dhcp_stop)
+                  0000fff4    00000038     lwiplib.obj (.text:dns_compare_name)
+                  0001002c    00000038     exosite_meta.obj (.text:exosite_meta_defaults)
+                  00010064    00000038     lwiplib.obj (.text:memp_free)
+                  0001009c    00000038     lwiplib.obj (.text:pbuf_pool_is_empty)
+                  000100d4    00000038     rtsv7M4_T_le_v4SPD16_eabi.lib : fs_tod_t2.obj (.text)
+                  0001010c    00000038     lwiplib.obj (.text:sys_init)
+                  00010144    00000038     lwiplib.obj (.text:tcpip_tcp_timer)
+                  0001017c    00000038     lwiplib.obj (.text:udp_sendto)
+                  000101b4    00000038     list.obj (.text:vListInsert)
+                  000101ec    00000036     exosite.obj (.text:connect_to_exosite)
+                  00010222    00000002     --HOLE-- [fill = 0]
+                  00010224    00000036     exosite_meta.obj (.text:exosite_meta_init)
+                  0001025a    00000036     tasks.obj (.text:prvAllocateTCBAndStack)
+                  00010290    00000034     command_task.obj (.text:Cmd_clear)
+                  000102c4    00000034     eth_client_lwip.obj (.text:DNSServerFound)
+                  000102f8    00000034     driverlib.lib : eeprom.obj (.text:EEPROMRead)
+                  0001032c    00000034                   : emac.obj (.text:EMACConfigSet)
+                  00010360    00000034                   : emac.obj (.text:EMACIntClear)
+                  00010394    00000034     sensorlib.lib : i2cm_drv.obj (.text:I2CMInit)
+                  000103c8    00000034     locator.obj (.text:LocatorAppTitleSet)
+                  000103fc    00000034     driverlib.lib : sysctl.obj (.text:SysCtlPeripheralEnable)
+                  00010430    00000034                   : eeprom.obj (.text:_EEPROMSectorMaskClear)
+                  00010464    00000034     lwiplib.obj (.text:autoip_arp_probe)
+                  00010498    00000034     rtsv7M4_T_le_v4SPD16_eabi.lib : feraiseexcept.obj (.text)
+                  000104cc    00000034                                   : xfdtest.obj (.text)
+                  00010500    00000034     lwiplib.obj (.text:tcp_kill_timewait)
+                  00010534    00000034     lwiplib.obj (.text:tcp_timer_needed)
+                  00010568    00000034     lwiplib.obj (.text:tivaif_init)
+                  0001059c    00000034     tasks.obj (.text:vTaskDelay)
+                  000105d0    00000032     sensorlib.lib : vector.obj (.text:VectorAdd)
+                  00010602    00000032     lwiplib.obj (.text:ip4_addr_isbroadcast)
+                  00010634    00000032     lwiplib.obj (.text:tcp_recved)
+                  00010666    00000030     sensorlib.lib : i2cm_drv.obj (.text:I2CMTransferResume)
+                  00010696    00000002     --HOLE-- [fill = 0]
+                  00010698    00000030     eth_client_lwip.obj (.text:ResetConnection)
+                  000106c8    00000030     ringbuf.obj (.text:UpdateIndexAtomic)
+                  000106f8    00000030     lwiplib.obj (.text:dhcp_option_trailer)
+                  00010728    00000030     exosite.obj (.text:get_http_status)
+                  00010758    00000030     lwiplib.obj (.text:pbuf_free_ooseq)
+                  00010788    00000030     rtsv7M4_T_le_v4SPD16_eabi.lib : strncpy.obj (.text)
+                  000107b8    00000030                                   : xferaise.obj (.text)
+                  000107e8    00000030     lwiplib.obj (.text:tcp_update_rcv_ann_wnd)
+                  00010818    00000030     ustdlib.obj (.text:ustrncmp)
+                  00010848    0000002e     rtsv7M4_T_le_v4SPD16_eabi.lib : raise.obj (.text)
+                  00010876    0000002e     ustdlib.obj (.text:ustrstr)
+                  000108a4    0000002c     bmp180_task.obj (.text:BMP180AppCallback)
+                  000108d0    0000002c     compdcm_task.obj (.text:CompDCMAppCallback)
+                  000108fc    0000002c     driverlib.lib : emac.obj (.text:EMACIntStatus)
+                  00010928    0000002c     isl29023_task.obj (.text:ISL29023AppCallback)
+                  00010954    0000002c     sht21_task.obj (.text:SHT21AppCallback)
+                  00010980    0000002c     tmp006_task.obj (.text:TMP006AppCallback)
+                  000109ac    0000002c     uartstdio.obj (.text:UARTFlushRx)
+                  000109d8    0000002c     lwiplib.obj (.text:autoip_arp_announce)
+                  00010a04    0000002c     lwiplib.obj (.text:dhcp_handle_offer)
+                  00010a30    0000002c     lwiplib.obj (.text:etharp_request)
+                  00010a5c    0000002c     exosite_hal_lwip.obj (.text:exoHAL_ReadMetaItem)
+                  00010a88    0000002c     exosite_hal_lwip.obj (.text:exoHAL_WriteMetaItem)
+                  00010ab4    0000002c     lwiplib.obj (.text:lwIPNetworkConfigChange)
+                  00010ae0    0000002c     lwiplib.obj (.text:sys_arch_thread)
+                  00010b0c    0000002c     lwiplib.obj (.text:sys_mbox_trypost)
+                  00010b38    0000002c     lwiplib.obj (.text:tcp_rexmit_rto)
+                  00010b64    0000002c     lwiplib.obj (.text:udp_remove)
+                  00010b90    0000002c     tasks.obj (.text:vTaskPlaceOnEventListRestricted)
+                  00010bbc    0000002a     driverlib.lib : gpio.obj (.text:GPIODirModeSet)
+                  00010be6    0000002a     sensorlib.lib : i2cm_drv.obj (.text:I2CMStateReadFirst)
+                  00010c10    0000002a     lwiplib.obj (.text:autoip_bind)
+                  00010c3a    00000002     --HOLE-- [fill = 0]
+                  00010c3c    00000028     eth_client_lwip.obj (.text:EthClientTCPDisconnect)
+                  00010c64    00000028     exosite.obj (.text:Exosite_SetCIK)
+                  00010c8c    00000028     senshub_iot.obj (.text:Timer0IntHandler)
+                  00010cb4    00000028     lwiplib.obj (.text:etharp_cleanup_netif)
+                  00010cdc    00000028     exosite_hal_lwip.obj (.text:exoHAL_ExositeProxySet)
+                  00010d04    00000028     exosite_hal_lwip.obj (.text:exoHAL_ServerConnect)
+                  00010d2c    00000028     timers.obj (.text:prvSampleTimeNow)
+                  00010d54    00000026     http.obj (.text:BufferFillToEOL)
+                  00010d7a    00000026     driverlib.lib : emac.obj (.text:EMACPHYRead)
+                  00010da0    00000026                   : emac.obj (.text:EMACPHYWrite)
+                  00010dc6    00000026     sensorlib.lib : vector.obj (.text:VectorDotProduct)
+                  00010dec    00000026                   : vector.obj (.text:VectorScale)
+                  00010e12    00000026     lwiplib.obj (.text:dhcp_check)
+                  00010e38    00000026     rtsv7M4_T_le_v4SPD16_eabi.lib : strncmp.obj (.text)
+                  00010e5e    00000002     --HOLE-- [fill = 0]
+                  00010e60    00000024     driverlib.lib : interrupt.obj (.text:IntPrioritySet)
+                  00010e84    00000024     lwiplib.obj (.text:dns_setserver)
+                  00010ea8    00000024     lwiplib.obj (.text:etharp_free_entry)
+                  00010ecc    00000024     lwiplib.obj (.text:netif_set_up)
+                  00010ef0    00000024     lwiplib.obj (.text:pbuf_cat)
+                  00010f14    00000024     queue.obj (.text:prvCopyDataFromQueue)
+                  00010f38    00000024     rtsv7M4_T_le_v4SPD16_eabi.lib : sqrtf.obj (.text)
+                  00010f5c    00000024     lwiplib.obj (.text:tcp_seg_copy)
+                  00010f80    00000022     lwiplib.obj (.text:dhcp_option_short)
+                  00010fa2    00000022     port.obj (.text:pxPortInitialiseStack)
+                  00010fc4    00000022     rtsv7M4_T_le_v4SPD16_eabi.lib : memcmp.obj (.text)
+                  00010fe6    00000022     ustdlib.obj (.text:ustrncpy)
+                  00011008    00000022     list.obj (.text:uxListRemove)
+                  0001102a    00000020     http.obj (.text:BufferFillToCharacter)
+                  0001104a    00000020     sensorlib.lib : i2cm_drv.obj (.text:I2CMStateReadOne)
+                  0001106a    00000002     --HOLE-- [fill = 0]
+                  0001106c    00000020     locator.obj (.text:LocatorMACAddrSet)
+                  0001108c    00000020     lwiplib.obj (.text:autoip_handle_arp_conflict)
+                  000110ac    00000020     lwiplib.obj (.text:dhcp_option)
+                  000110cc    00000020     lwiplib.obj (.text:etharp_send_ip)
+                  000110ec    00000020     timers.obj (.text:prvGetNextExpireTime)
+                  0001110c    00000020     lwiplib.obj (.text:tcp_eff_send_mss)
+                  0001112c    00000020     lwiplib.obj (.text:tcp_recv_null)
+                  0001114c    00000020     lwiplib.obj (.text:tcp_tmr)
+                  0001116c    00000020     ustdlib.obj (.text:usprintf)
+                  0001118c    00000020     tasks.obj (.text:xTaskGetSchedulerState)
+                  000111ac    0000001e     driverlib.lib : emac.obj (.text:EMACAddrGet)
+                  000111ca    0000001e     lwiplib.obj (.text:netif_set_down)
+                  000111e8    0000001c     driverlib.lib : sysctl.obj (.text:_SysCtlMemTimingGet)
+                  00011204    0000001c     exosite_hal_lwip.obj (.text:exoHAL_EnableMeta)
+                  00011220    0000001c     lwiplib.obj (.text:lwIPLocalIPAddrGet)
+                  0001123c    0000001c     lwiplib.obj (.text:lwIPLocalMACGet)
+                  00011258    0000001c     lwiplib.obj (.text:netif_set_addr)
+                  00011274    0000001c     queue.obj (.text:prvIsQueueFull)
+                  00011290    0000001c     lwiplib.obj (.text:udp_new)
+                  000112ac    0000001c     port.obj (.text:xPortSysTickHandler)
+                  000112c8    0000001a     sensorlib.lib : i2cm_drv.obj (.text:I2CMStateReadWait)
+                  000112e2    0000001a     ringbuf.obj (.text:RingBufRead)
+                  000112fc    0000001a     ringbuf.obj (.text:RingBufWrite)
+                  00011316    0000001a     uartstdio.obj (.text:UARTprintf)
+                  00011330    0000001a     lwiplib.obj (.text:autoip_network_changed)
+                  0001134a    0000001a     lwiplib.obj (.text:dhcp_arp_reply)
+                  00011364    0000001a     lwiplib.obj (.text:dns_parse_name)
+                  0001137e    0000001a     lwiplib.obj (.text:lwip_htonl)
+                  00011398    0000001a     queue.obj (.text:prvIsQueueEmpty)
+                  000113b2    0000001a     rtsv7M4_T_le_v4SPD16_eabi.lib : strcat.obj (.text)
+                  000113cc    0000001a     lwiplib.obj (.text:sys_mbox_post)
+                  000113e6    0000001a     ustdlib.obj (.text:usnprintf)
+                  00011400    00000018     eth_client_lwip.obj (.text:EthClientMACAddrGet)
+                  00011418    00000018     uartstdio.obj (.text:IsBufferFull)
+                  00011430    00000018     eth_client_lwip.obj (.text:TCPError)
+                  00011448    00000018     eth_client_lwip.obj (.text:TCPSent)
+                  00011460    00000018     sensorlib.lib : tmp006.obj (.text:TMP006DataTemperatureGetRaw)
+                  00011478    00000018     lwiplib.obj (.text:arp_timer)
+                  00011490    00000018     lwiplib.obj (.text:autoip_timer)
+                  000114a8    00000018     lwiplib.obj (.text:dhcp_timer_coarse)
+                  000114c0    00000018     lwiplib.obj (.text:dhcp_timer_fine)
+                  000114d8    00000018     lwiplib.obj (.text:dns_timer)
+                  000114f0    00000018     lwiplib.obj (.text:lwIPPrivateHostTimer)
+                  00011508    00000018     lwiplib.obj (.text:lwIPPrivateLinkTimer)
+                  00011520    00000018     lwiplib.obj (.text:lwip_init)
+                  00011538    00000018     rtsv7M4_T_le_v4SPD16_eabi.lib : args_main.obj (.text)
+                  00011550    00000018                                   : strcmp.obj (.text)
+                  00011568    00000018     lwiplib.obj (.text:tcp_next_iss)
+                  00011580    00000018     lwiplib.obj (.text:tcp_seg_free)
+                  00011598    00000018     list.obj (.text:vListInsertEnd)
+                  000115b0    00000018     tasks.obj (.text:vTaskSetTimeOutState)
+                  000115c8    00000018     tasks.obj (.text:xTaskGetTickCount)
+                  000115e0    00000016     driverlib.lib : emac.obj (.text:EMACReset)
+                  000115f6    00000016                   : emac.obj (.text:EMACRxEnable)
+                  0001160c    00000016                   : emac.obj (.text:EMACTxEnable)
+                  00011622    00000016     ringbuf.obj (.text:RingBufFlush)
+                  00011638    00000016     ringbuf.obj (.text:RingBufReadOne)
+                  0001164e    00000016     ringbuf.obj (.text:RingBufUsed)
+                  00011664    00000016     sensorlib.lib : sht21.obj (.text:SHT21Callback)
+                  0001167a    00000016     lwiplib.obj (.text:dhcp_delete_msg)
+                  00011690    00000016     lwiplib.obj (.text:dhcp_t1_timeout)
+                  000116a6    00000016     lwiplib.obj (.text:dhcp_t2_timeout)
+                  000116bc    00000016     lwiplib.obj (.text:pbuf_ref)
+                  000116d2    00000016     list.obj (.text:vListInitialise)
+                  000116e8    00000014     driverlib.lib : flash.obj (.text:FlashUserGet)
+                  000116fc    00000014     uartstdio.obj (.text:GetBufferCount)
+                  00011710    00000014     lwiplib.obj (.text:ipaddr_addr)
+                  00011724    00000014     port.obj (.text:prvSetupTimerInterrupt)
+                  00011738    00000014     tasks.obj (.text:prvTaskCheckFreeStackSpace)
+                  0001174c    00000014     timers.obj (.text:prvTimerTask)
+                  00011760    00000014     rtsv7M4_T_le_v4SPD16_eabi.lib : _lock.obj (.text)
+                  00011774    00000014                                   : strlen.obj (.text)
+                  00011788    00000014     lwiplib.obj (.text:tcp_close)
+                  0001179c    00000014     port.obj (.text:vPortEnterCritical)
+                  000117b0    00000014     port.obj (.text:vPortExitCritical)
+                  000117c4    00000012     driverlib.lib : gpio.obj (.text:GPIOPinTypeEthernetLED)
+                  000117d6    00000012                   : gpio.obj (.text:GPIOPinTypeI2CSCL)
+                  000117e8    00000012     ringbuf.obj (.text:RingBufFree)
+                  000117fa    00000012     rtsv7M4_T_le_v4SPD16_eabi.lib : copy_zero_init.obj (.text:decompress:ZI)
+                  0001180c    00000012     lwiplib.obj (.text:dhcp_option_byte)
+                  0001181e    00000012     lwiplib.obj (.text:dns_check_entries)
+                  00011830    00000012     lwiplib.obj (.text:netif_set_link_down)
+                  00011842    00000012     lwiplib.obj (.text:pbuf_clen)
+                  00011854    00000012     tasks.obj (.text:prvDeleteTCB)
+                  00011866    00000012     lwiplib.obj (.text:tcp_segs_free)
+                  00011878    00000012     ustdlib.obj (.text:ustrlen)
+                  0001188a    00000002     --HOLE-- [fill = 0]
+                  0001188c    00000010     driverlib.lib : emac.obj (.text:EMACFrameFilterSet)
+                  0001189c    00000010     eth_client_lwip.obj (.text:EthClientHostSet)
+                  000118ac    00000010     eth_client_lwip.obj (.text:EthClientProxySet)
+                  000118bc    00000010     driverlib.lib : interrupt.obj (.text:IntMasterDisable)
+                  000118cc    00000010                   : interrupt.obj (.text:IntMasterEnable)
+                  000118dc    00000010     ringbuf.obj (.text:RingBufWriteOne)
+                  000118ec    00000010     driverlib.lib : eeprom.obj (.text:_EEPROMWaitForDone)
+                  000118fc    00000010     lwiplib.obj (.text:autoip_stop)
+                  0001190c    00000010     lwiplib.obj (.text:dhcp_set_state)
+                  0001191c    00000010     lwiplib.obj (.text:dns_tmr)
+                  0001192c    00000010     lwiplib.obj (.text:sys_sem_signal)
+                  0001193c    00000010     port.obj (.text:vPortYield)
+                  0001194c    00000010     port.obj (.text:vPortYieldFromISR)
+                  0001195c    00000010     tasks.obj (.text:vTaskSuspendAll)
+                  0001196c    0000000e     sensorlib.lib : comp_dcm.obj (.text:CompDCMAccelUpdate)
+                  0001197a    0000000e                   : comp_dcm.obj (.text:CompDCMGyroUpdate)
+                  00011988    0000000e                   : comp_dcm.obj (.text:CompDCMMagnetoUpdate)
+                  00011996    0000000e     driverlib.lib : gpio.obj (.text:GPIOIntStatus)
+                  000119a4    0000000e     uartstdio.obj (.text:IsBufferEmpty)
+                  000119b2    0000000e     driverlib.lib : timer.obj (.text:TimerEnable)
+                  000119c0    0000000e     rtsv7M4_T_le_v4SPD16_eabi.lib : copy_decompress_none.obj (.text:decompress:none)
+                  000119ce    0000000e     lwiplib.obj (.text:pbuf_chain)
+                  000119dc    0000000e     rtsv7M4_T_le_v4SPD16_eabi.lib : xfdclass.obj (.text)
+                  000119ea    0000000c     driverlib.lib : cpu.obj (.text:CPUcpsid)
+                  000119f6    0000000c                   : cpu.obj (.text:CPUcpsie)
+                  00011a02    0000000c                   : gpio.obj (.text:GPIOIntEnable)
+                  00011a0e    0000000c     sensorlib.lib : isl29023.obj (.text:ISL29023DataLightVisibleGetRaw)
+                  00011a1a    00000002     --HOLE-- [fill = 0]
+                  00011a1c    0000000c     driverlib.lib : interrupt.obj (.text:IntTrigger)
+                  00011a28    0000000c     ringbuf.obj (.text:RingBufInit)
+                  00011a34    0000000c     sensorlib.lib : sht21.obj (.text:SHT21DataHumidityGetRaw)
+                  00011a40    0000000c                   : sht21.obj (.text:SHT21DataTemperatureGetRaw)
+                  00011a4c    0000000c     senshub_iot.obj (.text:SensHubI2CIntHandler)
+                  00011a58    0000000c     lwiplib.obj (.text:autoip_restart)
+                  00011a64    0000000c     exosite_hal_lwip.obj (.text:exoHAL_SocketClose)
+                  00011a70    0000000c     lwiplib.obj (.text:inet_chksum)
+                  00011a7c    0000000c     lwiplib.obj (.text:lwip_htons)
+                  00011a88    0000000c     lwiplib.obj (.text:netif_set_default)
+                  00011a94    0000000c     lwiplib.obj (.text:netif_set_gw)
+                  00011aa0    0000000c     lwiplib.obj (.text:netif_set_netmask)
+                  00011aac    0000000c     tasks.obj (.text:vTaskMissedYield)
+                  00011ab8    0000000c     tasks.obj (.text:xTaskGetCurrentTaskHandle)
+                  00011ac4    0000000a     driverlib.lib : i2c.obj (.text:I2CMasterEnable)
+                  00011ace    0000000a     lwiplib.obj (.text:sys_arch_protect)
+                  00011ad8    0000000a     lwiplib.obj (.text:sys_mbox_valid)
+                  00011ae2    00000008     driverlib.lib : emac.obj (.text:EMACTxDMAPollDemand)
+                  00011aea    00000008                   : i2c.obj (.text:I2CMasterIntClear)
+                  00011af2    00000008                   : i2c.obj (.text:I2CMasterIntEnableEx)
+                  00011afa    00000008                   : i2c.obj (.text:I2CMasterSlaveAddrSet)
+                  00011b02    00000008     lwiplib.obj (.text:icmp_dest_unreach)
+                  00011b0a    00000008     tasks.obj (.text:prvIdleTask)
+                  00011b12    00000008     ustdlib.obj (.text:ustrcmp)
+                  00011b1a    00000006     driverlib.lib : emac.obj (.text:EMACRxDMADescriptorListSet)
+                  00011b20    00000006                   : emac.obj (.text:EMACTimestampIntStatus)
+                  00011b26    00000006                   : emac.obj (.text:EMACTxDMADescriptorListSet)
+                  00011b2c    00000006                   : gpio.obj (.text:GPIOIntClear)
+                  00011b32    00000006                   : gpio.obj (.text:GPIOPinWrite)
+                  00011b38    00000006     startup_ccs.obj (.text:ResetISR)
+                  00011b3e    00000006     driverlib.lib : sysctl.obj (.text:SysCtlDelay)
+                  00011b44    00000006                   : uart.obj (.text:UARTClockSourceSet)
+                  00011b4a    00000006     rtsv7M4_T_le_v4SPD16_eabi.lib : copy_decompress_rle.obj (.text:decompress:rle24)
+                  00011b50    00000006                                   : logf.obj (.text)
+                  00011b56    00000006     lwiplib.obj (.text:tcp_abort)
+                  00011b5c    00000006     lwiplib.obj (.text:tcp_err)
+                  00011b62    00000006     lwiplib.obj (.text:tcp_new)
+                  00011b68    00000006     lwiplib.obj (.text:tcp_recv)
+                  00011b6e    00000006     lwiplib.obj (.text:udp_recv)
+                  00011b74    00000006     list.obj (.text:vListInitialiseItem)
+                  00011b7a    00000004     driverlib.lib : i2c.obj (.text:I2CMasterControl)
+                  00011b7e    00000004                   : i2c.obj (.text:I2CMasterDataGet)
+                  00011b82    00000004                   : i2c.obj (.text:I2CMasterDataPut)
+                  00011b86    00000004     lwiplib.obj (.text:pbuf_free_ooseq_callback)
+                  00011b8a    00000004     lwiplib.obj (.text:sys_arch_unprotect)
+                  00011b8e    00000004     lwiplib.obj (.text:tcp_sent)
+
+.const     0    00011b94    00000692     
+                  00011b94    00000150     command_task.obj (.const:.string)
+                  00011ce4    00000120     driverlib.lib : sysctl.obj (.const:g_pppui32XTALtoVCO)
+                  00011e04    0000009c                   : interrupt.obj (.const:g_pui32Regs)
+                  00011ea0    0000008a     lwiplib.obj (.const:.string)
+                  00011f2a    00000002     --HOLE-- [fill = 0]
+                  00011f2c    00000070     driverlib.lib : interrupt.obj (.const)
+                  00011f9c    0000006c                   : sysctl.obj (.const:g_pui32Xtals)
+                  00012008    0000004c     lwiplib.obj (.const)
+                  00012054    00000038     rtsv7M4_T_le_v4SPD16_eabi.lib : xflog.obj (.const)
+                  0001208c    00000034                                   : xfatan.obj (.const)
+                  000120c0    00000030     driverlib.lib : sysctl.obj (.const:g_sXTALtoMEMTIM)
+                  000120f0    00000030     sensorlib.lib : isl29023.obj (.const)
+                  00012120    00000028     rtsv7M4_T_le_v4SPD16_eabi.lib : xfdint.obj (.const)
+                  00012148    00000028     uartstdio.obj (.const)
+                  00012170    00000020     isl29023_task.obj (.const)
+                  00012190    00000020     sensorlib.lib : mpu9150.obj (.const)
+                  000121b0    0000001c     rtsv7M4_T_le_v4SPD16_eabi.lib : xfexp.obj (.const)
+                  000121cc    00000018     driverlib.lib : emac.obj (.const)
+                  000121e4    00000014     tasks.obj (.const:.string)
+                  000121f8    00000012     uartstdio.obj (.const:.string)
+                  0001220a    0000000e     http.obj (.const:.string)
+                  00012218    00000008     driverlib.lib : sysctl.obj (.const)
+                  00012220    00000006     exosite_meta.obj (.const:.string)
+
+.cinit     0    00012228    00000158     
+                  00012228    0000012d     (.cinit..data.load) [load image, compression = rle]
+                  00012355    00000003     --HOLE-- [fill = 0]
+                  00012358    0000000c     (__TI_handler_table)
+                  00012364    00000004     --HOLE-- [fill = 0]
+                  00012368    00000008     (.cinit..bss.load) [load image, compression = zero_init]
+                  00012370    00000010     (__TI_cinit_table)
+
+.bss       0    20000000    0002540f     UNINITIALIZED
+                  20000000    00010000     heap_1.obj (.bss:ucHeap)
+                  20010000    0000a174     lwiplib.obj (.bss:memp_memory)
+                  2001a174    00008014     lwiplib.obj (.bss:ram_heap)
+                  20022188    00001000     eth_client_lwip.obj (.bss:g_pui8SendBuff)
+                  20023188    00000460     lwiplib.obj (.bss:dns_table)
+                  200235e8    00000400     uartstdio.obj (.bss:g_pcUARTTxBuffer)
+                  200239e8    00000400     exosite_hal_lwip.obj (.bss:g_ui8Data)
+                  20023de8    00000248     cloud_task.obj (.bss:g_sTaskStatistics)
+                  20024030    00000220     lwiplib.obj (.bss:mboxes)
+                  20024250    00000204     lwiplib.obj (.bss:dns_payload_buffer)
+                  20024454    00000140     tasks.obj (.bss:pxReadyTasksLists)
+                  20024594    00000124     senshub_iot.obj (.bss:g_sI2CInst)
+                  200246b8    00000120     lwiplib.obj (.bss:g_pRxDescriptors)
+                  200247d8    00000120     lwiplib.obj (.bss:g_pTxDescriptors)
+                  200248f8    00000110     lwiplib.obj (.bss:lwip_stats)
+                  20024a08    00000100     http.obj (.bss:g_pcTempData)
+                  20024b08    000000c8     lwiplib.obj (.bss:arp_table)
+                  20024bd0    00000088     lwiplib.obj (.bss:mbox)
+                  20024c58    00000080     cloud_task.obj (.bss:g_pcProxy)
+                  20024cd8    00000080     uartstdio.obj (.bss:g_pcUARTRxBuffer)
+                  20024d58    0000006c     compdcm_task.obj (.bss:g_sMPU9150Inst)
+                  20024dc4    00000058     compdcm_task.obj (.bss:g_sCompDCMInst)
+                  20024e1c    00000054     locator.obj (.bss:g_pui8LocatorData)
+                  20024e70    00000050     lwiplib.obj (.bss:threads)
+                  20024ec0    00000048     compdcm_task.obj (.bss:g_sCompDCMData)
+                  20024f08    00000044     exosite.obj (.bss:exosite_provision_info)
+                  20024f4c    00000044     bmp180_task.obj (.bss:g_sBMP180Inst)
+                  20024f90    00000038     eth_client_lwip.obj (.bss:g_sEnet)
+                  20024fc8    00000038     lwiplib.obj (.bss:g_sNetIF)
+                  20025000    00000034     cloud_task.obj (.bss:g_pcExositeCIK)
+                  20025034    00000034     exosite_hal_lwip.obj (.bss:g_pcProxyAddress)
+                  20025068    00000030     tmp006_task.obj (.bss:g_sTMP006Inst)
+                  20025098    00000030     lwiplib.obj (.bss:sems)
+                  200250c8    0000002c     isl29023_task.obj (.bss:g_sISL29023Inst)
+                  200250f4    0000002c     sht21_task.obj (.bss:g_sSHT21Inst)
+                  20025120    00000028     lwiplib.obj (.bss:dhcp_rx_options_val)
+                  20025148    00000028     lwiplib.obj (.bss:memp_tab)
+                  20025170    00000024     cmdline.obj (.bss:g_ppcArgv)
+                  20025194    0000001c     (.common:g_sCloudData)
+                  200251b0    00000014     (.common:g_sBMP180Data)
+                  200251c4    00000014     (.common:g_sExosite)
+                  200251d8    00000014     (.common:g_sISL29023Data)
+                  200251ec    00000014     (.common:xActiveTimerList1)
+                  20025200    00000014     (.common:xActiveTimerList2)
+                  20025214    00000014     (.common:xDelayedTaskList1)
+                  20025228    00000014     (.common:xDelayedTaskList2)
+                  2002523c    00000014     (.common:xPendingReadyList)
+                  20025250    00000014     (.common:xSuspendedTaskList)
+                  20025264    00000014     (.common:xTasksWaitingTermination)
+                  20025278    00000010     (.common:g_sEnetBuffer)
+                  20025288    00000010     (.common:g_sSHT21Data)
+                  20025298    00000010     (.common:g_sTMP006Data)
+                  200252a8    00000010     (.common:inseg)
+                  200252b8    0000000c     (.common:dhcp_rx_options_given)
+                  200252c4    0000000c     (.common:g_sCloudBoardData)
+                  200252d0    0000000c     (.common:mem_mutex)
+                  200252dc    00000008     (.common:dns_servers)
+                  200252e4    00000004     (.common:ackno)
+                  200252e8    00000004     (.common:current_header)
+                  200252ec    00000004     (.common:current_iphdr_dest)
+                  200252f0    00000004     (.common:current_iphdr_src)
+                  200252f4    00000004     (.common:current_netif)
+                  200252f8    00000004     (.common:dns_payload)
+                  200252fc    00000004     (.common:dns_pcb)
+                  20025300    00000004     (.common:g_pInterrupt)
+                  20025304    00000004     (.common:g_pfnTimerHandler)
+                  20025308    00000004     (.common:g_pvCloudTimerID)
+                  2002530c    00000004     (.common:g_pvSwitchesTimerID)
+                  20025310    00000004     (.common:g_ui32AbnormalInts)
+                  20025314    00000004     (.common:g_ui32GWAddr)
+                  20025318    00000004     (.common:g_ui32IPAddr)
+                  2002531c    00000004     (.common:g_ui32NetMask)
+                  20025320    00000004     (.common:g_ui32NormalInts)
+                  20025324    00000004     (.common:g_ui32PortNum)
+                  20025328    00000004     (.common:g_ui32SysClock)
+                  2002532c    00000004     (.common:g_vui8BMP180I2CErrorStatus)
+                  20025330    00000004     (.common:g_vui8CompDCMI2CErrorStatus)
+                  20025334    00000004     (.common:g_vui8ISL29023I2CErrorStatus)
+                  20025338    00000004     (.common:g_vui8SHT21I2CErrorStatus)
+                  2002533c    00000004     (.common:g_vui8TMP006I2CErrorStatus)
+                  20025340    00000004     (.common:g_vulRunTimeStatsCountValue)
+                  20025344    00000004     (.common:g_xBMP180Handle)
+                  20025348    00000004     (.common:g_xBMP180TransactionCompleteSemaphore)
+                  2002534c    00000004     (.common:g_xCloudDataSemaphore)
+                  20025350    00000004     (.common:g_xCloudTaskHandle)
+                  20025354    00000004     (.common:g_xCloudTaskRequestQueue)
+                  20025358    00000004     (.common:g_xCloudTimerHandle)
+                  2002535c    00000004     (.common:g_xCommandHandle)
+                  20025360    00000004     (.common:g_xCompDCMDataReadySemaphore)
+                  20025364    00000004     (.common:g_xCompDCMHandle)
+                  20025368    00000004     (.common:g_xCompDCMTransactionCompleteSemaphore)
+                  2002536c    00000004     (.common:g_xI2CSemaphore)
+                  20025370    00000004     (.common:g_xISL29023AdjustRangeSemaphore)
+                  20025374    00000004     (.common:g_xISL29023Handle)
+                  20025378    00000004     (.common:g_xISL29023TransactionCompleteSemaphore)
+                  2002537c    00000004     (.common:g_xSHT21Handle)
+                  20025380    00000004     (.common:g_xSHT21TransactionCompleteSemaphore)
+                  20025384    00000004     (.common:g_xSwitchesTimerHandle)
+                  20025388    00000004     (.common:g_xTMP006DataReadySemaphore)
+                  2002538c    00000004     (.common:g_xTMP006Handle)
+                  20025390    00000004     (.common:g_xTMP006TransactionCompleteSemaphore)
+                  20025394    00000004     (.common:g_xUARTSemaphore)
+                  20025398    00000004     (.common:iphdr)
+                  2002539c    00000004     (.common:lfree)
+                  200253a0    00000004     (.common:netif_default)
+                  200253a4    00000004     (.common:netif_list)
+                  200253a8    00000004     (.common:next_timeout)
+                  200253ac    00000004     (.common:pxCurrentTimerList)
+                  200253b0    00000004     (.common:pxDelayedTaskList)
+                  200253b4    00000004     (.common:pxOverflowDelayedTaskList)
+                  200253b8    00000004     (.common:pxOverflowTimerList)
+                  200253bc    00000004     (.common:ram)
+                  200253c0    00000004     (.common:ram_end)
+                  200253c4    00000004     (.common:raw_pcbs)
+                  200253c8    00000004     (.common:recv_data)
+                  200253cc    00000004     (.common:seqno)
+                  200253d0    00000004     (.common:tcp_active_pcbs)
+                  200253d4    00000004     (.common:tcp_bound_pcbs)
+                  200253d8    00000004     (.common:tcp_input_pcb)
+                  200253dc    00000004     (.common:tcp_listen_pcbs)
+                  200253e0    00000004     (.common:tcp_ticks)
+                  200253e4    00000004     (.common:tcp_tmp_pcb)
+                  200253e8    00000004     (.common:tcp_tw_pcbs)
+                  200253ec    00000004     (.common:tcphdr)
+                  200253f0    00000004     (.common:tcpip_init_done)
+                  200253f4    00000004     (.common:tcpip_init_done_arg)
+                  200253f8    00000004     (.common:tcpip_tcp_timer_active)
+                  200253fc    00000004     (.common:udp_pcbs)
+                  20025400    00000002     (.common:ip_id)
+                  20025402    00000002     (.common:tcplen)
+                  20025404    00000001     (.common:dns_seqno)
+                  20025405    00000001     (.common:etharp_cached_entry)
+                  20025406    00000001     (.common:flags)
+                  20025407    00000001     (.common:g_bDisableEcho)
+                  20025408    00000001     (.common:g_bOnline)
+                  20025409    00000001     (.common:netif_num)
+                  2002540a    00000001     (.common:pbuf_free_ooseq_pending)
+                  2002540b    00000001     (.common:recv_flags)
+                  2002540c    00000001     (.common:tcp_active_pcbs_changed)
+                  2002540d    00000001     (.common:tcp_timer)
+                  2002540e    00000001     (.common:tcp_timer_ctr)
+
+.stack     0    20025410    00004000     UNINITIALIZED
+                  20025410    00004000     --HOLE--
+
+.data      0    20029410    000003ac     UNINITIALIZED
+                  20029410    00000100     exosite_hal_lwip.obj (.data:g_pcRequest)
+                  20029510    000000b0     rtsv7M4_T_le_v4SPD16_eabi.lib : signal.obj (.data:sigtable)
+                  200295c0    00000078     command_task.obj (.data:g_psCmdTable)
+                  20029638    00000068     rtsv7M4_T_le_v4SPD16_eabi.lib : xfvalues.obj (.data)
+                  200296a0    00000044     lwiplib.obj (.data)
+                  200296e4    0000003e     http.obj (.data)
+                  20029722    00000002     --HOLE--
+                  20029724    00000038     tasks.obj (.data)
+                  2002975c    00000015     uartstdio.obj (.data)
+                  20029771    00000003     buttons.obj (.data)
+                  20029774    0000000c     exosite_hal_lwip.obj (.data)
+                  20029780    00000008     exosite.obj (.data)
+                  20029788    00000008     heap_1.obj (.data)
+                  20029790    00000008     rtsv7M4_T_le_v4SPD16_eabi.lib : _lock.obj (.data)
+                  20029798    00000008                                   : exit.obj (.data)
+                  200297a0    00000008                                   : feraiseexcept.obj (.data)
+                  200297a8    00000008     timers.obj (.data)
+                  200297b0    00000004     port.obj (.data)
+                  200297b4    00000004     rtsv7M4_T_le_v4SPD16_eabi.lib : errno.obj (.data)
+                  200297b8    00000004                                   : stkdepth_vars.obj (.data)
+
+
+LINKER GENERATED COPY TABLES
+
+__TI_cinit_table @ 00012370 records: 2, size/record: 8, table size: 16
+	.data: load addr=00012228, load size=0000012d bytes, run addr=20029410, run size=000003ac bytes, compression=rle
+	.bss: load addr=00012368, load size=00000008 bytes, run addr=20000000, run size=0002540f bytes, compression=zero_init
+
+
+LINKER GENERATED HANDLER TABLE
+
+__TI_handler_table @ 00012358 records: 3, size/record: 4, table size: 12
+	index: 0, handler: __TI_decompress_rle24
+	index: 1, handler: __TI_decompress_none
+	index: 2, handler: __TI_zero_init
+
+
+GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
+
+address    name
+--------   ----
+000108a5   BMP180AppCallback
+000081ad   BMP180AppErrorHandler
+00009fc1   BMP180DataEncodeJSON
+00003a55   BMP180DataPressureGetFloat
+00009dad   BMP180DataPrint
+0000dcf1   BMP180DataRead
+0000b561   BMP180DataTemperatureGetFloat
+0000e005   BMP180Init
+0000aec9   BMP180TaskInit
+0000e861   ButtonsInit
+0000bc7d   ButtonsPoll
+0000f535   C$$EXIT
+000119eb   CPUcpsid
+000119f7   CPUcpsie
+00008bf5   CloudBoardDataDecodeExositeHTTP
+0000ee01   CloudBoardDataEncodeExositeHTTP
+00004c69   CloudProvisionExosite
+0000e059   CloudProxySet
+000058fd   CloudStartExosite
+00003675   CloudSyncExosite
+00003ff9   CloudTaskInit
+00006721   CloudTaskStatsEncodeJSON
+00007849   CloudTaskStatsPrint
+0000d95d   CloudTaskStatsUpdate
+0000fc11   CloudTimerCallback
+0000d4e1   CmdLineProcess
+0000f815   Cmd_activate
+00010291   Cmd_clear
+0000fc4d   Cmd_connect
+0000b8fd   Cmd_help
+0000439d   Cmd_proxy
+0000c231   Cmd_stats
+0000fc89   Cmd_sync
+0000cbbd   CommandTaskInit
+0001196d   CompDCMAccelUpdate
+000108d1   CompDCMAppCallback
+0000828d   CompDCMAppErrorHandler
+0000f689   CompDCMComputeEulers
+00004565   CompDCMComputeQuaternion
+00004fb1   CompDCMDataEncodeJSON
+000064c1   CompDCMDataPrint
+0001197b   CompDCMGyroUpdate
+0000f359   CompDCMInit
+00011989   CompDCMMagnetoUpdate
+00009cf5   CompDCMStart
+00007e05   CompDCMTaskInit
+000024c9   CompDCMUpdate
+0000d035   ConfigureUART
+0000f855   EEPROMInit
+000094b9   EEPROMProgram
+000102f9   EEPROMRead
+000111ad   EMACAddrGet
+0000fedd   EMACConfigGet
+0001032d   EMACConfigSet
+0001188d   EMACFrameFilterSet
+0000bee9   EMACInit
+00010361   EMACIntClear
+0000fe2d   EMACIntEnable
+000108fd   EMACIntStatus
+0000dd49   EMACPHYConfigSet
+00010d7b   EMACPHYRead
+00010da1   EMACPHYWrite
+000115e1   EMACReset
+00011b1b   EMACRxDMADescriptorListSet
+000115f7   EMACRxEnable
+00011b21   EMACTimestampIntStatus
+00011b27   EMACTxDMADescriptorListSet
+00011ae3   EMACTxDMAPollDemand
+0001160d   EMACTxEnable
+00011221   EthClientAddrGet
+0000f39d   EthClientDHCPConnect
+0000e0ad   EthClientDNSResolve
+0001189d   EthClientHostSet
+0000b5e5   EthClientInit
+00011401   EthClientMACAddrGet
+000118ad   EthClientProxySet
+0000d099   EthClientSend
+0000c401   EthClientTCPConnect
+00010c3d   EthClientTCPDisconnect
+00004e15   Exosite_Activate
+0000e101   Exosite_GetCIK
+0000c471   Exosite_Init
+00007345   Exosite_Read
+00010c65   Exosite_SetCIK
+00009261   Exosite_Write
+000116e9   FlashUserGet
+00010bbd   GPIODirModeSet
+00011b2d   GPIOIntClear
+00011a03   GPIOIntEnable
+00011997   GPIOIntStatus
+000065f1   GPIOPadConfigSet
+000117c5   GPIOPinTypeEthernetLED
+000117d7   GPIOPinTypeI2CSCL
+00011b33   GPIOPinWrite
+00008979   HTTPMessageTypeSet
+0000a96d   HTTPResponseParse
+0000b341   I2CMCommand
+00010395   I2CMInit
+00007c21   I2CMIntHandler
+0000bf61   I2CMReadModifyWrite16LE
+0000c4e1   I2CMReadModifyWrite8
+00010667   I2CMTransferResume
+0000e155   I2CMWrite8
+00011b7b   I2CMasterControl
+00011b7f   I2CMasterDataGet
+00011b83   I2CMasterDataPut
+00011ac5   I2CMasterEnable
+0000ee91   I2CMasterInitExpClk
+00011aeb   I2CMasterIntClear
+00011af3   I2CMasterIntEnableEx
+00011afb   I2CMasterSlaveAddrSet
+0000957d   ISL29023AppAdjustRange
+00010929   ISL29023AppCallback
+0000836d   ISL29023AppErrorHandler
+0000abd9   ISL29023DataEncodeJSON
+0000eed9   ISL29023DataLightVisibleGetFloat
+00011a0f   ISL29023DataLightVisibleGetRaw
+0000c8cd   ISL29023DataPrint
+0000e591   ISL29023DataRead
+0000e1a9   ISL29023Init
+0000e5e1   ISL29023Read
+0000e8ad   ISL29023ReadModifyWrite
+00007449   ISL29023TaskInit
+0000cc25   ISL29023Write
+00009641   InitDMADescriptors
+0000cc8d   IntDisable
+0000ccf5   IntEnable
+0000fcc5   IntHandlerGPIOPortE
+0000f955   IntHandlerGPIOPortH
+0000f995   IntHandlerGPIOPortM
+0000d0fd   IntIsEnabled
+000118bd   IntMasterDisable
+000118cd   IntMasterEnable
+00010e61   IntPrioritySet
+00011a1d   IntTrigger
+0000c939   LEDWrite
+000103c9   LocatorAppTitleSet
+0000e631   LocatorInit
+0001106d   LocatorMACAddrSet
+0000bfd9   MPU9150DataAccelGetFloat
+0000c051   MPU9150DataGyroGetFloat
+0000a64d   MPU9150DataMagnetoGetFloat
+0000d5a1   MPU9150DataRead
+0000c9a5   MPU9150Init
+0000a6ed   MPU9150Write
+00003055   PinoutSet
+0000096d   PrintConnectionHelp
+00011b39   ResetISR
+00011623   RingBufFlush
+000117e9   RingBufFree
+00011a29   RingBufInit
+000112e3   RingBufRead
+00011639   RingBufReadOne
+0001164f   RingBufUsed
+000112fd   RingBufWrite
+000118dd   RingBufWriteOne
+UNDEFED    SHT$$INIT_ARRAY$$Base
+UNDEFED    SHT$$INIT_ARRAY$$Limit
+00010955   SHT21AppCallback
+0000860d   SHT21AppErrorHandler
+0000b3c9   SHT21DataEncodeJSON
+0000c551   SHT21DataHumidityGetFloat
+00011a35   SHT21DataHumidityGetRaw
+0000b451   SHT21DataPrint
+0000e8f9   SHT21DataRead
+0000d601   SHT21DataTemperatureGetFloat
+00011a41   SHT21DataTemperatureGetRaw
+0000e945   SHT21Init
+00007fe5   SHT21MeasureHumidity
+000080c9   SHT21MeasureTemperature
+0000af59   SHT21TaskInit
+0000e991   SHT21Write
+00011a4d   SensHubI2CIntHandler
+0000d161   SensorCloudStatTimerConfig
+0000fdf1   SetupServices
+0000d9b9   SwitchTimerCallback
+00003471   SysCtlClockFreqSet
+00011b3f   SysCtlDelay
+000103fd   SysCtlPeripheralEnable
+0000ff15   SysCtlPeripheralReady
+0000e681   SysCtlPeripheralReset
+0000c5c1   TCPConnected
+00011431   TCPError
+0000f9d5   TCPReceived
+00011449   TCPSent
+00010981   TMP006AppCallback
+00008a4d   TMP006AppErrorHandler
+0000b97d   TMP006DataEncodeJSON
+0000b4d9   TMP006DataPrint
+0000e1fd   TMP006DataRead
+00003c3d   TMP006DataTemperatureGetFloat
+00011461   TMP006DataTemperatureGetRaw
+0000dda1   TMP006Init
+0000d6c1   TMP006ReadModifyWrite
+0000754d   TMP006TaskInit
+00010c8d   Timer0IntHandler
+000119b3   TimerEnable
+00011b45   UARTClockSourceSet
+000109ad   UARTFlushRx
+0000fd01   UARTFlushTx
+0000f425   UARTPeek
+00009e61   UARTStdioConfig
+00005bf1   UARTStdioIntHandler
+0000e251   UARTgets
+00011317   UARTprintf
+00003869   UARTvprintf
+0000a119   UARTwrite
+000105d1   VectorAdd
+0000df01   VectorCrossProduct
+00010dc7   VectorDotProduct
+00010ded   VectorScale
+200297b4   _Errno
+0000a269   _FAtan
+000119dd   _FDclass
+20029638   _FDenorm
+0000b079   _FDint
+0000be6d   _FDnorm
+00009889   _FDscale
+000104cd   _FDtest
+0000e34d   _FDunscale
+20029648   _FEps
+00005779   _FExp
+20029658   _FInf
+00005a79   _FLog
+20029668   _FNan
+20029688   _FRteps
+20029678   _FSnan
+20029698   _FXbig
+2002969c   _FZero
+200297a0   _Fenv
+000107b9   _Feraise
+200297a4   _Tls_setup__Fenv
+20029410   __STACK_END
+00004000   __STACK_SIZE
+20029410   __STACK_TOP
+00012370   __TI_CINIT_Base
+00012380   __TI_CINIT_Limit
+00012358   __TI_Handler_Table_Base
+00012364   __TI_Handler_Table_Limit
+00000001   __TI_args_main
+0000ada1   __TI_auto_init
+20029798   __TI_cleanup_ptr
+000119c1   __TI_decompress_none
+00011b4b   __TI_decompress_rle24
+2002979c   __TI_dtors_ptr
+00000000   __TI_static_base__
+000117fb   __TI_zero_init
+0000edb7   __aeabi_d2f
+00004abb   __aeabi_dadd
+00006123   __aeabi_ddiv
+0000774d   __aeabi_dmul
+00004ab1   __aeabi_dsub
+000100d5   __aeabi_f2d
+0000c141   __aeabi_memclr
+0000c141   __aeabi_memclr4
+0000c141   __aeabi_memclr8
+0000aa09   __aeabi_memcpy
+0000aa09   __aeabi_memcpy4
+0000aa09   __aeabi_memcpy8
+0000c143   __aeabi_memset
+0000c143   __aeabi_memset4
+0000c143   __aeabi_memset8
+0000f74f   __aeabi_uidivmod
+ffffffff   __binit__
+ffffffff   __c_args__
+20025410   __stack
+00011539   _args_main
+0000f089   _c_int00
+20029790   _lock
+0001176f   _nop
+00011767   _register_lock
+00011761   _register_unlock
+20029794   _unlock
+0000f539   abort
+00009f11   asinf
+000088a1   atan2f
+0000b879   autoip_arp_reply
+00011331   autoip_network_changed
+0000dbe1   autoip_start
+000118fd   autoip_stop
+00008cc5   autoip_tmr
+ffffffff   binit
+000101ed   connect_to_exosite
+0000f4f1   copy_in
+200252e8   current_header
+200252ec   current_iphdr_dest
+200252f0   current_iphdr_src
+200252f4   current_netif
+0001134b   dhcp_arp_reply
+0000fd79   dhcp_coarse_tmr
+0000ff4d   dhcp_fine_tmr
+0000f6cb   dhcp_network_changed
+0000a461   dhcp_release
+0000ba7d   dhcp_renew
+200252b8   dhcp_rx_options_given
+20025120   dhcp_rx_options_val
+0000a1c1   dhcp_start
+0000ffbd   dhcp_stop
+0000ddf9   dns_gethostbyname
+0000d1c5   dns_init
+00010e85   dns_setserver
+0001191d   dns_tmr
+00010cb5   etharp_cleanup_netif
+00006975   etharp_output
+00006df5   etharp_query
+000086e9   etharp_raw
+00010a31   etharp_request
+0000fa55   etharp_tmr
+00012048   ethbroadcast
+0000a505   ethernet_input
+0001204e   ethzero
+0000f541   exit
+00011205   exoHAL_EnableMeta
+00004c67   exoHAL_EraseMeta
+00006cdd   exoHAL_ExositeEnetEvents
+0000cdc5   exoHAL_ExositeInit
+00010cdd   exoHAL_ExositeProxySet
+00010a5d   exoHAL_ReadMetaItem
+0000dc95   exoHAL_ReadUUID
+0000de51   exoHAL_ResetConnection
+00010d05   exoHAL_ServerConnect
+00011a65   exoHAL_SocketClose
+00009705   exoHAL_SocketOpenTCP
+0000c319   exoHAL_SocketRecv
+0000ea29   exoHAL_SocketSend
+00010a89   exoHAL_WriteMetaItem
+0001002d   exosite_meta_defaults
+00010225   exosite_meta_init
+0000efb1   exosite_meta_read
+0000fb93   exosite_meta_write
+20024f08   exosite_provision_info
+00010499   feraiseexcept
+200296b4   g_RxDescList
+200296a4   g_TxDescList
+20025408   g_bOnline
+20029774   g_bUseProxy
+00012110   g_fBetaLookup
+000120f0   g_fRangeLookup
+00012100   g_fResolutionLookup
+00012170   g_fThresholdHigh
+00012180   g_fThresholdLow
+200246b8   g_pRxDescriptors
+200247d8   g_pTxDescriptors
+20025000   g_pcExositeCIK
+20024c58   g_pcProxy
+20025034   g_pcProxyAddress
+20029410   g_pcRequest
+20025304   g_pfnTimerHandler
+00000000   g_pfnVectors
+200295c0   g_psCmdTable
+20022188   g_pui8SendBuff
+20025308   g_pvCloudTimerID
+2002530c   g_pvSwitchesTimerID
+200251b0   g_sBMP180Data
+20024f4c   g_sBMP180Inst
+200252c4   g_sCloudBoardData
+20025194   g_sCloudData
+20024ec0   g_sCompDCMData
+20024dc4   g_sCompDCMInst
+20024f90   g_sEnet
+20025278   g_sEnetBuffer
+200251c4   g_sExosite
+20024594   g_sI2CInst
+200251d8   g_sISL29023Data
+200250c8   g_sISL29023Inst
+20024d58   g_sMPU9150Inst
+20025288   g_sSHT21Data
+200250f4   g_sSHT21Inst
+20025298   g_sTMP006Data
+20025068   g_sTMP006Inst
+20023de8   g_sTaskStatistics
+20029776   g_ui16ProxyPort
+20025310   g_ui32AbnormalInts
+2002977c   g_ui32EEStatus
+20025320   g_ui32NormalInts
+20025328   g_ui32SysClock
+200239e8   g_ui8Data
+20029778   g_ui8RequestSize
+2002532c   g_vui8BMP180I2CErrorStatus
+20025330   g_vui8CompDCMI2CErrorStatus
+20025334   g_vui8ISL29023I2CErrorStatus
+20025338   g_vui8SHT21I2CErrorStatus
+2002533c   g_vui8TMP006I2CErrorStatus
+20025340   g_vulRunTimeStatsCountValue
+20025344   g_xBMP180Handle
+20025348   g_xBMP180TransactionCompleteSemaphore
+2002534c   g_xCloudDataSemaphore
+20025350   g_xCloudTaskHandle
+20025354   g_xCloudTaskRequestQueue
+20025358   g_xCloudTimerHandle
+2002535c   g_xCommandHandle
+20025360   g_xCompDCMDataReadySemaphore
+20025364   g_xCompDCMHandle
+20025368   g_xCompDCMTransactionCompleteSemaphore
+2002536c   g_xI2CSemaphore
+20025370   g_xISL29023AdjustRangeSemaphore
+20025374   g_xISL29023Handle
+20025378   g_xISL29023TransactionCompleteSemaphore
+2002537c   g_xSHT21Handle
+20025380   g_xSHT21TransactionCompleteSemaphore
+20025384   g_xSwitchesTimerHandle
+20025388   g_xTMP006DataReadySemaphore
+2002538c   g_xTMP006Handle
+20025390   g_xTMP006TransactionCompleteSemaphore
+20025394   g_xUARTSemaphore
+00010729   get_http_status
+00011b03   icmp_dest_unreach
+000055ed   icmp_input
+00011a71   inet_chksum
+0000df57   inet_chksum_pbuf
+000097c9   info_assemble
+00010603   ip4_addr_isbroadcast
+00012040   ip_addr_any
+00012044   ip_addr_broadcast
+00003e21   ip_input
+0000eff9   ip_output
+0000a5a9   ip_output_if
+0000ea75   ip_route
+00011711   ipaddr_addr
+00007131   ipaddr_aton
+00011b51   logf
+0000c0c9   lwIPEthernetIntHandler
+0000723d   lwIPHostTimerHandler
+00007ef5   lwIPInit
+00011221   lwIPLocalIPAddrGet
+0001123d   lwIPLocalMACGet
+00010ab5   lwIPNetworkConfigChange
+0001137f   lwip_htonl
+00011a7d   lwip_htons
+00011521   lwip_init
+0001137f   lwip_ntohl
+00011a7d   lwip_ntohs
+200248f8   lwip_stats
+00001c41   main
+200297b8   main_func_sp
+0000bd75   mem_free
+0000d28d   mem_init
+00006a9d   mem_malloc
+00006bbd   mem_trim
+00010fc5   memcmp
+0000aa09   memcpy
+00010065   memp_free
+0000ce2d   memp_init
+0000da15   memp_malloc
+0000c149   memset
+0000e2f9   netif_add
+200253a0   netif_default
+200253a4   netif_list
+00011259   netif_set_addr
+00011a89   netif_set_default
+000111cb   netif_set_down
+00011a95   netif_set_gw
+0000ce95   netif_set_ipaddr
+00011831   netif_set_link_down
+0000fbd1   netif_set_link_up
+00011aa1   netif_set_netmask
+00010ecd   netif_set_up
+00005fe9   pbuf_alloc
+00010ef1   pbuf_cat
+000119cf   pbuf_chain
+00011843   pbuf_clen
+0000ae35   pbuf_copy
+0000cae9   pbuf_copy_partial
+0000e49d   pbuf_free
+2002540a   pbuf_free_ooseq_pending
+0000d41d   pbuf_header
+0000dc3b   pbuf_realloc
+000116bd   pbuf_ref
+00000dd1   powf
+0000e771   pvPortMalloc
+20029724   pxCurrentTCB
+00010fa3   pxPortInitialiseStack
+00010849   raise
+2001a174   ram_heap
+0000c38d   raw_input
+00002c09   sendLine
+0000fa95   signal
+00010f39   sqrtf
+000113b3   strcat
+00011551   strcmp
+00011775   strlen
+00010e39   strncmp
+00010789   strncpy
+0000f0d1   sys_arch_mbox_fetch
+00011acf   sys_arch_protect
+0000f791   sys_arch_sem_wait
+00011b8b   sys_arch_unprotect
+0001010d   sys_init
+0000c631   sys_mbox_new
+000113cd   sys_mbox_post
+00010b0d   sys_mbox_trypost
+00011ad9   sys_mbox_valid
+0000bafd   sys_sem_new
+0001192d   sys_sem_signal
+0000bb7d   sys_thread_new
+0000d7e1   sys_timeout
+0000e3a1   sys_timeouts_init
+0000d841   sys_timeouts_mbox_fetch
+0000f119   sys_untimeout
+0000b109   tcp_abandon
+00011b57   tcp_abort
+200253d0   tcp_active_pcbs
+2002540c   tcp_active_pcbs_changed
+00008b21   tcp_alloc
+00011ea0   tcp_backoff
+200253d4   tcp_bound_pcbs
+00011789   tcp_close
+00007941   tcp_connect
+0001110d   tcp_eff_send_mss
+0000a311   tcp_enqueue_flags
+00011b5d   tcp_err
+0000c6a1   tcp_fasttmr
+00001571   tcp_input
+200253d8   tcp_input_pcb
+0000f579   tcp_keepalive
+200253dc   tcp_listen_pcbs
+00011b63   tcp_new
+00011569   tcp_next_iss
+00005145   tcp_output
+00012030   tcp_pcb_lists
+0000f7d3   tcp_pcb_purge
+0000da71   tcp_pcb_remove
+00011ead   tcp_persist_backoff
+0000cf65   tcp_process_refused_data
+00011b69   tcp_recv
+0001112d   tcp_recv_null
+00010635   tcp_recved
+0000e3f5   tcp_rexmit
+0000f1a9   tcp_rexmit_fast
+00010b39   tcp_rexmit_rto
+0000bdf1   tcp_rst
+00010f5d   tcp_seg_copy
+00011581   tcp_seg_free
+00011867   tcp_segs_free
+0000f311   tcp_send_empty_ack
+0000f5bd   tcp_send_fin
+00011b8f   tcp_sent
+0000220d   tcp_slowtmr
+200253e0   tcp_ticks
+00010535   tcp_timer_needed
+200253e4   tcp_tmp_pcb
+0001114d   tcp_tmr
+200253e8   tcp_tw_pcbs
+000107e9   tcp_update_rcv_ann_wnd
+00001f31   tcp_write
+0000b2b5   tcp_zero_window_probe
+0000dacd   tcpip_callback_with_block
+0000f1f1   tcpip_init
+0000ebf1   tcpip_input
+00010569   tivaif_init
+0000ec3d   tivaif_interrupt
+0000b7f5   tivaif_process_phy_interrupt
+0000d355   udp_bind
+0000f281   udp_connect
+0000472d   udp_input
+00011291   udp_new
+200253fc   udp_pcbs
+00011b6f   udp_recv
+00010b65   udp_remove
+0001017d   udp_sendto
+00009195   udp_sendto_if
+0000a8cd   uftostr
+000113e7   usnprintf
+0001116d   usprintf
+00011b13   ustrcmp
+00011879   ustrlen
+00010819   ustrncmp
+00010fe7   ustrncpy
+00010877   ustrstr
+0000ad09   ustrtoul
+000029c1   uvsnprintf
+00011009   uxListRemove
+0000aaa5   uxTaskGetSystemState
+0000723b   vApplicationStackOverflowHook
+000116d3   vListInitialise
+00011b75   vListInitialiseItem
+000101b5   vListInsert
+00011599   vListInsertEnd
+0000a415   vPortClearInterruptMask
+0000a44d   vPortEnableVFP
+0001179d   vPortEnterCritical
+000117b1   vPortExitCritical
+00007d13   vPortFree
+0000a41f   vPortSVCHandler
+0000a40b   vPortSetInterruptMask
+0000a439   vPortStartFirstTask
+0001193d   vPortYield
+0001194d   vPortYieldFromISR
+0000fdb5   vQueueWaitForMessageRestricted
+0001059d   vTaskDelay
+0000db29   vTaskDelayUntil
+0000d3b9   vTaskDelete
+00011aad   vTaskMissedYield
+0000f601   vTaskPlaceOnEventList
+00010b91   vTaskPlaceOnEventListRestricted
+0000f2c9   vTaskPriorityDisinherit
+0000ca7d   vTaskPriorityInherit
+000115b1   vTaskSetTimeOutState
+0000db85   vTaskStartScheduler
+0000cfcd   vTaskSuspend
+0001195d   vTaskSuspendAll
+00009329   vTaskSwitchContext
+0000a3bd   xPortPendSVHandler
+0000fad5   xPortStartScheduler
+000112ad   xPortSysTickHandler
+0000ecd5   xQueueCreateMutex
+0000ed21   xQueueGenericCreate
+0000764d   xQueueGenericReceive
+0000c711   xQueueGenericReset
+000093f1   xQueueGenericSend
+0000dfad   xQueueGenericSendFromISR
+0000e449   xTaskCheckForTimeOut
+000087c5   xTaskGenericCreate
+00011ab9   xTaskGetCurrentTaskHandle
+0001118d   xTaskGetSchedulerState
+000115c9   xTaskGetTickCount
+0000701d   xTaskIncrementTick
+0000c781   xTaskRemoveFromEventList
+00008d95   xTaskResumeAll
+0000fea1   xTimerCreate
+0000f645   xTimerCreateTimerTask
+0000fb15   xTimerGenericCommand
+
+
+GLOBAL SYMBOLS: SORTED BY Symbol Address 
+
+address    name
+--------   ----
+00000000   __TI_static_base__
+00000000   g_pfnVectors
+00000001   __TI_args_main
+0000096d   PrintConnectionHelp
+00000dd1   powf
+00001571   tcp_input
+00001c41   main
+00001f31   tcp_write
+0000220d   tcp_slowtmr
+000024c9   CompDCMUpdate
+000029c1   uvsnprintf
+00002c09   sendLine
+00003055   PinoutSet
+00003471   SysCtlClockFreqSet
+00003675   CloudSyncExosite
+00003869   UARTvprintf
+00003a55   BMP180DataPressureGetFloat
+00003c3d   TMP006DataTemperatureGetFloat
+00003e21   ip_input
+00003ff9   CloudTaskInit
+00004000   __STACK_SIZE
+0000439d   Cmd_proxy
+00004565   CompDCMComputeQuaternion
+0000472d   udp_input
+00004ab1   __aeabi_dsub
+00004abb   __aeabi_dadd
+00004c67   exoHAL_EraseMeta
+00004c69   CloudProvisionExosite
+00004e15   Exosite_Activate
+00004fb1   CompDCMDataEncodeJSON
+00005145   tcp_output
+000055ed   icmp_input
+00005779   _FExp
+000058fd   CloudStartExosite
+00005a79   _FLog
+00005bf1   UARTStdioIntHandler
+00005fe9   pbuf_alloc
+00006123   __aeabi_ddiv
+000064c1   CompDCMDataPrint
+000065f1   GPIOPadConfigSet
+00006721   CloudTaskStatsEncodeJSON
+00006975   etharp_output
+00006a9d   mem_malloc
+00006bbd   mem_trim
+00006cdd   exoHAL_ExositeEnetEvents
+00006df5   etharp_query
+0000701d   xTaskIncrementTick
+00007131   ipaddr_aton
+0000723b   vApplicationStackOverflowHook
+0000723d   lwIPHostTimerHandler
+00007345   Exosite_Read
+00007449   ISL29023TaskInit
+0000754d   TMP006TaskInit
+0000764d   xQueueGenericReceive
+0000774d   __aeabi_dmul
+00007849   CloudTaskStatsPrint
+00007941   tcp_connect
+00007c21   I2CMIntHandler
+00007d13   vPortFree
+00007e05   CompDCMTaskInit
+00007ef5   lwIPInit
+00007fe5   SHT21MeasureHumidity
+000080c9   SHT21MeasureTemperature
+000081ad   BMP180AppErrorHandler
+0000828d   CompDCMAppErrorHandler
+0000836d   ISL29023AppErrorHandler
+0000860d   SHT21AppErrorHandler
+000086e9   etharp_raw
+000087c5   xTaskGenericCreate
+000088a1   atan2f
+00008979   HTTPMessageTypeSet
+00008a4d   TMP006AppErrorHandler
+00008b21   tcp_alloc
+00008bf5   CloudBoardDataDecodeExositeHTTP
+00008cc5   autoip_tmr
+00008d95   xTaskResumeAll
+00009195   udp_sendto_if
+00009261   Exosite_Write
+00009329   vTaskSwitchContext
+000093f1   xQueueGenericSend
+000094b9   EEPROMProgram
+0000957d   ISL29023AppAdjustRange
+00009641   InitDMADescriptors
+00009705   exoHAL_SocketOpenTCP
+000097c9   info_assemble
+00009889   _FDscale
+00009cf5   CompDCMStart
+00009dad   BMP180DataPrint
+00009e61   UARTStdioConfig
+00009f11   asinf
+00009fc1   BMP180DataEncodeJSON
+0000a119   UARTwrite
+0000a1c1   dhcp_start
+0000a269   _FAtan
+0000a311   tcp_enqueue_flags
+0000a3bd   xPortPendSVHandler
+0000a40b   vPortSetInterruptMask
+0000a415   vPortClearInterruptMask
+0000a41f   vPortSVCHandler
+0000a439   vPortStartFirstTask
+0000a44d   vPortEnableVFP
+0000a461   dhcp_release
+0000a505   ethernet_input
+0000a5a9   ip_output_if
+0000a64d   MPU9150DataMagnetoGetFloat
+0000a6ed   MPU9150Write
+0000a8cd   uftostr
+0000a96d   HTTPResponseParse
+0000aa09   __aeabi_memcpy
+0000aa09   __aeabi_memcpy4
+0000aa09   __aeabi_memcpy8
+0000aa09   memcpy
+0000aaa5   uxTaskGetSystemState
+0000abd9   ISL29023DataEncodeJSON
+0000ad09   ustrtoul
+0000ada1   __TI_auto_init
+0000ae35   pbuf_copy
+0000aec9   BMP180TaskInit
+0000af59   SHT21TaskInit
+0000b079   _FDint
+0000b109   tcp_abandon
+0000b2b5   tcp_zero_window_probe
+0000b341   I2CMCommand
+0000b3c9   SHT21DataEncodeJSON
+0000b451   SHT21DataPrint
+0000b4d9   TMP006DataPrint
+0000b561   BMP180DataTemperatureGetFloat
+0000b5e5   EthClientInit
+0000b7f5   tivaif_process_phy_interrupt
+0000b879   autoip_arp_reply
+0000b8fd   Cmd_help
+0000b97d   TMP006DataEncodeJSON
+0000ba7d   dhcp_renew
+0000bafd   sys_sem_new
+0000bb7d   sys_thread_new
+0000bc7d   ButtonsPoll
+0000bd75   mem_free
+0000bdf1   tcp_rst
+0000be6d   _FDnorm
+0000bee9   EMACInit
+0000bf61   I2CMReadModifyWrite16LE
+0000bfd9   MPU9150DataAccelGetFloat
+0000c051   MPU9150DataGyroGetFloat
+0000c0c9   lwIPEthernetIntHandler
+0000c141   __aeabi_memclr
+0000c141   __aeabi_memclr4
+0000c141   __aeabi_memclr8
+0000c143   __aeabi_memset
+0000c143   __aeabi_memset4
+0000c143   __aeabi_memset8
+0000c149   memset
+0000c231   Cmd_stats
+0000c319   exoHAL_SocketRecv
+0000c38d   raw_input
+0000c401   EthClientTCPConnect
+0000c471   Exosite_Init
+0000c4e1   I2CMReadModifyWrite8
+0000c551   SHT21DataHumidityGetFloat
+0000c5c1   TCPConnected
+0000c631   sys_mbox_new
+0000c6a1   tcp_fasttmr
+0000c711   xQueueGenericReset
+0000c781   xTaskRemoveFromEventList
+0000c8cd   ISL29023DataPrint
+0000c939   LEDWrite
+0000c9a5   MPU9150Init
+0000ca7d   vTaskPriorityInherit
+0000cae9   pbuf_copy_partial
+0000cbbd   CommandTaskInit
+0000cc25   ISL29023Write
+0000cc8d   IntDisable
+0000ccf5   IntEnable
+0000cdc5   exoHAL_ExositeInit
+0000ce2d   memp_init
+0000ce95   netif_set_ipaddr
+0000cf65   tcp_process_refused_data
+0000cfcd   vTaskSuspend
+0000d035   ConfigureUART
+0000d099   EthClientSend
+0000d0fd   IntIsEnabled
+0000d161   SensorCloudStatTimerConfig
+0000d1c5   dns_init
+0000d28d   mem_init
+0000d355   udp_bind
+0000d3b9   vTaskDelete
+0000d41d   pbuf_header
+0000d4e1   CmdLineProcess
+0000d5a1   MPU9150DataRead
+0000d601   SHT21DataTemperatureGetFloat
+0000d6c1   TMP006ReadModifyWrite
+0000d7e1   sys_timeout
+0000d841   sys_timeouts_mbox_fetch
+0000d95d   CloudTaskStatsUpdate
+0000d9b9   SwitchTimerCallback
+0000da15   memp_malloc
+0000da71   tcp_pcb_remove
+0000dacd   tcpip_callback_with_block
+0000db29   vTaskDelayUntil
+0000db85   vTaskStartScheduler
+0000dbe1   autoip_start
+0000dc3b   pbuf_realloc
+0000dc95   exoHAL_ReadUUID
+0000dcf1   BMP180DataRead
+0000dd49   EMACPHYConfigSet
+0000dda1   TMP006Init
+0000ddf9   dns_gethostbyname
+0000de51   exoHAL_ResetConnection
+0000df01   VectorCrossProduct
+0000df57   inet_chksum_pbuf
+0000dfad   xQueueGenericSendFromISR
+0000e005   BMP180Init
+0000e059   CloudProxySet
+0000e0ad   EthClientDNSResolve
+0000e101   Exosite_GetCIK
+0000e155   I2CMWrite8
+0000e1a9   ISL29023Init
+0000e1fd   TMP006DataRead
+0000e251   UARTgets
+0000e2f9   netif_add
+0000e34d   _FDunscale
+0000e3a1   sys_timeouts_init
+0000e3f5   tcp_rexmit
+0000e449   xTaskCheckForTimeOut
+0000e49d   pbuf_free
+0000e591   ISL29023DataRead
+0000e5e1   ISL29023Read
+0000e631   LocatorInit
+0000e681   SysCtlPeripheralReset
+0000e771   pvPortMalloc
+0000e861   ButtonsInit
+0000e8ad   ISL29023ReadModifyWrite
+0000e8f9   SHT21DataRead
+0000e945   SHT21Init
+0000e991   SHT21Write
+0000ea29   exoHAL_SocketSend
+0000ea75   ip_route
+0000ebf1   tcpip_input
+0000ec3d   tivaif_interrupt
+0000ecd5   xQueueCreateMutex
+0000ed21   xQueueGenericCreate
+0000edb7   __aeabi_d2f
+0000ee01   CloudBoardDataEncodeExositeHTTP
+0000ee91   I2CMasterInitExpClk
+0000eed9   ISL29023DataLightVisibleGetFloat
+0000efb1   exosite_meta_read
+0000eff9   ip_output
+0000f089   _c_int00
+0000f0d1   sys_arch_mbox_fetch
+0000f119   sys_untimeout
+0000f1a9   tcp_rexmit_fast
+0000f1f1   tcpip_init
+0000f281   udp_connect
+0000f2c9   vTaskPriorityDisinherit
+0000f311   tcp_send_empty_ack
+0000f359   CompDCMInit
+0000f39d   EthClientDHCPConnect
+0000f425   UARTPeek
+0000f4f1   copy_in
+0000f535   C$$EXIT
+0000f539   abort
+0000f541   exit
+0000f579   tcp_keepalive
+0000f5bd   tcp_send_fin
+0000f601   vTaskPlaceOnEventList
+0000f645   xTimerCreateTimerTask
+0000f689   CompDCMComputeEulers
+0000f6cb   dhcp_network_changed
+0000f74f   __aeabi_uidivmod
+0000f791   sys_arch_sem_wait
+0000f7d3   tcp_pcb_purge
+0000f815   Cmd_activate
+0000f855   EEPROMInit
+0000f955   IntHandlerGPIOPortH
+0000f995   IntHandlerGPIOPortM
+0000f9d5   TCPReceived
+0000fa55   etharp_tmr
+0000fa95   signal
+0000fad5   xPortStartScheduler
+0000fb15   xTimerGenericCommand
+0000fb93   exosite_meta_write
+0000fbd1   netif_set_link_up
+0000fc11   CloudTimerCallback
+0000fc4d   Cmd_connect
+0000fc89   Cmd_sync
+0000fcc5   IntHandlerGPIOPortE
+0000fd01   UARTFlushTx
+0000fd79   dhcp_coarse_tmr
+0000fdb5   vQueueWaitForMessageRestricted
+0000fdf1   SetupServices
+0000fe2d   EMACIntEnable
+0000fea1   xTimerCreate
+0000fedd   EMACConfigGet
+0000ff15   SysCtlPeripheralReady
+0000ff4d   dhcp_fine_tmr
+0000ffbd   dhcp_stop
+0001002d   exosite_meta_defaults
+00010065   memp_free
+000100d5   __aeabi_f2d
+0001010d   sys_init
+0001017d   udp_sendto
+000101b5   vListInsert
+000101ed   connect_to_exosite
+00010225   exosite_meta_init
+00010291   Cmd_clear
+000102f9   EEPROMRead
+0001032d   EMACConfigSet
+00010361   EMACIntClear
+00010395   I2CMInit
+000103c9   LocatorAppTitleSet
+000103fd   SysCtlPeripheralEnable
+00010499   feraiseexcept
+000104cd   _FDtest
+00010535   tcp_timer_needed
+00010569   tivaif_init
+0001059d   vTaskDelay
+000105d1   VectorAdd
+00010603   ip4_addr_isbroadcast
+00010635   tcp_recved
+00010667   I2CMTransferResume
+00010729   get_http_status
+00010789   strncpy
+000107b9   _Feraise
+000107e9   tcp_update_rcv_ann_wnd
+00010819   ustrncmp
+00010849   raise
+00010877   ustrstr
+000108a5   BMP180AppCallback
+000108d1   CompDCMAppCallback
+000108fd   EMACIntStatus
+00010929   ISL29023AppCallback
+00010955   SHT21AppCallback
+00010981   TMP006AppCallback
+000109ad   UARTFlushRx
+00010a31   etharp_request
+00010a5d   exoHAL_ReadMetaItem
+00010a89   exoHAL_WriteMetaItem
+00010ab5   lwIPNetworkConfigChange
+00010b0d   sys_mbox_trypost
+00010b39   tcp_rexmit_rto
+00010b65   udp_remove
+00010b91   vTaskPlaceOnEventListRestricted
+00010bbd   GPIODirModeSet
+00010c3d   EthClientTCPDisconnect
+00010c65   Exosite_SetCIK
+00010c8d   Timer0IntHandler
+00010cb5   etharp_cleanup_netif
+00010cdd   exoHAL_ExositeProxySet
+00010d05   exoHAL_ServerConnect
+00010d7b   EMACPHYRead
+00010da1   EMACPHYWrite
+00010dc7   VectorDotProduct
+00010ded   VectorScale
+00010e39   strncmp
+00010e61   IntPrioritySet
+00010e85   dns_setserver
+00010ecd   netif_set_up
+00010ef1   pbuf_cat
+00010f39   sqrtf
+00010f5d   tcp_seg_copy
+00010fa3   pxPortInitialiseStack
+00010fc5   memcmp
+00010fe7   ustrncpy
+00011009   uxListRemove
+0001106d   LocatorMACAddrSet
+0001110d   tcp_eff_send_mss
+0001112d   tcp_recv_null
+0001114d   tcp_tmr
+0001116d   usprintf
+0001118d   xTaskGetSchedulerState
+000111ad   EMACAddrGet
+000111cb   netif_set_down
+00011205   exoHAL_EnableMeta
+00011221   EthClientAddrGet
+00011221   lwIPLocalIPAddrGet
+0001123d   lwIPLocalMACGet
+00011259   netif_set_addr
+00011291   udp_new
+000112ad   xPortSysTickHandler
+000112e3   RingBufRead
+000112fd   RingBufWrite
+00011317   UARTprintf
+00011331   autoip_network_changed
+0001134b   dhcp_arp_reply
+0001137f   lwip_htonl
+0001137f   lwip_ntohl
+000113b3   strcat
+000113cd   sys_mbox_post
+000113e7   usnprintf
+00011401   EthClientMACAddrGet
+00011431   TCPError
+00011449   TCPSent
+00011461   TMP006DataTemperatureGetRaw
+00011521   lwip_init
+00011539   _args_main
+00011551   strcmp
+00011569   tcp_next_iss
+00011581   tcp_seg_free
+00011599   vListInsertEnd
+000115b1   vTaskSetTimeOutState
+000115c9   xTaskGetTickCount
+000115e1   EMACReset
+000115f7   EMACRxEnable
+0001160d   EMACTxEnable
+00011623   RingBufFlush
+00011639   RingBufReadOne
+0001164f   RingBufUsed
+000116bd   pbuf_ref
+000116d3   vListInitialise
+000116e9   FlashUserGet
+00011711   ipaddr_addr
+00011761   _register_unlock
+00011767   _register_lock
+0001176f   _nop
+00011775   strlen
+00011789   tcp_close
+0001179d   vPortEnterCritical
+000117b1   vPortExitCritical
+000117c5   GPIOPinTypeEthernetLED
+000117d7   GPIOPinTypeI2CSCL
+000117e9   RingBufFree
+000117fb   __TI_zero_init
+00011831   netif_set_link_down
+00011843   pbuf_clen
+00011867   tcp_segs_free
+00011879   ustrlen
+0001188d   EMACFrameFilterSet
+0001189d   EthClientHostSet
+000118ad   EthClientProxySet
+000118bd   IntMasterDisable
+000118cd   IntMasterEnable
+000118dd   RingBufWriteOne
+000118fd   autoip_stop
+0001191d   dns_tmr
+0001192d   sys_sem_signal
+0001193d   vPortYield
+0001194d   vPortYieldFromISR
+0001195d   vTaskSuspendAll
+0001196d   CompDCMAccelUpdate
+0001197b   CompDCMGyroUpdate
+00011989   CompDCMMagnetoUpdate
+00011997   GPIOIntStatus
+000119b3   TimerEnable
+000119c1   __TI_decompress_none
+000119cf   pbuf_chain
+000119dd   _FDclass
+000119eb   CPUcpsid
+000119f7   CPUcpsie
+00011a03   GPIOIntEnable
+00011a0f   ISL29023DataLightVisibleGetRaw
+00011a1d   IntTrigger
+00011a29   RingBufInit
+00011a35   SHT21DataHumidityGetRaw
+00011a41   SHT21DataTemperatureGetRaw
+00011a4d   SensHubI2CIntHandler
+00011a65   exoHAL_SocketClose
+00011a71   inet_chksum
+00011a7d   lwip_htons
+00011a7d   lwip_ntohs
+00011a89   netif_set_default
+00011a95   netif_set_gw
+00011aa1   netif_set_netmask
+00011aad   vTaskMissedYield
+00011ab9   xTaskGetCurrentTaskHandle
+00011ac5   I2CMasterEnable
+00011acf   sys_arch_protect
+00011ad9   sys_mbox_valid
+00011ae3   EMACTxDMAPollDemand
+00011aeb   I2CMasterIntClear
+00011af3   I2CMasterIntEnableEx
+00011afb   I2CMasterSlaveAddrSet
+00011b03   icmp_dest_unreach
+00011b13   ustrcmp
+00011b1b   EMACRxDMADescriptorListSet
+00011b21   EMACTimestampIntStatus
+00011b27   EMACTxDMADescriptorListSet
+00011b2d   GPIOIntClear
+00011b33   GPIOPinWrite
+00011b39   ResetISR
+00011b3f   SysCtlDelay
+00011b45   UARTClockSourceSet
+00011b4b   __TI_decompress_rle24
+00011b51   logf
+00011b57   tcp_abort
+00011b5d   tcp_err
+00011b63   tcp_new
+00011b69   tcp_recv
+00011b6f   udp_recv
+00011b75   vListInitialiseItem
+00011b7b   I2CMasterControl
+00011b7f   I2CMasterDataGet
+00011b83   I2CMasterDataPut
+00011b8b   sys_arch_unprotect
+00011b8f   tcp_sent
+00011ea0   tcp_backoff
+00011ead   tcp_persist_backoff
+00012030   tcp_pcb_lists
+00012040   ip_addr_any
+00012044   ip_addr_broadcast
+00012048   ethbroadcast
+0001204e   ethzero
+000120f0   g_fRangeLookup
+00012100   g_fResolutionLookup
+00012110   g_fBetaLookup
+00012170   g_fThresholdHigh
+00012180   g_fThresholdLow
+00012358   __TI_Handler_Table_Base
+00012364   __TI_Handler_Table_Limit
+00012370   __TI_CINIT_Base
+00012380   __TI_CINIT_Limit
+2001a174   ram_heap
+20022188   g_pui8SendBuff
+200239e8   g_ui8Data
+20023de8   g_sTaskStatistics
+20024594   g_sI2CInst
+200246b8   g_pRxDescriptors
+200247d8   g_pTxDescriptors
+200248f8   lwip_stats
+20024c58   g_pcProxy
+20024d58   g_sMPU9150Inst
+20024dc4   g_sCompDCMInst
+20024ec0   g_sCompDCMData
+20024f08   exosite_provision_info
+20024f4c   g_sBMP180Inst
+20024f90   g_sEnet
+20025000   g_pcExositeCIK
+20025034   g_pcProxyAddress
+20025068   g_sTMP006Inst
+200250c8   g_sISL29023Inst
+200250f4   g_sSHT21Inst
+20025120   dhcp_rx_options_val
+20025194   g_sCloudData
+200251b0   g_sBMP180Data
+200251c4   g_sExosite
+200251d8   g_sISL29023Data
+20025278   g_sEnetBuffer
+20025288   g_sSHT21Data
+20025298   g_sTMP006Data
+200252b8   dhcp_rx_options_given
+200252c4   g_sCloudBoardData
+200252e8   current_header
+200252ec   current_iphdr_dest
+200252f0   current_iphdr_src
+200252f4   current_netif
+20025304   g_pfnTimerHandler
+20025308   g_pvCloudTimerID
+2002530c   g_pvSwitchesTimerID
+20025310   g_ui32AbnormalInts
+20025320   g_ui32NormalInts
+20025328   g_ui32SysClock
+2002532c   g_vui8BMP180I2CErrorStatus
+20025330   g_vui8CompDCMI2CErrorStatus
+20025334   g_vui8ISL29023I2CErrorStatus
+20025338   g_vui8SHT21I2CErrorStatus
+2002533c   g_vui8TMP006I2CErrorStatus
+20025340   g_vulRunTimeStatsCountValue
+20025344   g_xBMP180Handle
+20025348   g_xBMP180TransactionCompleteSemaphore
+2002534c   g_xCloudDataSemaphore
+20025350   g_xCloudTaskHandle
+20025354   g_xCloudTaskRequestQueue
+20025358   g_xCloudTimerHandle
+2002535c   g_xCommandHandle
+20025360   g_xCompDCMDataReadySemaphore
+20025364   g_xCompDCMHandle
+20025368   g_xCompDCMTransactionCompleteSemaphore
+2002536c   g_xI2CSemaphore
+20025370   g_xISL29023AdjustRangeSemaphore
+20025374   g_xISL29023Handle
+20025378   g_xISL29023TransactionCompleteSemaphore
+2002537c   g_xSHT21Handle
+20025380   g_xSHT21TransactionCompleteSemaphore
+20025384   g_xSwitchesTimerHandle
+20025388   g_xTMP006DataReadySemaphore
+2002538c   g_xTMP006Handle
+20025390   g_xTMP006TransactionCompleteSemaphore
+20025394   g_xUARTSemaphore
+200253a0   netif_default
+200253a4   netif_list
+200253d0   tcp_active_pcbs
+200253d4   tcp_bound_pcbs
+200253d8   tcp_input_pcb
+200253dc   tcp_listen_pcbs
+200253e0   tcp_ticks
+200253e4   tcp_tmp_pcb
+200253e8   tcp_tw_pcbs
+200253fc   udp_pcbs
+20025408   g_bOnline
+2002540a   pbuf_free_ooseq_pending
+2002540c   tcp_active_pcbs_changed
+20025410   __stack
+20029410   __STACK_END
+20029410   __STACK_TOP
+20029410   g_pcRequest
+200295c0   g_psCmdTable
+20029638   _FDenorm
+20029648   _FEps
+20029658   _FInf
+20029668   _FNan
+20029678   _FSnan
+20029688   _FRteps
+20029698   _FXbig
+2002969c   _FZero
+200296a4   g_TxDescList
+200296b4   g_RxDescList
+20029724   pxCurrentTCB
+20029774   g_bUseProxy
+20029776   g_ui16ProxyPort
+20029778   g_ui8RequestSize
+2002977c   g_ui32EEStatus
+20029790   _lock
+20029794   _unlock
+20029798   __TI_cleanup_ptr
+2002979c   __TI_dtors_ptr
+200297a0   _Fenv
+200297a4   _Tls_setup__Fenv
+200297b4   _Errno
+200297b8   main_func_sp
+ffffffff   __binit__
+ffffffff   __c_args__
+ffffffff   binit
+UNDEFED    SHT$$INIT_ARRAY$$Base
+UNDEFED    SHT$$INIT_ARRAY$$Limit
+
+[622 symbols]

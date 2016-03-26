@@ -1,0 +1,57 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+CMD_SRCS += \
+../main.cmd 
+
+C_SRCS += \
+../bmp180_task.c \
+../isl29023_task.c \
+../main.c \
+../sht21_task.c \
+../startup_ccs.c \
+../tmp006_task.c 
+
+OBJS += \
+./bmp180_task.obj \
+./isl29023_task.obj \
+./main.obj \
+./sht21_task.obj \
+./startup_ccs.obj \
+./tmp006_task.obj 
+
+C_DEPS += \
+./bmp180_task.pp \
+./isl29023_task.pp \
+./main.pp \
+./sht21_task.pp \
+./startup_ccs.pp \
+./tmp006_task.pp 
+
+C_DEPS__QUOTED += \
+"bmp180_task.pp" \
+"isl29023_task.pp" \
+"main.pp" \
+"sht21_task.pp" \
+"startup_ccs.pp" \
+"tmp006_task.pp" 
+
+OBJS__QUOTED += \
+"bmp180_task.obj" \
+"isl29023_task.obj" \
+"main.obj" \
+"sht21_task.obj" \
+"startup_ccs.obj" \
+"tmp006_task.obj" 
+
+C_SRCS__QUOTED += \
+"../bmp180_task.c" \
+"../isl29023_task.c" \
+"../main.c" \
+"../sht21_task.c" \
+"../startup_ccs.c" \
+"../tmp006_task.c" 
+
+

@@ -1,0 +1,522 @@
+
+**** Build of configuration Debug for project light_isl29023 ****
+
+"C:\\Program Files (x86)\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../light_isl29023.c'
+'Invoking: ARM Compiler'
+"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -O2 --include_path="C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/include" --include_path="c:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub" --include_path="c:/ti/TivaWare_C_Series-2.1.1.71" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --define=TARGET_IS_TM4C129_RA0 --define=UART_BUFFERED --display_error_number --diag_warning=225 --diag_wrap=off --gen_func_subsections=on --ual --preproc_with_compile --preproc_dependency="light_isl29023.pp"  "../light_isl29023.c"
+'Finished building: ../light_isl29023.c'
+' '
+'Building target: light_isl29023.out'
+'Invoking: ARM Linker'
+"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -O2 -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --define=TARGET_IS_TM4C129_RA0 --define=UART_BUFFERED --display_error_number --diag_warning=225 --diag_wrap=off --gen_func_subsections=on --ual -z -m"light_isl29023_ccs.map" --heap_size=0 --stack_size=1024 -i"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/lib" -i"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="light_isl29023_linkInfo.xml" --rom_model -o "light_isl29023.out"  "./light_isl29023.obj" "./startup_ccs.obj" "./utils/uartstdio.obj" "./drivers/buttons.obj" "./drivers/pinout.obj" "../light_isl29023_ccs.cmd" -l"libc.a" -l"c:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub/light_isl29023/ccs/../../../../../driverlib/ccs/Debug/driverlib.lib" -l"c:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub/light_isl29023/ccs/../../../../../sensorlib/ccs/Debug/sensorlib.lib" 
+<Linking>
+'Finished building target: light_isl29023.out'
+' '
+"C:/Program Files (x86)/ccsv6/utils/tiobj2bin/tiobj2bin" "light_isl29023.out" "light_isl29023.bin" "C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armofd" "C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armhex" "C:/Program Files (x86)/ccsv6/utils/tiobj2bin/mkhex4bin"
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project light_isl29023 ****
+
+"C:\\Program Files (x86)\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project light_isl29023 ****
+
+"C:\\Program Files (x86)\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../light_isl29023.c'
+'Invoking: ARM Compiler'
+"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -O2 --include_path="C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/include" --include_path="c:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub" --include_path="c:/ti/TivaWare_C_Series-2.1.1.71" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --define=TARGET_IS_TM4C129_RA0 --define=UART_BUFFERED --display_error_number --diag_warning=225 --diag_wrap=off --gen_func_subsections=on --ual --preproc_with_compile --preproc_dependency="light_isl29023.pp"  "../light_isl29023.c"
+"../light_isl29023.c", line 442: warning #225-D: function "I2CSlaveInit" declared implicitly
+"../light_isl29023.c", line 711: warning #225-D: function "I2CSlaveStatus" declared implicitly
+"../light_isl29023.c", line 711: error #20: identifier "I2C_SLAVE_ACT_TREQ" is undefined
+"../light_isl29023.c", line 712: warning #225-D: function "I2CSlaveDataPut" declared implicitly
+"../light_isl29023.c", line 718: warning #112-D: statement is unreachable
+1 error detected in the compilation of "../light_isl29023.c".
+
+>> Compilation failure
+gmake: *** [light_isl29023.obj] Error 1
+gmake: Target `all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project light_isl29023 ****
+
+"C:\\Program Files (x86)\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../light_isl29023.c'
+'Invoking: ARM Compiler'
+"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -O2 --include_path="C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/include" --include_path="c:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub" --include_path="c:/ti/TivaWare_C_Series-2.1.1.71" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --define=TARGET_IS_TM4C129_RA0 --define=UART_BUFFERED --display_error_number --diag_warning=225 --diag_wrap=off --gen_func_subsections=on --ual --preproc_with_compile --preproc_dependency="light_isl29023.pp"  "../light_isl29023.c"
+"../light_isl29023.c", line 720: warning #112-D: statement is unreachable
+'Finished building: ../light_isl29023.c'
+' '
+'Building target: light_isl29023.out'
+'Invoking: ARM Linker'
+"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -O2 -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --define=TARGET_IS_TM4C129_RA0 --define=UART_BUFFERED --display_error_number --diag_warning=225 --diag_wrap=off --gen_func_subsections=on --ual -z -m"light_isl29023_ccs.map" --heap_size=0 --stack_size=1024 -i"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/lib" -i"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="light_isl29023_linkInfo.xml" --rom_model -o "light_isl29023.out"  "./light_isl29023.obj" "./startup_ccs.obj" "./utils/uartstdio.obj" "./drivers/buttons.obj" "./drivers/pinout.obj" "../light_isl29023_ccs.cmd" -l"libc.a" -l"c:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub/light_isl29023/ccs/../../../../../driverlib/ccs/Debug/driverlib.lib" -l"c:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub/light_isl29023/ccs/../../../../../sensorlib/ccs/Debug/sensorlib.lib" 
+<Linking>
+'Finished building target: light_isl29023.out'
+' '
+"C:/Program Files (x86)/ccsv6/utils/tiobj2bin/tiobj2bin" "light_isl29023.out" "light_isl29023.bin" "C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armofd" "C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armhex" "C:/Program Files (x86)/ccsv6/utils/tiobj2bin/mkhex4bin"
+' '
+
+**** Build Finished ****
+
+**** Clean-only build of configuration Debug for project light_isl29023 ****
+
+"C:\\Program Files (x86)\\ccsv6\\utils\\bin\\gmake" -k clean 
+DEL /F  "light_isl29023.out"  "light_isl29023.hex" 
+DEL /F "light_isl29023.pp" "startup_ccs.pp" "utils\uartstdio.pp" "drivers\buttons.pp" "drivers\pinout.pp" 
+DEL /F "light_isl29023.obj" "startup_ccs.obj" "utils\uartstdio.obj" "drivers\buttons.obj" "drivers\pinout.obj" 
+'Finished clean'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project light_isl29023 ****
+
+"C:\\Program Files (x86)\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../light_isl29023.c'
+'Invoking: ARM Compiler'
+"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -O2 --include_path="C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/include" --include_path="c:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub" --include_path="c:/ti/TivaWare_C_Series-2.1.1.71" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --define=TARGET_IS_TM4C129_RA0 --define=UART_BUFFERED --display_error_number --diag_warning=225 --diag_wrap=off --gen_func_subsections=on --ual --preproc_with_compile --preproc_dependency="light_isl29023.pp"  "../light_isl29023.c"
+"../light_isl29023.c", line 720: warning #112-D: statement is unreachable
+'Finished building: ../light_isl29023.c'
+' '
+'Building file: ../startup_ccs.c'
+'Invoking: ARM Compiler'
+"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -O2 --include_path="C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/include" --include_path="c:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub" --include_path="c:/ti/TivaWare_C_Series-2.1.1.71" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --define=TARGET_IS_TM4C129_RA0 --define=UART_BUFFERED --display_error_number --diag_warning=225 --diag_wrap=off --gen_func_subsections=on --ual --preproc_with_compile --preproc_dependency="startup_ccs.pp"  "../startup_ccs.c"
+'Finished building: ../startup_ccs.c'
+' '
+'Building file: C:/ti/TivaWare_C_Series-2.1.1.71/utils/uartstdio.c'
+'Invoking: ARM Compiler'
+"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -O2 --include_path="C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/include" --include_path="c:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub" --include_path="c:/ti/TivaWare_C_Series-2.1.1.71" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --define=TARGET_IS_TM4C129_RA0 --define=UART_BUFFERED --display_error_number --diag_warning=225 --diag_wrap=off --gen_func_subsections=on --ual --preproc_with_compile --preproc_dependency="utils/uartstdio.pp" --obj_directory="utils"  "C:/ti/TivaWare_C_Series-2.1.1.71/utils/uartstdio.c"
+'Finished building: C:/ti/TivaWare_C_Series-2.1.1.71/utils/uartstdio.c'
+' '
+'Building file: C:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub/drivers/buttons.c'
+'Invoking: ARM Compiler'
+"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -O2 --include_path="C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/include" --include_path="c:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub" --include_path="c:/ti/TivaWare_C_Series-2.1.1.71" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --define=TARGET_IS_TM4C129_RA0 --define=UART_BUFFERED --display_error_number --diag_warning=225 --diag_wrap=off --gen_func_subsections=on --ual --preproc_with_compile --preproc_dependency="drivers/buttons.pp" --obj_directory="drivers"  "C:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub/drivers/buttons.c"
+'Finished building: C:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub/drivers/buttons.c'
+' '
+'Building file: C:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub/drivers/pinout.c'
+'Invoking: ARM Compiler'
+"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -O2 --include_path="C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/include" --include_path="c:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub" --include_path="c:/ti/TivaWare_C_Series-2.1.1.71" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --define=TARGET_IS_TM4C129_RA0 --define=UART_BUFFERED --display_error_number --diag_warning=225 --diag_wrap=off --gen_func_subsections=on --ual --preproc_with_compile --preproc_dependency="drivers/pinout.pp" --obj_directory="drivers"  "C:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub/drivers/pinout.c"
+'Finished building: C:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub/drivers/pinout.c'
+' '
+'Building target: light_isl29023.out'
+'Invoking: ARM Linker'
+"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -O2 -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --define=TARGET_IS_TM4C129_RA0 --define=UART_BUFFERED --display_error_number --diag_warning=225 --diag_wrap=off --gen_func_subsections=on --ual -z -m"light_isl29023_ccs.map" --heap_size=0 --stack_size=1024 -i"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/lib" -i"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="light_isl29023_linkInfo.xml" --rom_model -o "light_isl29023.out"  "./light_isl29023.obj" "./startup_ccs.obj" "./utils/uartstdio.obj" "./drivers/buttons.obj" "./drivers/pinout.obj" "../light_isl29023_ccs.cmd" -l"libc.a" -l"c:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub/light_isl29023/ccs/../../../../../driverlib/ccs/Debug/driverlib.lib" -l"c:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub/light_isl29023/ccs/../../../../../sensorlib/ccs/Debug/sensorlib.lib" 
+<Linking>
+'Finished building target: light_isl29023.out'
+' '
+"C:/Program Files (x86)/ccsv6/utils/tiobj2bin/tiobj2bin" "light_isl29023.out" "light_isl29023.bin" "C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armofd" "C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armhex" "C:/Program Files (x86)/ccsv6/utils/tiobj2bin/mkhex4bin"
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project light_isl29023 ****
+
+"C:\\Program Files (x86)\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../light_isl29023.c'
+'Invoking: ARM Compiler'
+"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -O2 --include_path="C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/include" --include_path="c:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub" --include_path="c:/ti/TivaWare_C_Series-2.1.1.71" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --define=TARGET_IS_TM4C129_RA0 --define=UART_BUFFERED --display_error_number --diag_warning=225 --diag_wrap=off --gen_func_subsections=on --ual --preproc_with_compile --preproc_dependency="light_isl29023.pp"  "../light_isl29023.c"
+"../light_isl29023.c", line 720: warning #112-D: statement is unreachable
+'Finished building: ../light_isl29023.c'
+' '
+'Building target: light_isl29023.out'
+'Invoking: ARM Linker'
+"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -O2 -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --define=TARGET_IS_TM4C129_RA0 --define=UART_BUFFERED --display_error_number --diag_warning=225 --diag_wrap=off --gen_func_subsections=on --ual -z -m"light_isl29023_ccs.map" --heap_size=0 --stack_size=1024 -i"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/lib" -i"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="light_isl29023_linkInfo.xml" --rom_model -o "light_isl29023.out"  "./light_isl29023.obj" "./startup_ccs.obj" "./utils/uartstdio.obj" "./drivers/buttons.obj" "./drivers/pinout.obj" "../light_isl29023_ccs.cmd" -l"libc.a" -l"c:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub/light_isl29023/ccs/../../../../../driverlib/ccs/Debug/driverlib.lib" -l"c:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub/light_isl29023/ccs/../../../../../sensorlib/ccs/Debug/sensorlib.lib" 
+<Linking>
+'Finished building target: light_isl29023.out'
+' '
+"C:/Program Files (x86)/ccsv6/utils/tiobj2bin/tiobj2bin" "light_isl29023.out" "light_isl29023.bin" "C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armofd" "C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armhex" "C:/Program Files (x86)/ccsv6/utils/tiobj2bin/mkhex4bin"
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project light_isl29023 ****
+
+"C:\\Program Files (x86)\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../light_isl29023.c'
+'Invoking: ARM Compiler'
+"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -O2 --include_path="C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/include" --include_path="c:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub" --include_path="c:/ti/TivaWare_C_Series-2.1.1.71" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --define=TARGET_IS_TM4C129_RA0 --define=UART_BUFFERED --display_error_number --diag_warning=225 --diag_wrap=off --gen_func_subsections=on --ual --preproc_with_compile --preproc_dependency="light_isl29023.pp"  "../light_isl29023.c"
+"../light_isl29023.c", line 721: warning #112-D: statement is unreachable
+"../light_isl29023.c", line 537: warning #179-D: variable "cnt" was declared but never referenced
+'Finished building: ../light_isl29023.c'
+' '
+'Building target: light_isl29023.out'
+'Invoking: ARM Linker'
+"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -O2 -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --define=TARGET_IS_TM4C129_RA0 --define=UART_BUFFERED --display_error_number --diag_warning=225 --diag_wrap=off --gen_func_subsections=on --ual -z -m"light_isl29023_ccs.map" --heap_size=0 --stack_size=1024 -i"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/lib" -i"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="light_isl29023_linkInfo.xml" --rom_model -o "light_isl29023.out"  "./light_isl29023.obj" "./startup_ccs.obj" "./utils/uartstdio.obj" "./drivers/buttons.obj" "./drivers/pinout.obj" "../light_isl29023_ccs.cmd" -l"libc.a" -l"c:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub/light_isl29023/ccs/../../../../../driverlib/ccs/Debug/driverlib.lib" -l"c:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub/light_isl29023/ccs/../../../../../sensorlib/ccs/Debug/sensorlib.lib" 
+<Linking>
+'Finished building target: light_isl29023.out'
+' '
+"C:/Program Files (x86)/ccsv6/utils/tiobj2bin/tiobj2bin" "light_isl29023.out" "light_isl29023.bin" "C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armofd" "C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armhex" "C:/Program Files (x86)/ccsv6/utils/tiobj2bin/mkhex4bin"
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project light_isl29023 ****
+
+"C:\\Program Files (x86)\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../light_isl29023.c'
+'Invoking: ARM Compiler'
+"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -O2 --include_path="C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/include" --include_path="c:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub" --include_path="c:/ti/TivaWare_C_Series-2.1.1.71" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --define=TARGET_IS_TM4C129_RA0 --define=UART_BUFFERED --display_error_number --diag_warning=225 --diag_wrap=off --gen_func_subsections=on --ual --preproc_with_compile --preproc_dependency="light_isl29023.pp"  "../light_isl29023.c"
+"../light_isl29023.c", line 537: warning #179-D: variable "cnt" was declared but never referenced
+'Finished building: ../light_isl29023.c'
+' '
+'Building target: light_isl29023.out'
+'Invoking: ARM Linker'
+"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -O2 -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --define=TARGET_IS_TM4C129_RA0 --define=UART_BUFFERED --display_error_number --diag_warning=225 --diag_wrap=off --gen_func_subsections=on --ual -z -m"light_isl29023_ccs.map" --heap_size=0 --stack_size=1024 -i"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/lib" -i"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="light_isl29023_linkInfo.xml" --rom_model -o "light_isl29023.out"  "./light_isl29023.obj" "./startup_ccs.obj" "./utils/uartstdio.obj" "./drivers/buttons.obj" "./drivers/pinout.obj" "../light_isl29023_ccs.cmd" -l"libc.a" -l"c:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub/light_isl29023/ccs/../../../../../driverlib/ccs/Debug/driverlib.lib" -l"c:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub/light_isl29023/ccs/../../../../../sensorlib/ccs/Debug/sensorlib.lib" 
+<Linking>
+'Finished building target: light_isl29023.out'
+' '
+"C:/Program Files (x86)/ccsv6/utils/tiobj2bin/tiobj2bin" "light_isl29023.out" "light_isl29023.bin" "C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armofd" "C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armhex" "C:/Program Files (x86)/ccsv6/utils/tiobj2bin/mkhex4bin"
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project light_isl29023 ****
+
+"C:\\Program Files (x86)\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../light_isl29023.c'
+'Invoking: ARM Compiler'
+"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -O2 --include_path="C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/include" --include_path="c:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub" --include_path="c:/ti/TivaWare_C_Series-2.1.1.71" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --define=TARGET_IS_TM4C129_RA0 --define=UART_BUFFERED --display_error_number --diag_warning=225 --diag_wrap=off --gen_func_subsections=on --ual --preproc_with_compile --preproc_dependency="light_isl29023.pp"  "../light_isl29023.c"
+'Finished building: ../light_isl29023.c'
+' '
+'Building target: light_isl29023.out'
+'Invoking: ARM Linker'
+"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -O2 -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --define=TARGET_IS_TM4C129_RA0 --define=UART_BUFFERED --display_error_number --diag_warning=225 --diag_wrap=off --gen_func_subsections=on --ual -z -m"light_isl29023_ccs.map" --heap_size=0 --stack_size=1024 -i"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/lib" -i"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="light_isl29023_linkInfo.xml" --rom_model -o "light_isl29023.out"  "./light_isl29023.obj" "./startup_ccs.obj" "./utils/uartstdio.obj" "./drivers/buttons.obj" "./drivers/pinout.obj" "../light_isl29023_ccs.cmd" -l"libc.a" -l"c:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub/light_isl29023/ccs/../../../../../driverlib/ccs/Debug/driverlib.lib" -l"c:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub/light_isl29023/ccs/../../../../../sensorlib/ccs/Debug/sensorlib.lib" 
+<Linking>
+'Finished building target: light_isl29023.out'
+' '
+"C:/Program Files (x86)/ccsv6/utils/tiobj2bin/tiobj2bin" "light_isl29023.out" "light_isl29023.bin" "C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armofd" "C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armhex" "C:/Program Files (x86)/ccsv6/utils/tiobj2bin/mkhex4bin"
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project light_isl29023 ****
+
+"C:\\Program Files (x86)\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../light_isl29023.c'
+'Invoking: ARM Compiler'
+"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -O2 --include_path="C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/include" --include_path="c:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub" --include_path="c:/ti/TivaWare_C_Series-2.1.1.71" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --define=TARGET_IS_TM4C129_RA0 --define=UART_BUFFERED --display_error_number --diag_warning=225 --diag_wrap=off --gen_func_subsections=on --ual --preproc_with_compile --preproc_dependency="light_isl29023.pp"  "../light_isl29023.c"
+'Finished building: ../light_isl29023.c'
+' '
+'Building target: light_isl29023.out'
+'Invoking: ARM Linker'
+"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -O2 -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --define=TARGET_IS_TM4C129_RA0 --define=UART_BUFFERED --display_error_number --diag_warning=225 --diag_wrap=off --gen_func_subsections=on --ual -z -m"light_isl29023_ccs.map" --heap_size=0 --stack_size=1024 -i"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/lib" -i"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="light_isl29023_linkInfo.xml" --rom_model -o "light_isl29023.out"  "./light_isl29023.obj" "./startup_ccs.obj" "./utils/uartstdio.obj" "./drivers/buttons.obj" "./drivers/pinout.obj" "../light_isl29023_ccs.cmd" -l"libc.a" -l"c:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub/light_isl29023/ccs/../../../../../driverlib/ccs/Debug/driverlib.lib" -l"c:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub/light_isl29023/ccs/../../../../../sensorlib/ccs/Debug/sensorlib.lib" 
+<Linking>
+'Finished building target: light_isl29023.out'
+' '
+"C:/Program Files (x86)/ccsv6/utils/tiobj2bin/tiobj2bin" "light_isl29023.out" "light_isl29023.bin" "C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armofd" "C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armhex" "C:/Program Files (x86)/ccsv6/utils/tiobj2bin/mkhex4bin"
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project gpio ****
+
+"C:\\Program Files (x86)\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/include" --include_path="C:/ti/TivaWare_C_Series-2.1.1.71" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="main.pp"  "../main.c"
+'Finished building: ../main.c'
+' '
+'Building file: ../tm4c1294ncpdt_startup_ccs.c'
+'Invoking: ARM Compiler'
+"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/include" --include_path="C:/ti/TivaWare_C_Series-2.1.1.71" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="tm4c1294ncpdt_startup_ccs.pp"  "../tm4c1294ncpdt_startup_ccs.c"
+'Finished building: ../tm4c1294ncpdt_startup_ccs.c'
+' '
+'Building target: gpio.out'
+'Invoking: ARM Linker'
+"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --display_error_number --diag_warning=225 --diag_wrap=off -z -m"gpio.map" --heap_size=0 --stack_size=100 -i"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/lib" -i"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="gpio_linkInfo.xml" --rom_model -o "gpio.out"  "./main.obj" "./tm4c1294ncpdt_startup_ccs.obj" "C:/ti/TivaWare_C_Series-2.1.1.71/driverlib/ccs/Debug/driverlib.lib" "../tm4c1294ncpdt.cmd" -l"libc.a" 
+<Linking>
+'Finished building target: gpio.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lightSensor_I2C_Rpi ****
+
+"C:\\Program Files (x86)\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building target: lightSensor_I2C_Rpi.out'
+'Invoking: ARM Linker'
+"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -O2 -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --define=TARGET_IS_TM4C129_RA0 --define=UART_BUFFERED --display_error_number --diag_warning=225 --diag_wrap=off --gen_func_subsections=on --ual -z -m"light_isl29023_ccs.map" --heap_size=0 --stack_size=1024 -i"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/lib" -i"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lightSensor_I2C_Rpi_linkInfo.xml" --rom_model -o "lightSensor_I2C_Rpi.out"  "./light_isl29023.obj" "./startup_ccs.obj" "./utils/uartstdio.obj" "./drivers/buttons.obj" "./drivers/pinout.obj" "../light_isl29023_ccs.cmd" -l"libc.a" -l"c:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub/light_isl29023/ccs/../../../../../driverlib/ccs/Debug/driverlib.lib" -l"c:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub/light_isl29023/ccs/../../../../../sensorlib/ccs/Debug/sensorlib.lib" 
+<Linking>
+'Finished building target: lightSensor_I2C_Rpi.out'
+' '
+"C:/Program Files (x86)/ccsv6/utils/tiobj2bin/tiobj2bin" "lightSensor_I2C_Rpi.out" "lightSensor_I2C_Rpi.bin" "C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armofd" "C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armhex" "C:/Program Files (x86)/ccsv6/utils/tiobj2bin/mkhex4bin"
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lightSensor_I2C_Rpi ****
+
+"C:\\Program Files (x86)\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../light_isl29023.c'
+'Invoking: ARM Compiler'
+"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -O2 --include_path="C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/include" --include_path="c:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub" --include_path="c:/ti/TivaWare_C_Series-2.1.1.71" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --define=TARGET_IS_TM4C129_RA0 --define=UART_BUFFERED --display_error_number --diag_warning=225 --diag_wrap=off --gen_func_subsections=on --ual --preproc_with_compile --preproc_dependency="light_isl29023.pp"  "../light_isl29023.c"
+'Finished building: ../light_isl29023.c'
+' '
+'Building target: lightSensor_I2C_Rpi.out'
+'Invoking: ARM Linker'
+"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -O2 -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --define=TARGET_IS_TM4C129_RA0 --define=UART_BUFFERED --display_error_number --diag_warning=225 --diag_wrap=off --gen_func_subsections=on --ual -z -m"light_isl29023_ccs.map" --heap_size=0 --stack_size=1024 -i"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/lib" -i"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lightSensor_I2C_Rpi_linkInfo.xml" --rom_model -o "lightSensor_I2C_Rpi.out"  "./light_isl29023.obj" "./startup_ccs.obj" "./utils/uartstdio.obj" "./drivers/buttons.obj" "./drivers/pinout.obj" "../light_isl29023_ccs.cmd" -l"libc.a" -l"c:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub/light_isl29023/ccs/../../../../../driverlib/ccs/Debug/driverlib.lib" -l"c:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub/light_isl29023/ccs/../../../../../sensorlib/ccs/Debug/sensorlib.lib" 
+<Linking>
+'Finished building target: lightSensor_I2C_Rpi.out'
+' '
+"C:/Program Files (x86)/ccsv6/utils/tiobj2bin/tiobj2bin" "lightSensor_I2C_Rpi.out" "lightSensor_I2C_Rpi.bin" "C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armofd" "C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armhex" "C:/Program Files (x86)/ccsv6/utils/tiobj2bin/mkhex4bin"
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project I2C_slave_write ****
+
+"C:\\Program Files (x86)\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/include" --include_path="C:/ti/TivaWare_C_Series-2.1.1.71" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="main.pp"  "../main.c"
+"../main.c", line 49: warning #112-D: statement is unreachable
+'Finished building: ../main.c'
+' '
+'Building target: I2C_slave_write.out'
+'Invoking: ARM Linker'
+"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --display_error_number --diag_warning=225 --diag_wrap=off -z -m"I2C_slave_write.map" --heap_size=0 --stack_size=512 -i"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/lib" -i"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="I2C_slave_write_linkInfo.xml" --rom_model -o "I2C_slave_write.out"  "./main.obj" "./tm4c1294ncpdt_startup_ccs.obj" "C:/ti/TivaWare_C_Series-2.1.1.71/driverlib/ccs/Debug/driverlib.lib" "../tm4c1294ncpdt.cmd" -l"libc.a" 
+<Linking>
+'Finished building target: I2C_slave_write.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project I2C_slave_write ****
+
+"C:\\Program Files (x86)\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/include" --include_path="C:/ti/TivaWare_C_Series-2.1.1.71" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="main.pp"  "../main.c"
+"../main.c", line 51: warning #112-D: statement is unreachable
+'Finished building: ../main.c'
+' '
+'Building target: I2C_slave_write.out'
+'Invoking: ARM Linker'
+"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --display_error_number --diag_warning=225 --diag_wrap=off -z -m"I2C_slave_write.map" --heap_size=0 --stack_size=512 -i"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/lib" -i"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="I2C_slave_write_linkInfo.xml" --rom_model -o "I2C_slave_write.out"  "./main.obj" "./tm4c1294ncpdt_startup_ccs.obj" "C:/ti/TivaWare_C_Series-2.1.1.71/driverlib/ccs/Debug/driverlib.lib" "../tm4c1294ncpdt.cmd" -l"libc.a" 
+<Linking>
+'Finished building target: I2C_slave_write.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project I2C_slave_write ****
+
+"C:\\Program Files (x86)\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lightSensor_I2C_Rpi ****
+
+"C:\\Program Files (x86)\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lightSensor_I2C_Rpi ****
+
+"C:\\Program Files (x86)\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../light_isl29023.c'
+'Invoking: ARM Compiler'
+"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -O2 --include_path="C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/include" --include_path="c:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub" --include_path="c:/ti/TivaWare_C_Series-2.1.1.71" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --define=TARGET_IS_TM4C129_RA0 --define=UART_BUFFERED --display_error_number --diag_warning=225 --diag_wrap=off --gen_func_subsections=on --ual --preproc_with_compile --preproc_dependency="light_isl29023.pp"  "../light_isl29023.c"
+"../light_isl29023.c", line 633: warning #225-D: function "GetLightData" declared implicitly
+"../light_isl29023.c", line 459: warning #179-D: variable "cnt" was declared but never referenced
+'Finished building: ../light_isl29023.c'
+' '
+'Building target: lightSensor_I2C_Rpi.out'
+'Invoking: ARM Linker'
+"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -O2 -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --define=TARGET_IS_TM4C129_RA0 --define=UART_BUFFERED --display_error_number --diag_warning=225 --diag_wrap=off --gen_func_subsections=on --ual -z -m"light_isl29023_ccs.map" --heap_size=0 --stack_size=1024 -i"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/lib" -i"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lightSensor_I2C_Rpi_linkInfo.xml" --rom_model -o "lightSensor_I2C_Rpi.out"  "./light_isl29023.obj" "./startup_ccs.obj" "./utils/uartstdio.obj" "./drivers/buttons.obj" "./drivers/pinout.obj" "../light_isl29023_ccs.cmd" -l"libc.a" -l"c:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub/light_isl29023/ccs/../../../../../driverlib/ccs/Debug/driverlib.lib" -l"c:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub/light_isl29023/ccs/../../../../../sensorlib/ccs/Debug/sensorlib.lib" 
+<Linking>
+
+ undefined    first referenced    
+
+>> Compilation failure
+  symbol          in file         
+ ---------    ----------------    
+ GetLightData ./light_isl29023.obj
+
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "lightSensor_I2C_Rpi.out" not built
+gmake: *** [lightSensor_I2C_Rpi.out] Error 1
+gmake: Target `all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Clean-only build of configuration Debug for project lightSensor_I2C_Rpi ****
+
+"C:\\Program Files (x86)\\ccsv6\\utils\\bin\\gmake" -k clean 
+DEL /F  "lightSensor_I2C_Rpi.out"  "lightSensor_I2C_Rpi.hex" 
+Could Not Find C:\TM4C1294_Workspace\lightSensor_I2C_Rpi\Debug\lightSensor_I2C_Rpi.out
+DEL /F "light_isl29023.pp" "startup_ccs.pp" "utils\uartstdio.pp" "drivers\buttons.pp" "drivers\pinout.pp" 
+DEL /F "light_isl29023.obj" "startup_ccs.obj" "utils\uartstdio.obj" "drivers\buttons.obj" "drivers\pinout.obj" 
+'Finished clean'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lightSensor_I2C_Rpi ****
+
+"C:\\Program Files (x86)\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../light_isl29023.c'
+'Invoking: ARM Compiler'
+"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -O2 --include_path="C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/include" --include_path="c:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub" --include_path="c:/ti/TivaWare_C_Series-2.1.1.71" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --define=TARGET_IS_TM4C129_RA0 --define=UART_BUFFERED --display_error_number --diag_warning=225 --diag_wrap=off --gen_func_subsections=on --ual --preproc_with_compile --preproc_dependency="light_isl29023.pp"  "../light_isl29023.c"
+"../light_isl29023.c", line 539: warning #179-D: variable "cnt" was declared but never referenced
+'Finished building: ../light_isl29023.c'
+' '
+'Building file: ../startup_ccs.c'
+'Invoking: ARM Compiler'
+"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -O2 --include_path="C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/include" --include_path="c:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub" --include_path="c:/ti/TivaWare_C_Series-2.1.1.71" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --define=TARGET_IS_TM4C129_RA0 --define=UART_BUFFERED --display_error_number --diag_warning=225 --diag_wrap=off --gen_func_subsections=on --ual --preproc_with_compile --preproc_dependency="startup_ccs.pp"  "../startup_ccs.c"
+'Finished building: ../startup_ccs.c'
+' '
+'Building file: C:/ti/TivaWare_C_Series-2.1.1.71/utils/uartstdio.c'
+'Invoking: ARM Compiler'
+"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -O2 --include_path="C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/include" --include_path="c:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub" --include_path="c:/ti/TivaWare_C_Series-2.1.1.71" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --define=TARGET_IS_TM4C129_RA0 --define=UART_BUFFERED --display_error_number --diag_warning=225 --diag_wrap=off --gen_func_subsections=on --ual --preproc_with_compile --preproc_dependency="utils/uartstdio.pp" --obj_directory="utils"  "C:/ti/TivaWare_C_Series-2.1.1.71/utils/uartstdio.c"
+'Finished building: C:/ti/TivaWare_C_Series-2.1.1.71/utils/uartstdio.c'
+' '
+'Building file: C:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub/drivers/buttons.c'
+'Invoking: ARM Compiler'
+"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -O2 --include_path="C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/include" --include_path="c:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub" --include_path="c:/ti/TivaWare_C_Series-2.1.1.71" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --define=TARGET_IS_TM4C129_RA0 --define=UART_BUFFERED --display_error_number --diag_warning=225 --diag_wrap=off --gen_func_subsections=on --ual --preproc_with_compile --preproc_dependency="drivers/buttons.pp" --obj_directory="drivers"  "C:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub/drivers/buttons.c"
+'Finished building: C:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub/drivers/buttons.c'
+' '
+'Building file: C:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub/drivers/pinout.c'
+'Invoking: ARM Compiler'
+"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -O2 --include_path="C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/include" --include_path="c:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub" --include_path="c:/ti/TivaWare_C_Series-2.1.1.71" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --define=TARGET_IS_TM4C129_RA0 --define=UART_BUFFERED --display_error_number --diag_warning=225 --diag_wrap=off --gen_func_subsections=on --ual --preproc_with_compile --preproc_dependency="drivers/pinout.pp" --obj_directory="drivers"  "C:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub/drivers/pinout.c"
+'Finished building: C:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub/drivers/pinout.c'
+' '
+'Building target: lightSensor_I2C_Rpi.out'
+'Invoking: ARM Linker'
+"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -O2 -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --define=TARGET_IS_TM4C129_RA0 --define=UART_BUFFERED --display_error_number --diag_warning=225 --diag_wrap=off --gen_func_subsections=on --ual -z -m"light_isl29023_ccs.map" --heap_size=0 --stack_size=1024 -i"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/lib" -i"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lightSensor_I2C_Rpi_linkInfo.xml" --rom_model -o "lightSensor_I2C_Rpi.out"  "./light_isl29023.obj" "./startup_ccs.obj" "./utils/uartstdio.obj" "./drivers/buttons.obj" "./drivers/pinout.obj" "../light_isl29023_ccs.cmd" -l"libc.a" -l"c:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub/light_isl29023/ccs/../../../../../driverlib/ccs/Debug/driverlib.lib" -l"c:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub/light_isl29023/ccs/../../../../../sensorlib/ccs/Debug/sensorlib.lib" 
+<Linking>
+'Finished building target: lightSensor_I2C_Rpi.out'
+' '
+"C:/Program Files (x86)/ccsv6/utils/tiobj2bin/tiobj2bin" "lightSensor_I2C_Rpi.out" "lightSensor_I2C_Rpi.bin" "C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armofd" "C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armhex" "C:/Program Files (x86)/ccsv6/utils/tiobj2bin/mkhex4bin"
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lightSensor_I2C_Rpi ****
+
+"C:\\Program Files (x86)\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project light_isl29023 ****
+
+"C:\\Program Files (x86)\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../light_isl29023.c'
+'Invoking: ARM Compiler'
+"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -O2 --include_path="C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/include" --include_path="c:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub" --include_path="c:/ti/TivaWare_C_Series-2.1.1.71" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --define=TARGET_IS_TM4C129_RA0 --define=UART_BUFFERED --display_error_number --diag_warning=225 --diag_wrap=off --gen_func_subsections=on --ual --preproc_with_compile --preproc_dependency="light_isl29023.pp"  "../light_isl29023.c"
+'Finished building: ../light_isl29023.c'
+' '
+'Building file: ../startup_ccs.c'
+'Invoking: ARM Compiler'
+"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -O2 --include_path="C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/include" --include_path="c:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub" --include_path="c:/ti/TivaWare_C_Series-2.1.1.71" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --define=TARGET_IS_TM4C129_RA0 --define=UART_BUFFERED --display_error_number --diag_warning=225 --diag_wrap=off --gen_func_subsections=on --ual --preproc_with_compile --preproc_dependency="startup_ccs.pp"  "../startup_ccs.c"
+'Finished building: ../startup_ccs.c'
+' '
+'Building file: C:/ti/TivaWare_C_Series-2.1.1.71/utils/uartstdio.c'
+'Invoking: ARM Compiler'
+"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -O2 --include_path="C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/include" --include_path="c:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub" --include_path="c:/ti/TivaWare_C_Series-2.1.1.71" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --define=TARGET_IS_TM4C129_RA0 --define=UART_BUFFERED --display_error_number --diag_warning=225 --diag_wrap=off --gen_func_subsections=on --ual --preproc_with_compile --preproc_dependency="utils/uartstdio.pp" --obj_directory="utils"  "C:/ti/TivaWare_C_Series-2.1.1.71/utils/uartstdio.c"
+'Finished building: C:/ti/TivaWare_C_Series-2.1.1.71/utils/uartstdio.c'
+' '
+'Building file: C:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub/drivers/buttons.c'
+'Invoking: ARM Compiler'
+"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -O2 --include_path="C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/include" --include_path="c:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub" --include_path="c:/ti/TivaWare_C_Series-2.1.1.71" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --define=TARGET_IS_TM4C129_RA0 --define=UART_BUFFERED --display_error_number --diag_warning=225 --diag_wrap=off --gen_func_subsections=on --ual --preproc_with_compile --preproc_dependency="drivers/buttons.pp" --obj_directory="drivers"  "C:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub/drivers/buttons.c"
+'Finished building: C:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub/drivers/buttons.c'
+' '
+'Building file: C:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub/drivers/pinout.c'
+'Invoking: ARM Compiler'
+"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -O2 --include_path="C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/include" --include_path="c:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub" --include_path="c:/ti/TivaWare_C_Series-2.1.1.71" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --define=TARGET_IS_TM4C129_RA0 --define=UART_BUFFERED --display_error_number --diag_warning=225 --diag_wrap=off --gen_func_subsections=on --ual --preproc_with_compile --preproc_dependency="drivers/pinout.pp" --obj_directory="drivers"  "C:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub/drivers/pinout.c"
+'Finished building: C:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub/drivers/pinout.c'
+' '
+'Building target: light_isl29023.out'
+'Invoking: ARM Linker'
+"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -O2 -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --define=TARGET_IS_TM4C129_RA0 --define=UART_BUFFERED --display_error_number --diag_warning=225 --diag_wrap=off --gen_func_subsections=on --ual -z -m"light_isl29023_ccs.map" --heap_size=0 --stack_size=1024 -i"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/lib" -i"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="light_isl29023_linkInfo.xml" --rom_model -o "light_isl29023.out"  "./light_isl29023.obj" "./startup_ccs.obj" "./utils/uartstdio.obj" "./drivers/buttons.obj" "./drivers/pinout.obj" "../light_isl29023_ccs.cmd" -l"libc.a" -l"c:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub/light_isl29023/ccs/../../../../../driverlib/ccs/Debug/driverlib.lib" -l"c:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub/light_isl29023/ccs/../../../../../sensorlib/ccs/Debug/sensorlib.lib" 
+<Linking>
+'Finished building target: light_isl29023.out'
+' '
+"C:/Program Files (x86)/ccsv6/utils/tiobj2bin/tiobj2bin" "light_isl29023.out" "light_isl29023.bin" "C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armofd" "C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armhex" "C:/Program Files (x86)/ccsv6/utils/tiobj2bin/mkhex4bin"
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project light_isl29023 ****
+
+"C:\\Program Files (x86)\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../light_isl29023.c'
+'Invoking: ARM Compiler'
+"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -O2 --include_path="C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/include" --include_path="c:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub" --include_path="c:/ti/TivaWare_C_Series-2.1.1.71" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --define=TARGET_IS_TM4C129_RA0 --define=UART_BUFFERED --display_error_number --diag_warning=225 --diag_wrap=off --gen_func_subsections=on --ual --preproc_with_compile --preproc_dependency="light_isl29023.pp"  "../light_isl29023.c"
+'Finished building: ../light_isl29023.c'
+' '
+'Building file: ../startup_ccs.c'
+'Invoking: ARM Compiler'
+"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -O2 --include_path="C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/include" --include_path="c:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub" --include_path="c:/ti/TivaWare_C_Series-2.1.1.71" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --define=TARGET_IS_TM4C129_RA0 --define=UART_BUFFERED --display_error_number --diag_warning=225 --diag_wrap=off --gen_func_subsections=on --ual --preproc_with_compile --preproc_dependency="startup_ccs.pp"  "../startup_ccs.c"
+'Finished building: ../startup_ccs.c'
+' '
+'Building file: C:/ti/TivaWare_C_Series-2.1.1.71/utils/uartstdio.c'
+'Invoking: ARM Compiler'
+"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -O2 --include_path="C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/include" --include_path="c:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub" --include_path="c:/ti/TivaWare_C_Series-2.1.1.71" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --define=TARGET_IS_TM4C129_RA0 --define=UART_BUFFERED --display_error_number --diag_warning=225 --diag_wrap=off --gen_func_subsections=on --ual --preproc_with_compile --preproc_dependency="utils/uartstdio.pp" --obj_directory="utils"  "C:/ti/TivaWare_C_Series-2.1.1.71/utils/uartstdio.c"
+'Finished building: C:/ti/TivaWare_C_Series-2.1.1.71/utils/uartstdio.c'
+' '
+'Building file: C:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub/drivers/buttons.c'
+'Invoking: ARM Compiler'
+"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -O2 --include_path="C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/include" --include_path="c:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub" --include_path="c:/ti/TivaWare_C_Series-2.1.1.71" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --define=TARGET_IS_TM4C129_RA0 --define=UART_BUFFERED --display_error_number --diag_warning=225 --diag_wrap=off --gen_func_subsections=on --ual --preproc_with_compile --preproc_dependency="drivers/buttons.pp" --obj_directory="drivers"  "C:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub/drivers/buttons.c"
+'Finished building: C:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub/drivers/buttons.c'
+' '
+'Building file: C:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub/drivers/pinout.c'
+'Invoking: ARM Compiler'
+"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -O2 --include_path="C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/include" --include_path="c:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub" --include_path="c:/ti/TivaWare_C_Series-2.1.1.71" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --define=TARGET_IS_TM4C129_RA0 --define=UART_BUFFERED --display_error_number --diag_warning=225 --diag_wrap=off --gen_func_subsections=on --ual --preproc_with_compile --preproc_dependency="drivers/pinout.pp" --obj_directory="drivers"  "C:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub/drivers/pinout.c"
+'Finished building: C:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub/drivers/pinout.c'
+' '
+'Building target: light_isl29023.out'
+'Invoking: ARM Linker'
+"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -O2 -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --define=TARGET_IS_TM4C129_RA0 --define=UART_BUFFERED --display_error_number --diag_warning=225 --diag_wrap=off --gen_func_subsections=on --ual -z -m"light_isl29023_ccs.map" --heap_size=0 --stack_size=1024 -i"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/lib" -i"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="light_isl29023_linkInfo.xml" --rom_model -o "light_isl29023.out"  "./light_isl29023.obj" "./startup_ccs.obj" "./utils/uartstdio.obj" "./drivers/buttons.obj" "./drivers/pinout.obj" "../light_isl29023_ccs.cmd" -l"libc.a" -l"c:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub/light_isl29023/ccs/../../../../../driverlib/ccs/Debug/driverlib.lib" -l"c:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub/light_isl29023/ccs/../../../../../sensorlib/ccs/Debug/sensorlib.lib" 
+<Linking>
+'Finished building target: light_isl29023.out'
+' '
+"C:/Program Files (x86)/ccsv6/utils/tiobj2bin/tiobj2bin" "light_isl29023.out" "light_isl29023.bin" "C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armofd" "C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armhex" "C:/Program Files (x86)/ccsv6/utils/tiobj2bin/mkhex4bin"
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project light_isl29023 ****
+
+"C:\\Program Files (x86)\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lightSensor_I2C_Rpi ****
+
+"C:\\Program Files (x86)\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: C:/ti/TivaWare_C_Series-2.1.1.71/utils/uartstdio.c'
+'Invoking: ARM Compiler'
+"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -O2 --include_path="C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/include" --include_path="c:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub" --include_path="c:/ti/TivaWare_C_Series-2.1.1.71" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --define=TARGET_IS_TM4C129_RA0 --define=UART_BUFFERED --display_error_number --diag_warning=225 --diag_wrap=off --gen_func_subsections=on --ual --preproc_with_compile --preproc_dependency="utils/uartstdio.pp" --obj_directory="utils"  "C:/ti/TivaWare_C_Series-2.1.1.71/utils/uartstdio.c"
+'Finished building: C:/ti/TivaWare_C_Series-2.1.1.71/utils/uartstdio.c'
+' '
+'Building file: C:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub/drivers/buttons.c'
+'Invoking: ARM Compiler'
+"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -O2 --include_path="C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/include" --include_path="c:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub" --include_path="c:/ti/TivaWare_C_Series-2.1.1.71" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --define=TARGET_IS_TM4C129_RA0 --define=UART_BUFFERED --display_error_number --diag_warning=225 --diag_wrap=off --gen_func_subsections=on --ual --preproc_with_compile --preproc_dependency="drivers/buttons.pp" --obj_directory="drivers"  "C:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub/drivers/buttons.c"
+'Finished building: C:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub/drivers/buttons.c'
+' '
+'Building file: C:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub/drivers/pinout.c'
+'Invoking: ARM Compiler'
+"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -O2 --include_path="C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/include" --include_path="c:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub" --include_path="c:/ti/TivaWare_C_Series-2.1.1.71" -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --define=TARGET_IS_TM4C129_RA0 --define=UART_BUFFERED --display_error_number --diag_warning=225 --diag_wrap=off --gen_func_subsections=on --ual --preproc_with_compile --preproc_dependency="drivers/pinout.pp" --obj_directory="drivers"  "C:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub/drivers/pinout.c"
+'Finished building: C:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub/drivers/pinout.c'
+' '
+'Building target: lightSensor_I2C_Rpi.out'
+'Invoking: ARM Linker'
+"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -O2 -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --define=TARGET_IS_TM4C129_RA0 --define=UART_BUFFERED --display_error_number --diag_warning=225 --diag_wrap=off --gen_func_subsections=on --ual -z -m"light_isl29023_ccs.map" --heap_size=0 --stack_size=1024 -i"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/lib" -i"C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lightSensor_I2C_Rpi_linkInfo.xml" --rom_model -o "lightSensor_I2C_Rpi.out"  "./light_isl29023.obj" "./startup_ccs.obj" "./utils/uartstdio.obj" "./drivers/buttons.obj" "./drivers/pinout.obj" "../light_isl29023_ccs.cmd" -l"libc.a" -l"c:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub/light_isl29023/ccs/../../../../../driverlib/ccs/Debug/driverlib.lib" -l"c:/ti/TivaWare_C_Series-2.1.1.71/examples/boards/ek-tm4c1294xl-boostxl-senshub/light_isl29023/ccs/../../../../../sensorlib/ccs/Debug/sensorlib.lib" 
+<Linking>
+'Finished building target: lightSensor_I2C_Rpi.out'
+' '
+"C:/Program Files (x86)/ccsv6/utils/tiobj2bin/tiobj2bin" "lightSensor_I2C_Rpi.out" "lightSensor_I2C_Rpi.bin" "C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armofd" "C:/Program Files (x86)/ccsv6/tools/compiler/arm_5.1.6/bin/armhex" "C:/Program Files (x86)/ccsv6/utils/tiobj2bin/mkhex4bin"
+' '
+
+**** Build Finished ****

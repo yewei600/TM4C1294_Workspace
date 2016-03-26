@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchHistory>
+<launchGroup id="org.eclipse.ui.externaltools.launchGroup">
+<mruHistory/>
+<favorites/>
+</launchGroup>
+<launchGroup id="org.eclipse.debug.ui.launchGroup.profile">
+<mruHistory/>
+<favorites/>
+</launchGroup>
+<launchGroup id="org.eclipse.debug.ui.launchGroup.debug">
+<mruHistory>
+<launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;false&quot; path=&quot;/lightSensor_I2C_Rpi/.launches/lightSensor_I2C_Rpi.launch&quot;/&gt;&#13;&#10;"/>
+<launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;false&quot; path=&quot;/lightSensor_I2C_Rpi/.launches/light_isl29023.launch&quot;/&gt;&#13;&#10;"/>
+<launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;false&quot; path=&quot;/I2C_slave_write/.launches/I2C_slave_write.launch&quot;/&gt;&#13;&#10;"/>
+<launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;false&quot; path=&quot;/gpio/.launches/gpio.launch&quot;/&gt;&#13;&#10;"/>
+<launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;false&quot; path=&quot;/I2C_master/.launches/I2C_master.launch&quot;/&gt;&#13;&#10;"/>
+<launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;false&quot; path=&quot;/sensors_controller/.launches/sensors_controller.launch&quot;/&gt;&#13;&#10;"/>
+<launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;false&quot; path=&quot;/senshub_iot/.launches/senshub_iot.launch&quot;/&gt;&#13;&#10;"/>
+<launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;false&quot; path=&quot;/timer_interrupts/.launches/timer_interrupts.launch&quot;/&gt;&#13;&#10;"/>
+</mruHistory>
+<favorites/>
+</launchGroup>
+<launchGroup id="org.eclipse.debug.ui.launchGroup.run">
+<mruHistory/>
+<favorites/>
+</launchGroup>
+</launchHistory>
